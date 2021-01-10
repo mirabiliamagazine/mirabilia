@@ -1,0 +1,298 @@
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="./js/parser.js"></script>
+		<script type="text/javascript" src="./js/fileToHTML.js"></script>
+		<script type="text/javascript" src="./styles/loader.js"></script>
+		<script type="text/javascript" src="./styles/raygun/raygun.js"></script>
+		<script type="text/javascript" src="./styles/raygun_cover/raygun_cover.js"></script>
+        <script type="text/javascript" src="./styles/carolina/carolina.js"></script>
+        <script type="text/javascript" src="./styles/carolina_cover/carolina_cover.js"></script>
+        <script type="text/javascript" src="./styles/newspaper/newspaper.js"></script>
+        <script type="text/javascript" src="./styles/newspaper_cover/newspaper_cover.js"></script>
+        <script type="text/javascript" src="./styles/future/future.js"></script>
+        <script type="text/javascript" src="./styles/future_cover/future_cover.js"></script>
+        <script type="text/javascript" src="./styles/bauhaus_cover/bauhaus_cover.js"></script>
+        <script type="text/javascript" src="./styles/bauhaus/bauhaus.js"></script>
+        <script type="text/javascript" src="./styles/rollingstones/rollingstones.js"></script>
+        <script type="text/javascript" src="./styles/rollingstones_cover/rollingstones_cover.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="./styles/loader.css">
+        
+        
+	</head>
+	<body>
+
+        <script>
+            function toggleUl(id){
+                var element = document.getElementById(id);  //per occorrenze
+                if (element.style.display === "none"){
+                    element.style.display = "block";
+                }else{
+                    element.style.display = "none";
+                } 
+            }
+
+
+            function highlight(id){
+                document.getElementById(id).style = "background: yellow";
+                if (style_active !== undefined && style_active.includes("future")){
+                    document.getElementById("box").scroll(0,document.getElementById(id).offsetTop - document.getElementById("my_navbar").clientHeight - 35);
+                }else{
+                    window.scroll(0,document.getElementById(id).offsetTop - document.getElementById("my_navbar").clientHeight);
+                }
+                setTimeout(function (){document.getElementById(id).style = "";}, 3000);
+            }
+
+            
+
+            function toggleMetadata(id){
+                // generateMetadataHTML(id);
+               
+
+                var x= document.getElementById(id+"_toggle");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+
+               var y = document.getElementById("meta_header_"+id);
+                if (y.style.backgroundColor === "lightgrey"){
+                    y.style.backgroundColor = "white";
+                }else{
+                    y.style.backgroundColor = "lightgrey";
+                }          
+            }
+
+            function show() {
+                var x = document.getElementsByClassName("item3")[0];
+                
+                if (x.style.width === "0%") {
+                    // x.style.display = "block";
+                    x.style.width = "40%";
+                } else {
+                    x.style.width = "0%";
+                }
+            }
+                
+
+
+        </script>
+        
+       <!------<nav>
+            <ul>
+               <li style="float:left; font-size: 30px; position: relative; bottom: 20px;"><a href="homepage.html" id="navbar" class> mirabilia</li><a>
+               <li><a href="explore.html" id="navbar">Explore</li></a>
+               <li><a href="documentation.html" id="navbar"> Documentation</li></a>
+               <li><a href="disclaimer.html" id="navbar"> Disclaimer</li></a>
+               <li><a href="about.html" id="navbar"> About</li></a>
+           </ul>issues
+        </nav>--->
+        <div class="grid-container">
+            <a onclick="show()" class="metadata_button"><img src="./images/nuova_lente.png"></a>
+            <div class="first_menu item1" id="my_navbar">
+                <ul>
+                <!---logo a destra--> 
+                    <li style="float:left; font-size: 30px; position: relative; bottom: 10px;"><a href="homepage.html" id="navbar" class="logo"> mirabilia</a></li>
+                    <li class="issues">Issues:</li>
+                    <!--menu nav centrale-->
+                    <li class="dropdown">
+                    
+                    <a onclick="parser('./pagesToLoad/literature.html', style_active, true, 'literature')"  class="dropbtn">Literature</a>
+                    <div class="dropdown-content">
+                        <a onclick="parser('./pagesToLoad/children.html', style_active, false, 'literature')">
+                            Article 1
+                        </a>
+                        <a onclick="parser('./pagesToLoad/inforgraphics.html', style_active, false, 'literature')">
+                            Article 2
+                        </a>
+                        <a onclick="parser('./pagesToLoad/theGuardian_article.html', style_active, false, 'literature')">
+                            Article 3
+                        </a>
+                    </div>
+                    </li>
+                    <li class="dropdown">
+                        <a onclick="parser('./pagesToLoad/digital.html', style_active, true, 'digital')" class="dropbtn">Digital</a>
+                        <div class="dropdown-content">
+                            <a onclick="parser('./pagesToLoad/medium_hp_article.html', style_active, false, 'digital')">
+                                Article 1
+                            </a>
+                            <a onclick="parser('./pagesToLoad/Dataviz.html', style_active, false, 'digital')">
+                                Article 2
+                            </a>
+                            <a onclick="parser('./pagesToLoad/Illus.html', style_active, false, 'digital')">
+                                Article 3
+                            </a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a onclick="parser('./pagesToLoad/Rodar100.html', style_active, true, 'Rodar100')" class="dropbtn">Rodar100</a>
+                        <div class="dropdown-content">
+                            <a onclick="parser('./pagesToLoad/corriere_articolo.html', style_active, false, 'Rodar100')">
+                                Article 1
+                            </a>
+                            <a onclick="parser('./pagesToLoad/ny_article.html', style_active, false, 'Rodar100')">
+                                Article 2
+                            </a>
+                            <a onclick="parser('./pagesToLoad/Rodari_internazionale.html', style_active, false, 'Rodar100')">
+                                Article 3
+                            </a>
+                        </div>
+                    </li>
+                    <!--menu hamburger destra-->
+                    <li class="dropdown hamburgers">
+                        <a>
+                            <div class="menu_icon"></div>
+                            <div class="menu_icon"></div>
+                            <div class="menu_icon"></div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="documentation.html" id="navbar"> Documentation</a>
+                            <a href="disclaimer.html" id="navbar"> Disclaimer</a>
+                            <a href="about.html" id="navbar"> About</a>
+                        </div>
+                    </li>
+                    <!--altro menu(responsive version)-->
+                    <li class="dropdown hamburgers1">
+                        <a>
+                            <div class="menu_icon"></div>
+                            <div class="menu_icon"></div>
+                            <div class="menu_icon"></div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="homepage.html" id="navbar"> Home</a>
+                            <a href="documentation.html" id="navbar"> Documentation</a>
+                            <a href="disclaimer.html" id="navbar"> Disclaimer</a>
+                            <a href="about.html" id="navbar"> About</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="box" class="item2">
+                <div class="welcome">
+                    
+                    <p>Welcome to the new Explore section of the <span class = "mirabilia">Mirabilia</span> magazine.</p>
+                    <p>Here's what you can do:</p>
+                    <ol>
+                        <li><span class = "enfasi">Select</span> one of the issues above to access our Covers (which this month presents a <span class = "red">surprise</span>*!). Or, again above, go directly to one of the articles.</li><br>
+                        <li><span class = "enfasi">Choose</span> one of the styles below to travel back (but also forward!) in time and magically adapt the text graphics to the chosen period!</li><br>
+                        <li><span class = "enfasi">Immerse</span> yourself in this incredible timeline and find out in which century you would have wanted your <q>Once upon a time</q>.</li>
+                    </ol>
+        
+                    <p>*<span class = "red">Drumroll! For this month and only for this month, on the occasion of the new Explore section of the <span class = "mirabilia">Mirabilia</span> website, the Cover of our issues is entirely dedicated to the White Rabbit from Alice in Wonderland!</p>
+                    <p>What better character to accompany you back and forth in time?</span></p>
+                </div>    
+            </div> 
+
+                <div class="item3" id="metadati">
+                    <!-- TABLE OF CONTENTS -->
+                    <div class="meta_header" id="meta_header_content" onclick="toggleMetadata('content')">
+                        <div>Table of contents</div> 
+                        <div class="row"> ⮟ </div>
+                    </div>
+                    <div id="content_toggle" style="display: none;">
+                        <!----vuoto-->
+                    </div>
+
+                    <!-- PEOPLE -->
+                    <div class="meta_header" id="meta_header_person" onclick="toggleMetadata('person')">
+                            <div>People</div> 
+                            <div class="row"> ⮟ </div>
+                    </div>
+                    <div id="person_toggle" style="display: none;">
+                        <!----vuoto-->
+                    </div>
+
+                    <!-- PLACES -->
+                    <div class="meta_header" id="meta_header_place" onclick="toggleMetadata('place')">
+                        <div>Places</div> 
+                        <div class="row"> ⮟ </div> 
+                    </div>
+                    <div id="place_toggle" style="display: none;">
+                            <!----vuoto-->
+                    </div>
+
+                    <!-- entities -->
+                    <div class="meta_header" id="meta_header_entity" onclick="toggleMetadata('entity')">
+                        <div>Entities</div> 
+                        <div class="row"> ⮟ </div>
+                    </div>
+                    <div id="entity_toggle" style="display: none;">
+                            <!----vuoto-->
+                    </div>
+
+                    <!-- TIME -->
+                    <div class="meta_header" id="meta_header_time" onclick="toggleMetadata('time')">
+                        <div>Dates</div> 
+                        <div class="row"> ⮟ </div>
+                    </div>
+                    <div id="time_toggle" style="display: none;">
+                            <!----vuoto-->
+                    </div>
+
+
+                    <!-- KEYWORDS -->
+                    <div class="meta_header" id="meta_header_keywords" onclick="toggleMetadata('keywords')">
+                        <div>Key concepts of the issue</div> 
+                        <div class="row"> ⮟ </div>
+                    </div>
+                    <div id="keywords_toggle" style="display: none;">
+                        No entries found for Key concepts
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="menu_stili item4">
+                   
+                    <button id="style_label">
+                        Styles:
+                    </button>
+                    <button onclick="parser(html_active, 'carolina')">
+                        1450
+                    </button>
+                    <button onclick="parser(html_active, 'newspaper')">
+                        1860
+                    </button>
+                    <button onclick="parser(html_active, 'bauhaus')">
+                        1920
+                    </button>
+                    <button onclick="parser(html_active, 'rollingstones')">
+                        1970
+                    </button>
+                    <button onclick="parser(html_active, 'raygun')">
+                        1996
+                    </button>
+                    <button onclick="parser(html_active, 'future')">
+                        2040
+                    </button>
+                    <button id="reset_label"onclick="parser(html_active, undefined)">
+                        Reset
+                    </button>
+            </div>
+        </div>
+    
+       
+
+
+     
+        <script>
+            var html_active = undefined,  // devono essere globali, vengono richiamte da tutte le altre funzioni
+                style_active = undefined,
+                cover_active = undefined,
+                issue_active = undefined;
+            var metadata = {};
+            
+            if(screen.width <= 600){
+                document.getElementsByClassName("item3")[0].style.width = "0%";
+            }// serve ha settere lo stile, perchè mi serve nella funzione show. cos' mi chiedo se ha una widht 0%. è in fondo perchè prima 
+                // devo stampare tutto html
+        </script>
+        
+	</body>
+</html>
+
+
+

@@ -1,0 +1,358 @@
+@font-face{
+	font-family: 'dosis.medium';
+	src: url(../../fonts/dosis.medium.ttf);
+}
+
+@font-face{
+	font-family: 'dosis.book';
+	src: url(../../fonts/dosis.book.ttf);
+}
+
+
+body{
+background-color: black;
+  overflow: hidden;
+  cursor: url(../../images/bunny_future1.png), auto;
+}
+
+
+#box{
+  color: white;
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+  margin-top: 30px;
+  padding:30px;
+  padding:30px;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+  font-family: 'dosis.book'; 
+  box-shadow: 0 0 100px #354D73;
+ 
+
+  background-image: url(../../images/future_background.jpg);
+  background-size: cover;
+  /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(156, 156, 156, 0.8));*/
+  
+}
+
+
+
+.cone {
+  position: fixed!important;
+  z-index: 2;
+  width: 30%;
+  height: 5px;
+  margin: -5px auto 0;
+  background-color: rgba(0, 252, 252, .35);
+  border-radius: 100%;
+  filter: blur(2.5px);
+  transform: perspective(100px) rotateX(-30deg);
+  transform-style: preserve-3d;
+  animation: holographic 1.5s infinite alternate;
+  backface-visibility: hidden;
+  bottom: 15%;
+  right: 75.5%;
+  left: 25.5%;
+  
+}
+
+.cone::after{
+  position: absolute;
+    left: -10px;
+    right: -10px;
+    content: "";
+    height: 10px;background-color: rgba(0, 252, 252, .35);
+    border-radius: 100%;
+    filter: blur(2.5px);
+}
+
+.cone + .cone {
+  animation-duration: 0.75s;
+  opacity: 0.5;
+}
+
+@keyframes float {
+  from {
+    will-change: unset;
+    transform: translateY(-10px);
+ }
+  to {
+    will-change: transform;
+    transform: translateY(-30px);
+ }
+}
+@keyframes holographic {
+  from {
+    will-change: box-shadow;
+    box-shadow: 0 -75px 5px rgba(0, 252, 252, .15), 0 -1px 2px rgba(0, 252, 252, .5), 0 -45px 5px rgba(0, 252, 252, .15), 0 -2px 3px rgba(0, 252, 252, .5), 0 -3px 4px rgba(0, 252, 252, .5), 0 -4px 6px rgba(0, 252, 252, .5), 0 -5px 10px rgba(0, 252, 252, .75), 0 -7px 20px rgba(0, 252, 252, .75), 0 -10px 30px rgba(0, 252, 252, .75), 0 -15px 40px rgba(0, 252, 252, .75), 0 -25px 50px rgba(0, 252, 252, .75), 0 -35px 60px rgba(0, 252, 252, .85), 0 -45px 70px rgba(0, 252, 252, .95), 0 -65px 80px rgba(0, 252, 252, 1), 0 -75px 90px rgba(0, 252, 252, 1);
+ }
+  to {
+    will-change: unset;
+    box-shadow: 0 -1px 5px rgba(0, 252, 252, .15), 0 -1px 2px rgba(0, 252, 252, .5), 0 -1px 5px rgba(0, 252, 252, .15), 0 -2px 3px rgba(0, 252, 252, .5), 0 -3px 4px rgba(0, 252, 252, .5), 0 -4px 6px rgba(0, 252, 252, .5), 0 -5px 7px rgba(0, 252, 252, .75), 0 -7px 10px rgba(0, 252, 252, .75), 0 -10px 15px rgba(0, 252, 252, .75), 0 -15px 20px rgba(0, 252, 252, .75), 0 -25px 25px rgba(0, 252, 252, .75), 0 -35px 30px rgba(0, 252, 252, .85), 0 -45px 35px rgba(0, 252, 252, .95), 0 -65px 40px rgba(0, 252, 252, 1), 0 -75px 50px rgba(0, 252, 252, 1);
+ }
+}
+
+
+
+
+h1 {
+    color: white;
+    font-family: 'dosis.book';
+    text-transform: uppercase;  
+    animation: 5s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    font-weight: 700;
+    text-align: center;
+    font-size: 60px;
+    height: 5vh;
+    letter-spacing: 10px;
+    text-shadow: 2px 4px 20px #924DF9;
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.date_magazine{
+  font-weight: bolder;
+  animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+/*.contenitore{
+    background-image: url(../../images/coniglio_futuro.png), url(../../images/tromba.png);
+    background-position: left,right;
+    background-position: fixed, fixed;
+    
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20%, 20%;
+}*/
+.publication_magazine{
+    display: flex;
+    flex-direction: column;
+}
+
+.text_container div{
+    padding-top: 60px;
+}
+
+
+p{
+  font-size: 30px;
+  
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #043373; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #043373; 
+}
+
+
+
+.text_container a {
+  text-decoration: none;
+  color: white;
+  font-family: 'dosis.book';
+  text-transform: uppercase;  
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+  height: 5vh;
+  letter-spacing: 10px;
+  text-shadow: 2px 4px 20px #924DF9;
+  cursor: url(../../images/bunny_future1.png), auto;
+
+}
+
+.text_container a:hover {
+  text-shadow: 2px 4px 20px white;
+
+}
+
+
+
+
+.primo{
+  background-color: rgba(133, 133, 236, 0.582);
+  margin-bottom: 30px;
+  animation: 5s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.secondo{
+  background-color: rgba(231, 131, 131, 0.514);
+  margin-bottom: 30px;
+  animation: 7s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.terzo{
+  background-color: rgba(141, 219, 141, 0.541);
+  margin-bottom: 30px;
+  animation: 10s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+
+
+
+@keyframes spin {
+  from {
+      transform:rotateY(0deg);
+  }
+  to {
+      transform:rotateY(360deg);
+  }
+}
+
+
+
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 320px){
+    #box{
+      
+      width: 60%!important;
+      height: 25%!important;
+    }
+
+    h1{
+      font-size: 120%!important;
+    }
+
+    .cone{
+      left:32%!important;
+    }
+  }
+
+
+  @media screen and (max-width: 600px){
+
+    #box{
+      margin-left: 13.5%!important;
+      width: 60%!important;
+      height: 20%!important;
+    }
+
+    h1{
+      font-size: 25px;
+    }
+  
+    .metadata_button{
+      display: none;
+    }
+
+    .text_container a{
+     
+      font-size: 20px;
+      letter-spacing: normal;
+    }
+    
+    p{
+      font-size: 15px;
+    }
+
+    .primo, .secondo, .terzo{
+      padding: 15px;
+    }
+
+    .cone{
+      left:35%!important;
+      bottom: 20%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px){
+ 
+#box{
+  margin-left: 16%;
+}
+  h1{
+    font-size: 40px;
+  }
+
+  .metadata_button{
+    display: none;
+  }
+
+  .date_magazine{
+    font-size: 20px;
+  }
+
+  .text_container a{
+   
+    font-size: 25px;
+    letter-spacing: normal;
+  }
+  
+  p{
+    font-size: 15px;
+  }
+
+  .primo, .secondo, .terzo{
+    padding: 15px;
+  }
+
+  .cone{
+    
+    bottom: 20%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+
+  #box{
+    margin-left:19%;
+    margin-top:20%;
+}
+
+}
+    
+    
+  
+  
+  
+  
+ 
+
+
+

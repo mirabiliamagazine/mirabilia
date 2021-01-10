@@ -1,0 +1,292 @@
+@font-face {
+	font-family: "seagram";
+	src: url(../../fonts/seagram.ttf);
+	font-style: normal;
+	font-weight: 100; 
+   }
+	
+   @font-face {
+	font-family: "initial";
+	src: url(../../fonts/CamelotCaps.ttf);
+   }
+
+
+
+
+	
+   #box{
+	
+	
+	font-family: "seagram";
+	font-size: 120%;
+	background-image: url(../../images/background_carolina.jpg);
+	background-size: cover;
+	height: 100%;
+	width: calc( 80vw );
+	background-repeat: no-repeat!important;
+	letter-spacing: -1.5px;
+	
+}
+
+   .contenitore{
+	   text-align: center;
+	   background-image: url(../../images/altro_conigli_girato.png), url(../../images/altro_conigli.png), url(../../images/altro_conigli_girato.png), url(../../images/altro_conigli.png);
+	background-size: contain, contain;
+	background-size: 15%, 15%;
+	background-repeat: no-repeat, no-repeat;
+	background-position: left top, right top, left bottom, right bottom;
+   }
+
+   .h1_copertina{
+	
+	
+    color:  #960018;
+	height: 40%;
+	letter-spacing: 25px;
+	font-size: 400%;
+	
+	}
+	
+  
+   
+	
+   p {
+	
+	color:#d4af37;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	
+   }
+
+   .primo, .secondo, .terzo {
+       padding: 20px;
+   }
+
+   div.primo, div.secondo{
+	background-image: url(../../images/decorations_blue_red_gimp.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 30px;
+    background-size: 20% auto;
+   }
+
+   .date_magazine{
+      
+	  margin-bottom:8%;
+	  font-size: 170%;
+	  
+       
+   }
+
+   .publication_magazine{
+		display: flex;
+		flex-direction: column;
+    }
+
+
+	.cornice{
+		
+		background-image: url(../../images/cover_frame.png);
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-size: 45vw 100%;
+
+	}
+
+	.text_container{
+	margin: auto;
+	width: 40%;
+	padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 7%;
+    padding-left: 10%;
+		
+
+	}
+
+	
+	.text_container a{
+		text-decoration: none;
+		color:#960018;
+		font-size:25px;
+		overflow-wrap: break-word;
+	}
+
+	@media screen and (max-width: 320px){
+		.text_container a{
+		
+			font-size:17px!important;
+			
+		}
+
+	}
+
+
+@media screen and (max-width: 600px){
+
+		body{
+			margin:0;
+		}
+
+		html{
+			width: 100%;
+		}
+
+	   #box{
+			width:100vw;
+			height: 100%;
+		   column-count: auto;
+		   border-image: none;
+		   border:none;
+		   padding-bottom:30%;
+		   margin: auto;
+	   }
+
+	   .contenitore{
+		background-image: none;
+	   }
+
+	   h1.h1_copertina {
+		font-size: 40px;
+		text-align:center;
+		letter-spacing: 10px;
+	}
+
+	.date_magazine{
+		font-size: 15px;
+	}
+
+	   
+	   p{
+		padding-left:10px;
+		padding-right: 10px;
+	   }
+
+	   .cornice{
+		
+		background-image: url(../../images/cover_frame.png);
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-size: 100vw 100%;
+
+	}
+
+	.text_container{
+		margin: auto;
+		width: 60%;
+		padding-top: 20%;
+		padding-bottom: 15%;
+		
+	}
+	
+	.primo , .secondo, .terzo {
+		padding: 5px;
+	}
+
+	.primo a , .secondo a, .terzo a {
+		font-size: 18px;
+	}
+	
+	.primo p, .secondo p, .terzo p {
+		font-size: 12px;
+	}
+
+	.metadata_button{
+		display: none;
+	}
+
+	div.primo, div.secondo{
+		background-image: url(../../images/decorations_blue_red_gimp.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 30px;
+		background-size: 40% auto;
+	   }
+
+	   .text_container a{
+		
+		font-size:17px!important;
+		
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+	
+
+  
+
+   h1.h1_copertina {
+	font-size: 40px;
+	text-align:center;
+	letter-spacing: 10px;
+}
+
+.date_magazine{
+	font-size: 15px;
+}
+
+   
+   p{
+	padding-left:10px;
+	padding-right: 10px;
+   }
+
+   .cornice{
+	
+	background-image: url(../../images/cover_frame.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size: 64vw 100%;
+
+}
+
+.text_container{
+	margin: auto;
+	width: 60%;
+	padding-top: 20%;
+	padding-bottom: 15%;
+	
+}
+
+.primo , .secondo, .terzo {
+	padding: 5px;
+}
+
+.primo a , .secondo a, .terzo a {
+	font-size: 18px;
+}
+
+.primo p, .secondo p, .terzo p {
+	font-size: 12px;
+}
+
+.metadata_button{
+	display: none;
+}
+
+div.primo, div.secondo{
+	background-image: url(../../images/decorations_blue_red_gimp.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 30px;
+	background-size: 30% auto;
+   }
+
+   .text_container a{
+	
+	font-size:17px!important;
+	
+}
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+
+	#box{
+	  height: 100vh;
+  }
+  
+  }

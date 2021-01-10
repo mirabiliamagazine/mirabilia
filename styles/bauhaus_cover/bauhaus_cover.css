@@ -1,0 +1,468 @@
+
+@font-face{
+  font-family: 'Bayer';
+  src: url('/fonts/BayerUniversal.ttf');
+}
+
+@font-face{
+  font-family: 'Prime';
+  src: url('/fonts/primerPrint.ttf');
+}
+
+@keyframes animation {
+/*cerchio */
+ 0% {
+  width: 50px;
+  height: 0px;
+
+  border-radius: 50%;
+  border-color:#be1e2d;
+}
+/*square*/
+100% {
+ width: 50px;
+ height: 0px;
+ border-radius: 0;
+}
+80% {
+ width: 50px;
+ height: 0px;
+ border-radius: 0;
+border-color: #ffde17;
+
+}
+60% {
+ width: 50px;
+ height: 0px;
+ border-radius: 0;
+
+}
+30% {
+  width: 50px;
+  height: 0px;
+  border-radius: 50%;
+}
+}
+
+
+
+@keyframes animation1{
+
+/*cerchio */
+ 0% {
+  width: 50px;
+  height: 0px;
+  border-radius: 0%;
+}
+/*square*/
+100% {
+ width: 50px;
+ height: 0px;
+ border-radius: 50%;
+border-color:#21409a;
+
+}
+80% {
+ width: 50px;
+ height: 0px;
+ border-radius: 0;
+
+}
+60% {
+ width: 50px;
+ height: 0px;
+ border-radius: 50%;
+ border-color:#be1e2d;
+
+}
+30% {
+  width: 50px;
+  height: 0px;
+  border-radius: 0;
+}
+}
+
+
+
+#box {
+
+  width: calc( 80vw );
+  height: 100%;
+ 
+  
+  font-family: 'Prime';
+  font-size: 20px;
+  text-align: center;
+  background-color: #f6f3ea;
+  text-transform:lowercase;
+
+
+
+}
+
+
+
+.date_magazine{
+font-weight: bold;
+font-size: 30px;
+margin-bottom: 5vh;
+transform: rotate(-25deg);
+
+}
+
+
+h1 {
+  
+  font-family:'Bayer' ;
+  font-weight: bold;
+  width: 90%;
+  color: #000;
+  font-size: 90px;
+  transform: rotate(-25deg);
+
+  padding:5px;
+  
+}
+#box a {
+text-decoration: none;
+font-size:40px;
+
+}
+#box .primo a:hover {
+color: #be1e2d;
+
+}
+#box .secondo a:hover {
+color: #21409a;
+
+}
+#box .terzo a:hover {
+color: #ffde17 ;
+
+}
+
+.text_container {
+transform: rotate(-25deg);
+font-weight: bold;
+width: 50vw;
+margin-left: 20vw;
+
+
+
+
+
+
+}
+.primo{
+
+border-bottom: 20px black solid;
+border-right: 20px #ffde17 solid;
+
+
+
+}
+.secondo {
+border-left: 20px #be1e2d solid;
+
+
+
+
+}
+.terzo{
+
+border-top:20px solid #21409a;
+border-right: 20px solid #ffde17;
+
+}
+
+
+.more1{
+
+  animation-name: animation;
+  background: url('/images/coniglio_gemma.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-duration: 5s;
+  border-style: solid;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  top: 20%;
+  left:5%;
+  padding: 80px;
+ border:8px solid;
+transform: rotate(-10deg);
+
+
+}
+.square {
+
+  animation-name: animation1;
+  animation-duration: 5s;
+  border-style: solid;
+  background: url('/images/coniglio_gemma.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  top:20%;
+  right:22%;
+  padding: 80px;
+  border:8px solid;
+  transform: rotate(-10deg);
+}
+
+
+
+@media screen and (max-width: 320px){
+
+  #box {
+    width: calc(98.3vw);
+   height:95vh!important;
+  margin:auto!important;
+   margin-right: 0!important;
+
+  font-size: 10px;
+
+
+
+
+
+}
+
+
+
+.date_magazine{
+font-size: 5px;
+border-bottom: 5px solid #be1e2d;
+transform: rotate(-5deg);
+
+}
+#box a {
+text-decoration: none;
+font-size:10px;
+
+}
+
+
+.primo{
+padding:10px;
+border-bottom: 10px black solid;
+border-right: 10px #ffde17 solid;
+
+
+
+}
+.secondo {
+border-left: 10px #be1e2d solid;
+padding:10px;
+
+
+
+}
+.terzo{
+
+border-top:10px solid #21409a;
+border-right: 10px solid #ffde17;
+
+}
+
+h1 {
+  
+
+  border-bottom: 5px solid #be1e2d;
+  font-size: 30px;
+  transform: rotate(-5deg);
+
+  padding:5px;
+  
+}
+
+
+.text_container {
+transform: rotate(-10deg);
+font-weight: bold;
+align-items: center;
+
+
+
+
+
+}
+
+
+
+.more1{
+
+display:none;
+
+
+}
+.square {
+
+ display: none;
+}
+
+
+
+}
+
+@media screen and (max-width: 600px){
+
+
+  #box {
+      width: calc(98.3vw);
+    height:100vh!important;
+    margin:auto!important;
+    margin-right: 0!important;
+  
+    font-size: 10px;
+
+  }
+
+  .date_magazine{
+  font-size: 15px;
+  border-bottom: 5px solid #be1e2d;
+  transform: rotate(-5deg);
+
+  }
+  #box a {
+  text-decoration: none;
+  font-size:15px;
+
+  }
+
+
+  .primo{
+  padding:10px;
+  border-bottom: 10px black solid;
+  border-right: 10px #ffde17 solid;
+
+
+
+  }
+  .secondo {
+  border-left: 10px #be1e2d solid;
+  padding:10px;
+
+
+
+  }
+  .terzo{
+
+  border-top:10px solid #21409a;
+  border-right: 10px solid #ffde17;
+
+  }
+
+  h1 {
+    
+
+    border-bottom: 5px solid #be1e2d;
+    font-size: 30px;
+    transform: rotate(-5deg);
+
+    padding:5px;
+    
+  }
+
+
+  .text_container {
+  transform: rotate(-10deg);
+  font-weight: bold;
+  align-items: center;
+
+
+
+
+
+  }
+
+
+
+  .more1{
+
+  display:none;
+
+
+  }
+  .square {
+
+  display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) and (max-width: 768px){
+
+  #box {
+      height: 100%;
+
+  }
+  .text_container{
+    width: 50%;
+    transform: rotate(-15deg);
+    height: 90%;
+  }
+  
+  .date_magazine{
+    font-size: 20px;
+    border-bottom: 5px solid #be1e2d;
+    transform: rotate(-5deg);
+  
+    }
+    #box a {
+
+    text-decoration: none;
+    font-size:40px;
+  
+    }
+  
+  
+    .primo{
+    padding:10px;
+    border-bottom: 10px black solid;
+    border-right: 10px #ffde17 solid;
+  
+  
+  
+    }
+    .secondo {
+    border-left: 10px #be1e2d solid;
+    padding:10px;
+  
+  
+  
+    }
+    .terzo{
+  
+    border-top:10px solid #21409a;
+    border-right: 10px solid #ffde17;
+  
+    }
+  
+    h1 {
+      
+  
+      border-bottom: 5px solid #be1e2d;
+      font-size: 50px;
+      transform: rotate(-5deg);
+  
+      padding:5px;
+      
+    }
+  
+  .more1{
+
+    display:none;
+  
+  
+    }
+    .square {
+  
+    display: none;
+    }
+
+}

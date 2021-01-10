@@ -1,0 +1,322 @@
+
+
+@font-face {
+    font-family: "didot";
+    src: url(../../fonts/didot.ttf);
+    font-style: normal;
+	font-weight: 100;
+}
+
+
+@font-face {
+    font-family: "franklin";
+    src: url(../../fonts/Franklin.otf);
+    
+}
+
+@font-face {
+    font-family: "typewriter";
+    src: url(../../fonts/typewriterbold.ttf);
+    font-style: normal;
+	font-weight: 100;
+}
+
+@font-face {
+    font-family: "deutch";
+    src: url(../../fonts/deutch.ttf);
+    
+    
+}
+
+@font-face {
+    font-family: "egyptian";
+    src: url(../../fonts/kenny.ttf);
+    font-style: normal;
+    font-weight: 100;
+   
+}
+
+@font-face {
+    font-family: "gothic";
+    src: url(../../fonts/garage_gothic_regular.otf);
+    
+   
+}
+
+
+
+
+#box{
+    
+    width: calc( 80vw );
+    height: 100%;
+    background-image: url(../../images/background_final.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    font-family: "didot";
+    filter: grayscale(100%);
+    text-align: center;
+    
+    
+}
+
+h1 {
+    font-family:"deutch";
+    font-size: 80px;
+    letter-spacing: 0.2em;
+    background-image: url(../../images/coniglio_newspaper.png);
+    background-size: contain;
+    padding-top:25%;
+    background-size: 450px;
+	background-repeat: no-repeat;
+    background-position: top;
+    
+    
+}
+
+
+
+.publication_magazine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+
+.date_magazine{
+    font-size: 30px;
+    padding-top:1%;
+    padding-bottom: 1%;
+    border-bottom: double black;
+    border-top: double black;
+    text-transform: uppercase;
+    font-family:"franklin";
+    width: 70vw;
+    margin: auto;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+    
+}
+
+.text_container{
+   
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.1em;
+    width: 50%;
+    padding-top:5%;
+    margin: auto;
+    
+    
+    
+}
+
+.primo, .secondo, .terzo{
+padding:5%;
+  
+}
+
+
+.primo, .secondo{
+    border: none;
+    margin-bottom: 10%;
+    
+}
+
+.primo{
+    border: 4px double black;
+    box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);
+    
+}
+
+.secondo{
+    border: 6px dotted black;
+    box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);
+}
+
+.terzo{
+    
+    border: 8px solid;
+    border-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);
+}
+
+div.text_container a {
+    
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+
+.primo >  a{
+       font-family:  "franklin";
+        
+        
+    }
+    
+.secondo > a{
+    font-family:   "egyptian";
+            }
+    
+.terzo > a{
+    font-family: "typewriter";
+       
+    }
+    
+    
+
+
+  p{
+      font-family: "gothic";
+      font-size: 30px;
+      
+  }
+
+  @media screen and (max-width: 320px){
+      .date_magazine{
+          font-size: 15px;
+      }
+
+      .text_container a{
+          font-size: 20px!important;
+      }
+
+      .text_container p{
+        font-size: 15px!important;
+    }
+
+    #box{
+        margin-bottom: 0!important;
+    }
+
+
+
+  }
+
+
+  @media screen and (max-width: 600px){
+
+    #box{
+     width: 100vw;
+     
+
+    }
+    
+    .metadata_button{
+     display: none;
+   }
+
+
+   .item3{
+       display: none!important;
+   }
+
+
+   h1 {
+    font-family:"deutch";
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    text-align: center; 
+    margin: auto; 
+    background-image: url(../../images/coniglio_newspaper.png);
+    background-size: contain;
+    padding-top:250px;
+    background-size: 250px;
+	background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 7vh;
+}
+
+.text_container{
+    padding-top: 80px;
+    padding-bottom:150px;
+    display: flex;
+    flex-direction: column;
+   
+    letter-spacing: 0.1em;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    
+    
+}
+
+
+
+.date_magazine{
+    font-size: 15px;
+}
+
+.text_container a{
+    font-size: 20px!important;
+}
+
+.text_container p{
+  font-size: 15px!important;
+}
+
+
+
+
+
+
+}
+   
+@media screen and (min-width: 768px) and (max-width: 768px){
+    
+      
+   
+    
+   
+   
+    
+   
+   .text_container{
+       padding-top: 80px;
+       padding-bottom:150px;
+       display: flex;
+       flex-direction: column;
+      
+       letter-spacing: 0.1em;
+       width: 90%;
+       margin: auto;
+       justify-content: center;
+       
+       
+   }
+   
+   
+   
+   .date_magazine{
+       font-size: 15px;
+   }
+   
+   .text_container a{
+       font-size: 20px!important;
+   }
+   
+   .text_container p{
+     font-size: 15px!important;
+   }
+   
+   
+   
+   
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+
+    #box{
+        height: 100%;
+        margin-bottom:30%;
+        
+    }
+
+    .terzo > a{
+        font-size: 150%!important;
+           
+        }
+} 

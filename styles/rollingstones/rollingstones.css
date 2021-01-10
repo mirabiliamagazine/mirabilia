@@ -1,0 +1,312 @@
+@font-face{
+    font-family: 'Rene';
+    src: url('/fonts/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf');
+
+}
+@font-face{
+    font-family: 'Roya';
+   src: url('/fonts/Royalacid.ttf');
+
+}
+body {
+  background-image: url('/images/backRolling.jpg');
+    background-size: cover;
+ background-repeat: no-repeat;
+
+
+}
+
+#box {
+    
+    width: 70%;
+    font-family: 'Rene'; 
+    font-size:15px;
+    column-count: 3;
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+    margin-left: 8vh;
+    column-gap: 2em;
+    column-rule: 2px solid black; /* dimensioni colonne divisorie */
+    text-align: justify;
+    column-fill: balance;
+
+    padding:10px;
+    background-image: url('/images/backRolling.jpg');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 5px 	#2e2d27 double;
+    outline: 3px solid 	#2e2d27;
+  
+            
+}
+
+
+
+h1 { 
+            
+    font-family:'Roya' ;
+    font-weight: bold;
+	font-size: 35px;
+    line-height: 1em;
+    text-transform: uppercase;
+    display: table-row-group;
+    letter-spacing: 1;
+    text-align: right;
+   
+
+
+
+}
+
+div#box img  {
+    width: 100%;
+    border: 2px solid black;
+    outline:5px #8d122d solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0.5px;
+
+       
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 12px;
+    color: black;
+    margin: auto;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  
+  }
+
+figure {
+    width: 90%;
+    margin: auto;
+   
+}
+
+
+section > p:nth-child(1)::first-letter {
+    text-transform: uppercase;
+    float: left;
+    font-size: 7rem;
+    line-height: 60%;
+  
+    margin-right: 2px;
+    padding: .80rem .60rem .60rem;
+   
+    
+
+}
+
+
+
+.byline  {
+    text-decoration: underline 4px black;
+    
+   
+}
+a {
+  word-break: break-all; /*per gli URL*/
+}
+
+.rolling {
+    font-family:'Roya';
+    text-shadow:
+   -1px 2px 0 	#2e2d27,  
+    1px 2px 0 	#2e2d27,
+    -1px 3px 0 	#2e2d27,
+     1px 3px 0 	#2e2d27;
+    color: 	#cc3125;
+    position: fixed;
+    left:31%;
+    top: 11%;
+    font-size: 3.5em;
+  
+
+
+
+
+}
+#Cover {
+    
+    font-size: 15px;
+    padding:10px;
+    display: table; 
+    border-spacing: 10px;
+    text-align: justify;
+}
+
+.subtitle{
+    display: table-header-group; 
+    text-align:justify;
+    border-spacing: 50px;
+    font-size:10px;
+
+}
+#Cover img {
+    width: 80%;
+    margin-top: 20px;
+    display: table-footer-group;
+    
+}
+
+
+
+figcaption {
+
+    padding:15px;
+
+
+}
+@media screen and (max-width: 600px){
+
+
+
+#box {
+    
+    width: 90%;
+    margin:auto;
+    height: 95%;
+    font-family: 'Rene'; 
+    font-size:15px;
+    column-count: 1;
+    margin-top: 8vh;
+    margin-bottom: 20vh;
+    text-align: justify;
+    
+    padding:5px;
+    background-image: url('/images/backRolling.jpg');
+    border: 5px 	#2e2d27 double;
+    outline: 3px solid 	#2e2d27;
+  
+            
+}
+h1 { 
+            
+    font-family:'Roya' ;
+    font-weight: bold;
+    padding:10px;
+	font-size: 30px;
+    line-height: 1em;
+    text-transform: uppercase;
+    display: table-row-group;
+    letter-spacing: 1;
+   
+
+
+
+}
+.rolling {
+    font-family:'Roya';
+    text-shadow:
+   -1px 2px 0 	#2e2d27,  
+    1px 2px 0 	#2e2d27,
+    -1px 3px 0 	#2e2d27,
+     1px 3px 0 	#2e2d27;
+    color: 	#cc3125;
+    display: block;
+    position: fixed;
+    left:12vh;
+    top: 12vh;
+    font-size: 2.5em;
+  
+  }
+figure {
+    width: 50%;
+    margin: auto;
+   
+}
+}
+
+@media screen and (max-width: 320px){
+    #box{
+        border: none;
+        margin: auto;
+        text-align: justify;
+        outline: none;
+        width: 100%;
+    }
+
+    table {
+        width: 50%!important;
+            
+    }
+ .rolling {
+      display: block;
+    left:22%;
+    top: 11%;
+     font-size: 2em;
+}
+figure {
+    width: 50%;
+    margin: auto;
+   
+}
+
+  
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px){
+#box{
+      column-count: 2;
+      margin:auto!important;
+    height: 92%!important;
+      width:60vw ;
+    margin-top: 5vh!important;
+    
+  
+       
+  }
+
+  #Cover{
+      
+      width: 40%!important;
+  }
+
+  h1{
+      font-size:20px;
+  }
+ .rolling {
+      display: block;
+    left:22%;
+    top: 11%;
+     font-size: 3em;
+}
+  
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+
+    #box{
+    
+     margin-left:4%;
+     column-count: 2;
+  }
+
+  .rolling {
+   
+    display: block;
+    position: fixed;
+    left:28%;
+    top: 10%;
+    font-size: 3em;
+}
+
+table {
+    width: 50%!important;
+        
+}
+
+
+
+}
+     
+
+     

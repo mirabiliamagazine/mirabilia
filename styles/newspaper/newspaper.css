@@ -1,0 +1,422 @@
+
+
+@font-face {
+    font-family: "didot";
+    src: url(../../fonts/didot.ttf);
+
+}
+
+
+@font-face {
+    font-family: "franklin";
+    src: url(../../fonts/Franklin.otf);
+  
+}
+
+@font-face {
+    font-family: "Cheltenham_Extra_Condensed_Bold";
+    src: url(../../fonts/Cheltenham_Extra_Condensed_Bold.otf);
+    
+}
+
+@font-face {
+    font-family: "deutch";
+    src: url(../../fonts/deutch.ttf);
+    
+    
+}
+
+@font-face {
+    font-family: "egyptian";
+    src: url(../../fonts/kenny.ttf);
+    
+   
+}
+
+h1 {
+    font-family: "Cheltenham_Extra_Condensed_Bold";
+    font-size: 300%;
+    text-transform: uppercase;
+    text-align: center; 
+    margin: auto;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+
+section:nth-child(odd) h2{
+    text-transform: uppercase;
+    font-size: 170%;
+    text-align: center;
+    font-family: "Cheltenham_Extra_Condensed_Bold";
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+section:nth-child(even) h2{
+    text-transform: uppercase;
+    font-size: 180%;
+    text-align: center;
+    font-family: "franklin";
+    letter-spacing: 0.2em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+
+    font-family: "deutch";
+    text-align: center;
+    font-size: 120%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+#Cover {
+    column-span: all;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;/**/
+    text-align: center;
+    
+}
+
+#Cover p{
+    line-height: normal!important;
+    text-indent: 0em!important;
+}
+
+#Cover img {
+    width: 80%!important; 
+    border: 2px solid black;    
+}
+
+#Cover figure {
+    text-align: center;
+    width: 100%;
+       
+}
+
+#Cover figcaption {
+    font-family: 'egyptian';
+    font-size: 120%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);   
+}
+
+.byline{
+    
+    order: 3;
+    width: 20%;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    border-bottom: double black;
+    border-top: double black;
+    align-self: flex-start;
+    margin: 0px;
+    margin-top: 15px;
+    font-family: "franklin";
+    color: rgba(0, 0, 0, 0.8);
+ 
+}
+ 
+.publicationDate{
+    
+    order: 4;
+    width: 20%;
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.2vw;
+    border-bottom: double black;
+    border-top: double black;
+    text-align: right;
+    margin: 15px 0px 5px 0px;
+    flex-grow: 2;
+    font-family: "franklin";
+    color: rgba(0, 0, 0, 0.8);
+ 
+}
+
+#box a {
+    word-break: break-all;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+#box{
+    margin-top: 3vh;
+    margin-bottom: 15vh;
+	column-count: 3; 
+    column-rule: 1px solid black; 
+    column-gap: 8px;
+    text-align: justify; 
+    width: calc( 80vw - 100px);
+    background-image: url(../../images/background_final.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    padding: 50px;
+    font-family: "didot";
+    filter: grayscale(100%);
+    box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);
+    
+    
+}
+
+
+div#box img {
+    width: 100%;
+    filter: brightness(60%) contrast(150%) brightness(150%);
+    border: 2px solid black;   
+}
+
+section:nth-child(even) img{
+    border: 4px dotted black!important;
+}
+
+figcaption {
+    font-family: "franklin";
+    text-transform: uppercase;
+    font-size: 15px;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    padding: 2%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+section {
+
+    background-image: url(../../images/divider.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 30px;
+    background-size: 20% auto;
+}
+
+section:nth-child(1) {
+    background-image: none;
+}
+
+table {
+	border-collapse: collapse;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 60%; 
+    margin: auto;
+}
+
+th, td {
+	border: 1px solid black;
+}
+
+section ol {
+    border: 5px black double;
+	font-size: 70%;
+    text-align: justify;
+    padding: 3.5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+section ul {
+    border: 8px solid;
+    border-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    padding:8%;
+	font-size: 80%;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+div#box p{
+    line-height: 0.9em;
+    overflow-wrap: break-word;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-indent: 1em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+blockquote {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 600px){
+    #box{
+        column-count: 1;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 30%;
+    }
+
+    h1{
+        font-size: 150%;
+    }
+    
+
+    .subtitle{
+        padding-top:10%;
+        font-size: 100%;
+        text-align: justify;
+    }
+
+   .byline, .publicationDate{
+       font-size: 40%!important;
+   }
+
+   #Cover figcaption{
+       font-size: 100%;
+       text-align: justify;
+   }
+    
+   
+
+    .byline{
+        font-size: 15px;
+        
+     
+    }
+     
+    .publicationDate{
+    
+        font-size: 15px;
+    }
+
+    #Cover img {
+        width: 100%;
+        margin:auto;   
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    section ol {
+       
+        font-size: 100%;
+        text-align: justify;
+        padding: 10%;
+    }
+
+    section ul {
+       
+        padding:10%;
+        font-size: 100%;
+        text-align: justify;
+    }
+
+    table {
+        width: 50%!important;
+            
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    #box{
+        column-count: 1;
+        width: 65%;
+        margin: auto;
+    }
+
+    h1{
+        font-size: 150%;
+    }
+    
+
+    .subtitle{
+        padding-top:10%;
+        font-size: 100%;
+        text-align: justify;
+    }
+
+   .byline, .publicationDate{
+       font-size: 55%;
+   }
+   #Cover figcaption{
+       font-size: 100%;
+       text-align: justify;
+   }
+
+   table {
+    width: 50%!important;
+        
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px){
+    #box{
+        column-count: 2;
+    }
+
+    h1{
+        font-size: 200%;
+        padding-bottom:10%;
+    }
+    
+
+    .subtitle{
+        padding-top:5%;
+        padding-bottom:8%;
+        font-size: 100%;
+        text-align: justify;
+    }
+
+   .byline, .publicationDate{
+       font-size: 60%!important;
+
+   }
+
+   #Cover figcaption{
+       font-size: 100%;
+       text-align: justify;
+   }
+    
+   
+
+    .byline{
+        font-size: 15px;
+        
+     
+    }
+     
+    .publicationDate{
+    
+        font-size: 15px;
+    }
+
+    #Cover img {
+        width: 100%;
+        margin:auto;   
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    section ol {
+       
+        font-size: 100%;
+        text-align: justify;
+        padding: 10%;
+    }
+
+    section ul {
+       
+        padding:10%;
+        font-size: 100%;
+        text-align: justify;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+
+    #box{
+     column-count: 2;
+  }
+  
+  }
+      
+
+
+

@@ -1,0 +1,76 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./css/style_about.css">
+    </head>
+    <body>
+      <script>
+        function myFunction() {
+          var x = document.getElementsByClassName("dropdown-content")[0];
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        function myFunction1(){
+          var x = document.getElementsByClassName("dropdown-content")[0];
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          }
+        }
+    </script>
+ 
+    <div class="topnav">
+        <a href="homepage.html" class="mirabilia1">Mirabilia</a>
+        <a href="loader.html" class="element1">Explore</a>
+        <a href="documentation.html" class="element2">Documentation</a>
+        <a href="disclaimer.html" class="element3">Disclaimer</a>
+        <a href="about.html" class="element4">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+    </div>
+    <div class="topnav_mobile">
+      <a href="homepage.html" class="mirabilia1">Mirabilia</a>
+      <div class="dropdown hamburgers1" onclick="myFunction()">
+        <a class="hamburger">
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+        </a>
+        <div class="dropdown-content" style="display: none;">
+            <a href="loader.html" id="navbar"> Explore</a>
+            <a href="documentation.html" id="navbar"> Documentation</a>
+            <a href="disclaimer.html" id="navbar"> Disclaimer</a>
+            <a href="about.html" id="navbar"> About</a>
+        </div>
+      </div>
+    </div>
+       
+        <div class="row"  onclick="myFunction1()">
+           <div class="column">
+               <img src="./img/foto_gemma.jpg">
+               <h3>Gemma Centrone</h3>
+               <p>Graduated in Communication Science at the University of Siena. I'm currently attending the Digital Humanities and Digital Knowledge Master Degree course at the University of Bologna. Contacts: gemma.centrone@studio.unibo.it</p>
+           </div>
+           <div class="column">
+                <img src="./img/foto_francesca.jpg">
+                <h3>Francesca Genovese</h3>
+                <p>Graduated in Communication Science at the University of Bologna. I'm currently attending the Digital Humanities and Digital Knowledge Master Degree course at the same University. Contacts: francesca.genovese2@studio.unibo.it</p>
+           </div>
+           <div class="column">
+                <img src="./img/foto_giulia.jpg">
+                <h3>Giulia Manganelli</h3>
+                <p>Graduated in Humanities at the University of Bologna. I'm currently attending the Digital Humanities and Digital Knowledge Master Degree course at the same University. Contacts: giulia.manganelli3@studio.unibo.it</p>
+           </div>
+        </div>
+       
+        <footer>
+          <span class="footer_content">
+              All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Gemma Centrone, Francesca Genovese and Giulia Manganelli. 
+          </span>
+      </footer>
+      </body>
+       
+    
+    
+</html>

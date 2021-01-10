@@ -1,0 +1,763 @@
+/*qui mettiamo lo style della pagina loader*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { 
+  width: 0 !important; 
+}
+
+body { 
+  overflow: -moz-scrollbars-none; 
+  margin:0;
+  
+}
+
+
+
+@font-face{
+	font-family: 'Shorelines';
+	src: url(../font/Shorelines_Script_Bold.otf);
+}
+
+@font-face{
+	font-family: 'Roboto-Light';
+	src: url(../font/Roboto-Light.ttf);
+}
+
+
+a:link {
+    color: black;
+  }
+  
+a:visited {
+    color: black;
+  }
+  
+a:hover {
+    color: red;
+ 
+  }
+
+  a:active {
+    color: black;
+  }
+
+  .logo{
+	  
+	  font-size: 30px!important;
+	  font-family: 'Shorelines';
+  }
+
+  .first_menu{
+	  margin: 0;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 20px;
+    font-family: 'Shorelines';
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    height: 10vh;
+  }
+
+  div.first_menu ul {
+	
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center!important;
+    width: 100%;
+    
+  }
+  
+  div.first_menu li {
+	  display: inline;
+    padding: 10px;
+    
+  }
+
+  div.first_menu li a, .dropbtn {
+    display: inline-block;
+    font-family: 'Shorelines';
+    color: black;
+    text-align: center;
+	  padding-right: 40px;
+    
+    text-decoration: none;
+  }
+  
+  div.first_menu li a:hover, .dropdown:hover .dropbtn {
+    
+    color:red;
+  }
+  
+  div.first_menu li.dropdown {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  div.first_menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  div.first_menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family:'Roboto-Light';
+    font-size: 15px;
+    cursor: pointer;
+    
+  }
+  
+  div.first_menu .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  div.first_menu .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  li.hamburgers .dropdown-content  {
+	display: none;
+  position: absolute;
+  background-color: #f9f9f9 ;
+  min-width: 80px;
+  right: 50;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  li.hamburgers .dropdown-content a {
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+  font-family: 'Roboto-Light';
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	
+  }
+
+  .menu_stili{
+  
+	padding: 10px;
+	border-top:1px solid black;
+  text-align: center;
+  
+}
+
+div.menu_stili button{
+	border: 1px solid black;
+	font-family: 'Shorelines';
+	font-size: 20px!important;
+	background-color: white;
+	letter-spacing: 1.5;
+  margin-right: 20px;
+  text-align: center;
+	width: 5vw;
+}
+
+#style_label{
+	border: none !important;
+	font-family: 'Roboto-Light';
+	font-size: 20px! important;
+	background-color: white;
+	
+  margin-right: 20px;
+  text-align: center;
+	width: 5vw;
+}
+
+#reset_label{
+  color:black;
+  font-family: 'Roboto-Light';
+  font-size: 20px! important;
+  border: 1px solid black;
+  padding: 11px;
+  width: 8vw;
+}
+
+.issues{
+  font-family: 'Roboto-Light';
+  margin-right: 10px;
+}
+
+
+
+div.first_menu button{
+	margin: auto;
+	font-family: 'Roboto-Light';
+	font-size: 15px;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+.hamburgers{
+	float: right;
+}
+
+.menu_icon{
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+}
+
+.item1 { grid-area: menu_navigazione; }
+
+.item2 { 
+  grid-area: box;
+  /* height: 100%;
+  width: 100vh!important; */
+  /* width: 80vw; */
+  margin-bottom: 10%;
+  overflow-x: hidden;
+}
+
+.welcome{
+  
+  width: 50%;
+  text-align: justify;
+  font-family: 'Roboto-Light';
+  margin-left: 3%; 
+  font-size: 100%;
+  height: 50%;
+}
+
+.welcome h1{
+  font-family: 'Shorelines';
+  font-size: 200%;
+  height: 7%;
+  text-align:center;
+}
+
+.welcome ol{
+  width: 45%;
+  border: 1px solid black;
+  padding: 3%;
+  
+}
+
+.enfasi{
+  font-weight: bolder;
+}
+
+.red{
+  color: red;
+  font-weight: bolder;
+}
+
+.mirabilia{
+  font-family: 'Shorelines';
+  font-size: 120%;
+}
+
+
+.item3 { 
+  grid-area: metadata; 
+  /* height: 100%; */
+  width: 20%;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  position: fixed;
+  right: 0;
+  top: 10vh;
+  overflow-y: scroll;
+  /* background-color: red; */
+  color: black;
+  background-color: white;
+  height: 100vh;
+  transition: width 2s; /*se cambai width  ci metti 2 s*/
+}
+
+#keywords_toggle{
+  font-family: 'Roboto-Light' ;
+}
+
+.item4 { 
+  
+  grid-area: stili;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  bottom:0;
+  left: 0;
+  background-color: white;
+  height: 8vh;
+  
+ }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu_navigazione menu_navigazione menu_navigazione menu_navigazione menu_navigazione menu_navigazione'
+    'box box box box metadata metadata '
+    'stili stili stili stili stili stili';
+  
+}
+
+
+.meta_header{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto-Light';
+  font-size: 18px;
+  outline: none;
+  border-left: none;
+  border-right:none;
+  border: none;
+  padding: 10px;
+  padding-top: 10%;
+  color: black;
+  background-color:white;
+  cursor: pointer;
+}
+
+ul.elenco li{
+  text-decoration: none;
+  padding-top: 5px;
+  list-style-type: none;
+}
+
+#entity_toggle ul.elenco, #time_toggle ul.elenco {
+  height: 90%;
+}
+
+label{
+  font-family: 'Roboto-Light';
+  cursor: pointer;
+  
+  
+}
+
+
+
+.label_key{
+  cursor: pointer;
+  height: 90%;
+  list-style-type: none;
+}
+
+
+.numeri_elenco{
+  font-family: 'Roboto-Light';
+  border-bottom: none;
+}
+
+div.grid-container .hamburgers1 {
+  display: none!important;
+}
+
+.metadata_button{
+  display: none;
+}
+
+@media screen and (max-width: 320px){
+  div.first_menu ul li {
+    font-size: 12px!important;
+
+  }
+
+  .welcome{
+    height: 100%;
+    margin-bottom: 60%;
+  }
+
+  .welcome ol li{
+    margin-left:5%!important;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 600px){
+  .issues{
+    display: none !important;
+  }
+
+  #style_label{
+    display: none !important;
+  }
+
+  /* .item2{
+    width:100%;
+    height: 100%;
+    margin-bottom:25vh;
+    overflow-x: hidden; 
+  } */
+  
+  div.first_menu li {
+	 font-size: 15px!important;
+    padding: 0px;
+    
+  }
+
+.logo{
+    display: none!important;
+  }
+
+  div.first_menu li a, .dropbtn {
+   
+    padding-right: 20px;
+  }
+
+  div.first_menu li a.dropbtn{
+    margin-top:20px;
+  }
+
+  div.grid-container .hamburgers {
+    display: none!important;
+  }
+
+  div.grid-container .hamburgers1 {
+    display: block!important;
+    float: right;
+    
+  }
+
+  li.hamburgers1 .dropdown-content  {
+    
+    position: absolute;
+    background-color: #f9f9f9 ;
+    min-width: 80px;
+    top:50;
+    right: 20;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    
+    li.hamburgers1 .dropdown-content a {
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    font-family: 'Roboto-Light';
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+
+  
+
+  div.menu_stili{
+    height: 15vh;
+  }
+
+  .metadata_button{
+    
+    display: block;
+    top:100;
+    left:0;
+    position: fixed;
+    z-index: 100!important;
+  }
+
+  a.metadata_button img{
+    width: 12vw;
+    opacity: 0.7;
+   
+  }
+
+
+  .item3 { 
+   
+    width: 40%;
+    border-left: 1px solid black;
+    position: fixed;
+    background-color: white;
+    top: 12vh;
+    font-size: 14px;
+    
+    overflow-y: scroll;
+    /* background-color: red; */
+    color: black;
+    z-index: 100;
+    height: 100vh;
+    /* display:none; */
+    width: 0%;
+    top:10vh!important;
+  }
+
+  .meta_header{
+    font-size: 16px;
+    
+  }
+
+ 
+
+  .menu_icon:first-child{
+    margin-top:50%;
+  }
+
+  .welcome{
+    width: 100%;
+    height: 100vh;
+    margin-bottom:50%;
+    text-align: center;
+    
+  }
+
+  .welcome ol{
+    margin:auto;
+    width: 70%;
+    padding: 5%;
+  }
+  
+  .welcome li{
+    padding:3%;
+    
+
+  }
+
+  .metadata_button{
+		/* display: none; */
+  }
+  
+  
+  #reset_label {
+    font-size: 18px!important;
+    background-color: white;
+    letter-spacing: 1.5;
+    margin-right: 20px;
+    text-align: center;
+    width: 23vw;
+    height: 6vh;
+    
+  }
+
+  div.menu_stili button{
+    
+    font-size: 20px!important;
+    background-color: white;
+    letter-spacing: 1.5;
+    margin-right: 20px;
+    margin-top:3%;
+    text-align: center;
+    width: 16vw;
+    height: 6vh;
+  }
+
+ 
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+
+  .issues{
+    display: none !important;
+  }
+
+  #style_label{
+    display: none !important;
+  }
+
+  .item1{
+    font-size: 200%;
+  }
+
+  .item3{
+    
+    top:10vh!important;
+    width: 20%;
+    border-left: 1px solid black;
+    position: fixed;
+    background-color: white;
+    
+    font-size: 14px;
+    
+    overflow-y: scroll;
+    /* background-color: red; */
+    color: black;
+  
+    height: 100vh;
+  }
+  /* .item2{
+    width:100%;
+    height: 100%;
+    margin-bottom:25vh;
+    overflow-x: hidden; 
+  } */
+  
+  div.first_menu li {
+	 font-size: 15px!important;
+    padding: 0px;
+    
+  }
+
+  .logo{
+    display: none!important;
+  }
+
+  div.first_menu li a, .dropbtn {
+   
+    padding-right: 20px;
+  }
+
+  div.first_menu li a.dropbtn{
+    margin-top:20px;
+  }
+
+  div.grid-container .hamburgers {
+    display: none!important;
+  }
+
+  div.grid-container .hamburgers1 {
+    display: block!important;
+    float: right;
+    
+  }
+
+  li.hamburgers1 .dropdown-content  {
+    
+    position: absolute;
+    background-color: #f9f9f9 ;
+    min-width: 80px;
+    top:85;
+    right: 20;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    }
+    
+    li.hamburgers1 .dropdown-content a {
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    font-family: 'Roboto-Light';
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+
+  div.menu_stili button{
+    width: 20%;
+    margin:1%;
+    padding:0px;
+   
+  }
+
+   div.menu_stili button{
+    width: 20%;
+    margin:1%;
+    padding:0px;
+   
+  }
+
+  div.menu_stili{
+    height: 15vh;
+  }
+
+  .metadata_button{
+    display: none;
+    top:100;
+    left:0;
+    position: fixed;
+    z-index: 100!important;
+  }
+
+  a.metadata_button img{
+    width: 12vw;
+    opacity: 0.7;
+   
+  }
+
+
+ 
+
+  .meta_header{
+    font-size: 16px;
+    
+  }
+
+  .welcome{
+    width: 80%;
+    height: 100%;
+    margin-bottom:10%;
+    text-align: center;
+    font-size: 200%;
+    
+  }
+
+  .welcome p{
+    width: 80%;
+   margin:auto;
+   padding:5%;
+    
+  }
+
+  .welcome ol{
+    margin:auto;
+    width: 70%;
+    padding: 10%;
+  }
+  
+  .welcome li{
+    padding:3%;
+
+  }
+
+  
+
+  div.first_menu li{
+    font-size: 100%!important;
+  }
+
+  .menu_icon{
+    width: 60px;
+    height: 10px;
+  }
+
+  .menu_icon:first-child{
+    margin-top:50%;
+  }
+
+  #reset_label{
+    
+    font-size: 30px! important;
+    border: 1px solid black;
+    text-align: center;
+    width: 14vw;
+  }
+
+  div.menu_stili button{
+    
+    font-size: 30px!important;
+    background-color: white;
+    letter-spacing: 1.5;
+    margin-right: 20px;
+    text-align: center;
+    width: 12vw;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+  .item1 {
+  
+    height: 5vh;
+    
+  }
+
+  .item3{
+    top: 5vh;
+    
+
+  }
+
+}
+
+
+
+

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style_home.css">
+    </head>
+    
+    <body>
+        <script>
+            function myFunction() {
+              var x = document.getElementsByClassName("dropdown-content")[0];
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            function myFunction1(){
+              var x = document.getElementsByClassName("dropdown-content")[0];
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              }
+            }
+        </script>
+     
+        <div class="topnav">
+            <a href="homepage.html" class="mirabilia1">Mirabilia</a>
+            <a href="loader.html" class="element1">Explore</a>
+            <a href="documentation.html" class="element2">Documentation</a>
+            <a href="disclaimer.html" class="element3">Disclaimer</a>
+            <a href="about.html" class="element4">About</a>
+        </div>
+        <div class="topnav_mobile">
+          <a href="homepage.html" class="mirabilia1">Mirabilia</a>
+          <div class="dropdown hamburgers1" onclick="myFunction()">
+            <a class="hamburger">
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+            </a>
+            <div class="dropdown-content" style="display: none;">
+                <a href="loader.html" id="navbar"> Explore</a>
+                <a href="documentation.html" id="navbar"> Documentation</a>
+                <a href="disclaimer.html" id="navbar"> Disclaimer</a>
+                <a href="about.html" id="navbar"> About</a>
+            </div>
+          </div>
+        </div>
+
+       
+        
+        <div class="main_content">
+            <div class="img_container">
+                <img src="./img/Opera_senza_titolo.jpg">
+            </div>
+            <section class="section1">
+                <h2>The magazine</h2>
+                <p>The <span class="mirabilia"> mirabilia</span> magazine was created with the intention of welcoming already existing articles of literature and illustration for children, with the aim of providing the reader with a wide and varied spectrum of its most current topics. The articles are divided into issues comprising three articles, which change periodically and which we expect to increase in the near future. In the Literature section, readers will be able to satisfy their curiosity about the most recent publications, in the Digital section they can find out how the technological element influences and adapts to the children's literary landscape. Finally, the Rodar100 section was created expressly to celebrate the centenary of Gianni Rodari's birth, to underline his fundamental contribution to the development of this magical reality.
+                </p>
+                <br>
+                <p>The source of the articles we have chosen is always cited and the original texts can be reached directly from the site. Furthermore, we have enriched our reading page (the <span class="explore"><a href="wwwww">explore</a></span> section) with a tool that allows you to view the most relevant information of the articles and their metadata; specifically, the places, people, dates and entities mentioned, so as to provide the reader with an opportunity for further study, with internal references and with the possibility of accessing external links (e.g. Wikipedia).
+                </p>
+                <br>
+                <p>To further enrich the reading experience, we then treated the aesthetic component of the Explore section in a unique way. In fact, readers will be able, through the magic wand ... or selector, to change the appearance of the article they are reading, spanning past centuries and coming to imagine the future. The reason for this bizarre choice is dictated by the desire to give the reader the feeling of moving in time, from the classic "Once upon a time" to "There will be once in the future".
+                </p>
+            </section>
+            <div id="clear"> </div>
+            <section class="section2">
+                <h2>The project</h2>
+                <p>The <span class="mirabilia"> mirabilia</span> magazine was born as a university project for the Information Modeling and Web Technology (UNIBO) course held by Professor Fabio Vitali (academic year 2019-2020). The aim of the project was to understand, analyze and reproduce the typographic layout of texts produced in past centuries and to imagine the stylistic taste that will characterize our future.
+                </p>
+                <br>
+                <p>In addition to the graphic discourse, we had to develop a tool that would facilitate access to the metadata of the texts we have chosen. To achieve this, we have created tools that are as intuitive and easy to use as possible, to allow users to enjoy the content of our site, exploiting the knowledge acquired during the lessons of the aforementioned course.
+                </p>
+            </section>
+        </div>
+        <footer>
+            <span class="footer_content">
+                All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Gemma Centrone, Francesca Genovese and Giulia Manganelli. 
+            </span>
+        </footer>
+    </body>
+        
+    </body>
+</html>
