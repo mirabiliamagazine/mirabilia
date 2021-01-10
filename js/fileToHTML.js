@@ -37,7 +37,7 @@ function generateMetadataHTML(id){
 				if(id !== "content"){
 					//wikipedia
 					var url = "https://it.wikipedia.org/wiki/"+Object.keys(metadata[id])[i];
-					temp += "<img src='../../images/wikipedia.png' style='width:1rem; padding-left: 5px; cursor:pointer;' onclick=window.open('"+url+"')>";
+					temp += "<img src='./images/wikipedia.png' style='width:1rem; padding-left: 5px; cursor:pointer;' onclick=window.open('"+url+"')>";
 					//wikipedia-end
 				}
 			}else{
@@ -45,7 +45,7 @@ function generateMetadataHTML(id){
 				if(id !== "content"){
 					//wikipedia
 					var url = "https://it.wikipedia.org/wiki/"+Object.keys(metadata[id])[i];
-					temp += "<img src='../../images/wikipedia.png' style='width:1rem; padding-left: 5px; cursor:pointer;' onclick=window.open('"+url+"')>";
+					temp += "<img src='./images/wikipedia.png' style='width:1rem; padding-left: 5px; cursor:pointer;' onclick=window.open('"+url+"')>";
 					//wikipedia-end
 				}
 				temp += "<ul style='display: none;' id='ul_"+Object.keys(metadata[id])[i]+"'>";
