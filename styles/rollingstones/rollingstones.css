@@ -9,7 +9,7 @@
 
 }
 body {
-  background-image: url('/images/backRolling.jpg');
+  background-image: url('../../images/backRolling.jpg');
     background-size: cover;
  background-repeat: no-repeat;
 
