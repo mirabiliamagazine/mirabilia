@@ -19,7 +19,7 @@
       <section id="Cover">
 			  <h1>Harry Potter Text Analysis</h1>
 			  <figure id="f01">
-				  <img src="../images/img_medium/img_1.png"/>
+				  <img src="./images/img_medium/img_1.png"/>
 			  </figure>
 			  <p class="byline">By <a href="https://medium.com/@zareen"><span class="person">Zareen Farooqui</span></a></p>
 			  <p class="publicationDate"><time datetime="06-05-2016">May 6, 2016</time></p>
@@ -56,7 +56,7 @@
             <p>First, I make the 7 HP files accessible from a Databricks Notebook, which is my coding environment. So, I copy the 7 files to Amazon S3 storage and use a Spark cluster to pull the files down from S3 into my cluster’s local file system. From there I can write normal python i/o code to read the files from the local disk.
             </p>
             <figure id="f02">
-				<img src="../images/img_medium/img_2.png"/>
+				<img src="./images/img_medium/img_2.png"/>
 			</figure>
         </section>
         <section>
@@ -78,14 +78,14 @@
             <p>It is possible to derive many new data sets from the bag of words. Here is a screenshot of top word frequencies for <span class="person">Harry Potter</span> and the Sorcerer’s Stone:
             </p>
             <figure id="f03">
-				<img src="../images/img_medium/img_3.png"/>
+				<img src="./images/img_medium/img_3.png"/>
             </figure>
             <p>As you can see, most of the top words such as the, of and to are fluff words that don’t add much context. These are called stop words. It is common in Natural Language Processing (NLP) to remove stop words. Here’s the list of <a href="https://www.ranks.nl/stopwords">English stop words</a> I remove for part of the analysis.
             </p>
             <p>Here’s the revised top words frequencies without stop words, which gives a slightly better understanding of which words are actually important:
             </p>
             <figure id="f04">
-				<img src="../images/img_medium/img_4.png"/>
+				<img src="./images/img_medium/img_4.png"/>
             </figure>
             <p>
             <p>Some <span class="concept">NLP libraries</span> use stemming which transforms each word to its ‘stem’. For example, running, runs, and runner would be changed to run as they are the same base word. This reduces the number of words in the bag of words, and may be more accurate for analysis. I’ll probably implement stemming when I revisit this code.
@@ -95,7 +95,7 @@
             <h2>Word Counts</h2>
             <p>Below are total and unique word counts for each book.</p>
             <figure id="f05">
-				<img src="../images/img_medium/img_5.png"/>
+				<img src="./images/img_medium/img_5.png"/>
             </figure>
             <p>The number of total words increases from HP 1 to HP 5 (HP 5 being the largest book), drops at HP 6 and increases slightly for HP 7.
             </p>
@@ -114,7 +114,7 @@
             <h2>Punctuation Analysis</h2>
             <p>Readers often overlook punctuation in text, but I thought it might be interesting to look at the punctuation in my data. How many period marks are in each book? How about exclamation marks? Question marks? Does sentence length increase as the series progresses?</p>
             <figure id="f06">
-				<img src="../images/img_medium/img_6.png"/>
+				<img src="./images/img_medium/img_6.png"/>
             </figure>
             <p>This chart’s trend looks similar to the word count chart (HP 5 has the most punctuation and the most words).
             </p>
@@ -128,7 +128,7 @@
                 <li>Exclamatory sentences express excitement and end in exclamation marks.</li>
             </ul>
             <figure id="f07">
-				<img src="../images/img_medium/img_7.png"/>
+				<img src="./images/img_medium/img_7.png"/>
             </figure>
             <p><span class="person">J.K. Rowling</span>’s sentence length stays fairly constant throughout the series. However, as you can see in the word counts and punctuation analysis charts above, there are more sentences overall in HP 5.
             </p>
@@ -149,12 +149,12 @@
             <p>Here’s the list of positive words and negative words I used. Since these are general positive and negative words for the English language, the code has no way to know the word mudblood is negative and the word patronus is positive.
             </p>
             <figure id="f08">
-				<img src="../images/img_medium/img_8.png"/>
+				<img src="./images/img_medium/img_8.png"/>
             </figure>
             <p>Notice the Y-axis above for number of words. HP 5 and HP 7 seem to be darker books than HP 1 or HP 2.
             </p>
             <figure id="f09">
-				<img src="../images/img_medium/img_9.png"/>
+				<img src="./images/img_medium/img_9.png"/>
             </figure>
             <p>Looking at overall words, there are very few positive or negative words present. On average, only about 2.9% of words are positive, 3.3% are negative and the rest are neutral. This is probably so low because there aren’t any <span class="person"> Harry Potter</span> specific positive and negative words in my positive and negative word lists. If only there was a way to programmatically determine if a word is positive or negative based on the surrounding text…. hmm, sounds like a fun project for the future.
             </p>
@@ -168,32 +168,32 @@
             <blockquote>"Harry Potter was a highly unusual boy in many ways."</blockquote>
             <p>If N= 2, here are the bigrams:</p>
             <figure id="f10">
-				<img src="../images/img_medium/img_10.png"/>
+				<img src="./images/img_medium/img_10.png"/>
             </figure>
             <p>If N= 3, here are the trigrams:</p>
             <figure id="f11">
-				<img src="../images/img_medium/img_11.png"/>
+				<img src="./images/img_medium/img_11.png"/>
             </figure>
             <p>The number of N-grams for any given sentence can be calculated by the equation below.</p>
             <figure id="f12">
-				<img src="../images/img_medium/img_12.png"/>
+				<img src="./images/img_medium/img_12.png"/>
             </figure>
             <p>Here are some N-grams charts for the series.
             </p>
             <figure id="f13">
-                <img src="../images/img_medium/img_13.png"/>
+                <img src="./images/img_medium/img_13.png"/>
                 <figcaption>Best Friend Trigrams</figcaption>
             </figure>
             <p>I don’t know about you, but I was always curious to see if <span class="person">Hermione</span> would date  <span class="person">Harry</span> or  <span class="person">Ron</span>. Interestingly, by applying text analysis on the books, I could have predicted that Ron and  <span class="person">Hermione</span> would date since their names appear together so often.
             </p>
             <figure id="f14">
-                <img src="../images/img_medium/img_14.png"/>
+                <img src="./images/img_medium/img_14.png"/>
                 <figcaption>Magical Locations N-Grams</figcaption>
             </figure>
            <p>This chart shows that <span class="place">Hogwarts</span> is mentioned more than other magical locations. It’s interesting to see the Ministry of Magic become important in the middle of the series. I was surprised to see its frequency drop for HP 6 and HP 7, but I think that’s because it starts being referred to as just “the Ministry” and not by its full name.
            </p>
            <figure id="f15">
-                <img src="../images/img_medium/img_15.png"/>
+                <img src="./images/img_medium/img_15.png"/>
                 <figcaption>Hogwarts Courses N-Grams</figcaption>
             </figure>
             <p>This charts compares courses taught at <span class="place">Hogwarts School of Witchcraft and Wizardry</span>. Defense Against the Darks Arts and Potions appear to be the most important. The five-gram Defense Against the Dark Arts peaks in frequency during HP 5. This is probably due to the Harry versus Umbridge battle in this book. In HP 6, the Potions course is the most important as Harry excels afters finding the Half-Blood Prince’s textbook. All the courses drop close to zero for HP 7 since <span class="person">Harry</span> does not attend Hogwarts this year.
@@ -216,7 +216,7 @@
             <p>Eventually, I decided the best approach is to first pick a viewpoint character and target character (character whose relationship to the viewpoint character we are analyzing). Let’s pick <span class="person">Harry Potter</span> as the viewpoint character and <span class="person">Sirius Black</span> as the target character. Then, I capture every instance where “Sirius” appears within 40 words before and 40 words after every instance of “Harry” and compare this number to the total number of times “Harry” appears in the text. This assumes the characters have a relationship (whether it’s positive or negative is another question), because they are either physically close at that time or one is mentioning the other in conversation.
             </p>
             <figure id="f16">
-                <img src="../images/img_medium/img_16.png"/>
+                <img src="./images/img_medium/img_16.png"/>
             </figure>
             <p>The output shows there was no relationship at all between Harry and Sirius in the first two books. Since Sirius was only introduced as a character in the third book, this makes sense. The 8.88% from Harry to Sirius in HP 3 can be read as <q>when the word Harry appears, if you look 40 words to the left and 40 words to the right, 8.88% of the time Sirius also appears</q>. Similarly, Sirius’ relationship to Harry in HP 3 can be described as <q>69.17% of the time Sirius appears, Harry appears within 40 words</q>. I’m making the assumption that if names appear within 40 words of each other, they are together or talking about each other (hence, strengthening their relationship score).
             </p>
@@ -227,7 +227,7 @@
             <p>Below is a chart which shows Harry’s overall relationship score to and from other major characters. The size of the circles correspond to the number of times that name appears in the 7 books and the thickness of the line represents the relationship score.
             </p>
             <figure id="f17">
-                <img src="../images/img_medium/img_17.png"/>
+                <img src="./images/img_medium/img_17.png"/>
             </figure>
             <p>It appears that <span class="person">Harry</span> is closest to <span class="person">Hermione</span> and <span class="person">Ron</span>, which is accurate.
             </p>
