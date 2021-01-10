@@ -1,0 +1,353 @@
+<html>
+  <head>
+    <title>Harry Potter Text Analysis</title>
+    <link rel="stylesheet" type="text/css" href="">
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+
+	<meta name="DC.title" lang="en" content="Harry Potter Text Analysis" />
+	<meta name="DC.creator" content="Zareen Farooqui" />
+	
+	<meta name="DCTERMS.issued" scheme="DCTERMS.W3CDTF" content="05-06-2016" /> 
+	<meta name="DC.publisher" content="Medium" />
+	<meta name="DC.identifier" scheme="DCTERMS.URI" content="https://medium.com/zareen-farooqui/harry-potter-text-analysis-4d89ffe59d5b" />
+	<meta name="DC.format" scheme="DCTERMS.IMT" content="text/html" />
+	<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="DCTERMS.bibliographicCitation" content="" /> <!-- ? ---->
+    </head>
+    <body>
+      <section id="Cover">
+			  <h1>Harry Potter Text Analysis</h1>
+			  <figure id="f01">
+				  <img src="../images/img_medium/img_1.png"/>
+			  </figure>
+			  <p class="byline">By <a href="https://medium.com/@zareen"><span class="person">Zareen Farooqui</span></a></p>
+			  <p class="publicationDate"><time datetime="06-05-2016">May 6, 2016</time></p>
+        </section>
+        <section id="Introduction">
+            <p>The seventh and final book in the <span class="person">Harry Potter</span> series,  <span class="person">Harry Potter</span> and the Deathly Hallows was published in <time datetime="07-2007">July 2007</time> and sold <a href="http://news.bbc.co.uk/2/hi/entertainment/6912529.stm">11 million copies worldwide within 24 hours</a>. This makes it the fastest selling book in history . I was one of those dedicated fans who stood in line at midnight to get my hands on the book. I read the entire book in one sitting immediately after getting home. It was that good.
+            </p>
+            <p>My first Pythoproject is <span class="content">text analysis</span> of the <span class="person">Harry Potter</span> series. I’m familiar with the data, which in the scientific world is called <span class="concept">domain knowledge</span>. Hopefully, this improves the accuracy of the analysis.
+            </p>
+            <p>Here is my <a href="https://databricks-prod-cloudfront.cloud.databricks.com/public/13fe59d17777de29f8a2ffdf85f52925/5638528096339357/475127/8718927279103245/latest.html">code</a>.</p>
+            <ol>
+                <p>Goals for this project:</p>
+                <li>Reinforce the Python fundamentals I’ve learned in the past few weeks by writing simple, easy to read code</li>
+                <li>Use as few libraries as possible (to learn how to do things the hard way)</li>
+                <li>Incorporate Amazon storage, one external API to pull data from and a visualization library</li>
+                <li>Discover some interesting insights that maybe no one else in the world has realized about the Harry Potter series</li>
+            </ol>
+            <p>I purposely did not use the Python Natural Language Toolkit (NLTK) because I wanted to learn how to write python code from scratch and not completely lean on what has already been written by others. I’ll probably revisit this project and run more sophisticated analysis using 3rd party libraries in the future.
+            </p>
+            <ul>
+                <p>Here are the titles of each <span class="person">Harry Potter</span> book, the year it was released in the US, its size, and what I refer to it as:
+                </p>
+                <li>Harry Potter and the Sorcerer’s Stone — <time datetime="1998">1998</time>/0.4 MB (HP 1)</li>
+                <li>Harry Potter and the Chamber of Secrets — <time datetime="1999">1999</time>/0.5 MB (HP 2)</li>
+                <li>Harry Potter and the Prisoner of Azkaban — <time datetime="1999">1999</time>/0.7 MB (HP 3)</li>
+                <li>Harry Potter and the Goblet of Fire — <time datetime="2000">2000</time>/1.2 MB (HP 4)</li>
+                <li>Harry Potter and the Order of the Phoenix —<time datetime="2003"> 2003</time>/1.6 MB (HP 5)</li>
+                <li>Harry Potter and the Half-Blood Prince — <time datetime="2005">2005</time>/1 MB (HP 6)</li>
+                <li>Harry Potter and the Deathly Hallows — <time datetime="2007">2007</time>/1.2 MB (HP 7)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Get Data Into Notebook</h2>
+            <p>First, I make the 7 HP files accessible from a Databricks Notebook, which is my coding environment. So, I copy the 7 files to Amazon S3 storage and use a Spark cluster to pull the files down from S3 into my cluster’s local file system. From there I can write normal python i/o code to read the files from the local disk.
+            </p>
+            <figure id="f02">
+				<img src="../images/img_medium/img_2.png"/>
+			</figure>
+        </section>
+        <section>
+            <h2>Bag of Words</h2>
+            <p>For this analysis I use a ‘bag of words’ approach where each book’s text is represented as a bag with words from that particular book. For example, if there are 75,000 words total in HP 1, then its bag of words contains 75,000 comma separated words. The implication here is that each word is analyzed individually, not taking into account word order or grammar.
+            </p>
+            <p><span class="concept">Bag of words analysis</span> is an effective way to filter out spam emails. For example, emails that contain the words “Viagra”, “cash”, and “free” no matter the order they appear in, are more likely to be spam than emails which do not contain these words.
+            </p>
+            <p>To transform the data into a bag of words, my code:</p>
+            <ul>
+                <p>To transform the data into a bag of words, my code:</p>
+                <li>removes end of line (/n) characters from the text</li>
+                <li>splits the text by whitespace to break into words</li>
+                <li>lowercases all text</li>
+                <li>removes all punctuation</li>
+            </ul>
+            <p>This part took an absurdly long time as I ran into numerous formatting issues and spent many hours learning about unicode characters. This is normal for <span class="concept">data analysts</span> — sometimes cleaning data and getting it in a useable format (called data wrangling or munging) takes just as much time as the analysis itself.
+            </p>
+            <p>It is possible to derive many new data sets from the bag of words. Here is a screenshot of top word frequencies for <span class="person">Harry Potter</span> and the Sorcerer’s Stone:
+            </p>
+            <figure id="f03">
+				<img src="../images/img_medium/img_3.png"/>
+            </figure>
+            <p>As you can see, most of the top words such as the, of and to are fluff words that don’t add much context. These are called stop words. It is common in Natural Language Processing (NLP) to remove stop words. Here’s the list of <a href="https://www.ranks.nl/stopwords">English stop words</a> I remove for part of the analysis.
+            </p>
+            <p>Here’s the revised top words frequencies without stop words, which gives a slightly better understanding of which words are actually important:
+            </p>
+            <figure id="f04">
+				<img src="../images/img_medium/img_4.png"/>
+            </figure>
+            <p>
+            <p>Some <span class="concept">NLP libraries</span> use stemming which transforms each word to its ‘stem’. For example, running, runs, and runner would be changed to run as they are the same base word. This reduces the number of words in the bag of words, and may be more accurate for analysis. I’ll probably implement stemming when I revisit this code.
+            </p>
+        </section>
+        <section>
+            <h2>Word Counts</h2>
+            <p>Below are total and unique word counts for each book.</p>
+            <figure id="f05">
+				<img src="../images/img_medium/img_5.png"/>
+            </figure>
+            <p>The number of total words increases from HP 1 to HP 5 (HP 5 being the largest book), drops at HP 6 and increases slightly for HP 7.
+            </p>
+            <p>The number of unique words also increases with the series. In HP 1 there are 5687 unique words compared to 12624 unique words in HP 5, so the writing is more sophisticated or J.K. Rowling is introducing new words (could be character names, new locations, spells, etc.) to readers.
+            </p>
+            <ol>
+                <p>Overall, the later books in the series have significantly more words than the first couple books. Here are some predictions why:
+                </p>
+                <li>The first book may the shortest because <span class="person">J.K. Rowling</span> was not a proven author when it was published. Perhaps it would have been harder to get a publishing company to read her manuscript if it was longer.</li>
+                <li>The <span class="person">Harry Potter</span> series is intended for a young adult audience and the average audience age grew with each book. For reference, I read the first book in fourth grade, so I was eight years old. I read the seventh book at age sixteen. At age eight, I wasn’t as likely to read a large book with over a quarter million words as I was at age twelve, when <span class="person">Harry Potter</span> and the Order of the Phoenix was published.</li>
+                <li>As the series unfolds, the plot thickens. Maybe all those extra words are necessary for the most enchanting story.</li>
+                <li>After the first couple books, there was a loyal fan base and demand for the next book in the series. The number of fans only increased as the series continued. Once there was a real demand for more books, maybe  <span class="person">J.K. Rowling</span> had more control and flexibility in her work. By the way, J.K. Rowling is the first author to become a billionaire by writing books!</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Punctuation Analysis</h2>
+            <p>Readers often overlook punctuation in text, but I thought it might be interesting to look at the punctuation in my data. How many period marks are in each book? How about exclamation marks? Question marks? Does sentence length increase as the series progresses?</p>
+            <figure id="f06">
+				<img src="../images/img_medium/img_6.png"/>
+            </figure>
+            <p>This chart’s trend looks similar to the word count chart (HP 5 has the most punctuation and the most words).
+            </p>
+            <p>There’s significantly more period marks than question marks or exclamation marks. I assume this is similar to a lot of literature. For my analysis, I ignore period marks after Mr. and Mrs. and ellipses to avoid inflating the number of sentences ending in period marks.
+            </p>
+            <ul>
+                <p>In English, there are four types of sentences:</p>
+                <li>Declarative sentences state facts and end with a period mark.</li>
+                <li>Imperative sentences give commands and typically end with a period mark, but can also end with exclamation marks. For my code, I’ll assume imperative sentences only end with period marks.</li>
+                <li>Interrogative sentences ask questions and end in question marks.</li>
+                <li>Exclamatory sentences express excitement and end in exclamation marks.</li>
+            </ul>
+            <figure id="f07">
+				<img src="../images/img_medium/img_7.png"/>
+            </figure>
+            <p><span class="person">J.K. Rowling</span>’s sentence length stays fairly constant throughout the series. However, as you can see in the word counts and punctuation analysis charts above, there are more sentences overall in HP 5.
+            </p>
+        </section>
+        <section>
+            <h2>Sentiment Analysis</h2>
+            <p><span class="concept">Sentiment Analysis</span> (or opinion mining) uses NLP to determine if text is positive, negative, or neutral. This is used for binary decisions such as good or bad and like or dislike. Example use cases are Yelp analyzing whether a restaurant has good reviews or bad reviews or a marketing department mining tweets to understand their consumers’ view on a new product launch.
+            </p>
+            <p>The sentiment analysis in my code is oversimplified, which creates some error. Consider this sentence.
+            </p>
+            <blockquote>The movie was neither funny, nor super witty.</blockquote>
+            <p>A human reads this and can understand it is a negative review. In my ‘bag-of-words’ approach, this sentence is rated positive because the words funny, super, and witty are positive. There are more sophisticated models which take these instances into account and can understand this should be marked negative, but because I didn’t want to use the NLTK library, I decided this is a fair tradeoff for my own learning.
+            </p>
+            <p>One such example of this oversimplification in my code is the word just, which is the most frequently occurring positive word in each HP book. There are multiple definitions of just and some are positive —1. based on or behaving according to what is morally right and fair and 2. exactly. However, there are alternate definitions of just which are not positive, but my code has no way to understand this and simply counts every instance of just as positive.
+            </p>
+            <p>Another possible issue is the lack of weighted words as more positive or more negative. So the words terrible and odd are both equally negative, even though terrible has a much stronger negative connotation.
+            </p>
+            <p>Here’s the list of positive words and negative words I used. Since these are general positive and negative words for the English language, the code has no way to know the word mudblood is negative and the word patronus is positive.
+            </p>
+            <figure id="f08">
+				<img src="../images/img_medium/img_8.png"/>
+            </figure>
+            <p>Notice the Y-axis above for number of words. HP 5 and HP 7 seem to be darker books than HP 1 or HP 2.
+            </p>
+            <figure id="f09">
+				<img src="../images/img_medium/img_9.png"/>
+            </figure>
+            <p>Looking at overall words, there are very few positive or negative words present. On average, only about 2.9% of words are positive, 3.3% are negative and the rest are neutral. This is probably so low because there aren’t any <span class="person"> Harry Potter</span> specific positive and negative words in my positive and negative word lists. If only there was a way to programmatically determine if a word is positive or negative based on the surrounding text…. hmm, sounds like a fun project for the future.
+            </p>
+        </section>
+        <section>
+            <h2>N-grams</h2>
+            <p>An <span class="concept">N-gram</span> is a continuous sequence of N words in a given text. N-grams of size N=1 are called unigrams, N=2 are bigrams, N=3 trigrams, and anything larger is referred to by the value of N so four-grams, five-grams, etc.
+            </p>
+            <p>Here is the first sentence in <span class="person">Harry Potter</span> and the Prisoner of Azkaban.
+            </p>
+            <blockquote>"Harry Potter was a highly unusual boy in many ways."</blockquote>
+            <p>If N= 2, here are the bigrams:</p>
+            <figure id="f10">
+				<img src="../images/img_medium/img_10.png"/>
+            </figure>
+            <p>If N= 3, here are the trigrams:</p>
+            <figure id="f11">
+				<img src="../images/img_medium/img_11.png"/>
+            </figure>
+            <p>The number of N-grams for any given sentence can be calculated by the equation below.</p>
+            <figure id="f12">
+				<img src="../images/img_medium/img_12.png"/>
+            </figure>
+            <p>Here are some N-grams charts for the series.
+            </p>
+            <figure id="f13">
+                <img src="../images/img_medium/img_13.png"/>
+                <figcaption>Best Friend Trigrams</figcaption>
+            </figure>
+            <p>I don’t know about you, but I was always curious to see if <span class="person">Hermione</span> would date  <span class="person">Harry</span> or  <span class="person">Ron</span>. Interestingly, by applying text analysis on the books, I could have predicted that Ron and  <span class="person">Hermione</span> would date since their names appear together so often.
+            </p>
+            <figure id="f14">
+                <img src="../images/img_medium/img_14.png"/>
+                <figcaption>Magical Locations N-Grams</figcaption>
+            </figure>
+           <p>This chart shows that <span class="place">Hogwarts</span> is mentioned more than other magical locations. It’s interesting to see the Ministry of Magic become important in the middle of the series. I was surprised to see its frequency drop for HP 6 and HP 7, but I think that’s because it starts being referred to as just “the Ministry” and not by its full name.
+           </p>
+           <figure id="f15">
+                <img src="../images/img_medium/img_15.png"/>
+                <figcaption>Hogwarts Courses N-Grams</figcaption>
+            </figure>
+            <p>This charts compares courses taught at <span class="place">Hogwarts School of Witchcraft and Wizardry</span>. Defense Against the Darks Arts and Potions appear to be the most important. The five-gram Defense Against the Dark Arts peaks in frequency during HP 5. This is probably due to the Harry versus Umbridge battle in this book. In HP 6, the Potions course is the most important as Harry excels afters finding the Half-Blood Prince’s textbook. All the courses drop close to zero for HP 7 since <span class="person">Harry</span> does not attend Hogwarts this year.
+            </p>
+          </section>
+        <section>
+            <h2>Character Relationship Analysis</h2>
+            <p>One of my goals for this project was to use an external API since it’s probably something I should be comfortable with for a data analyst job. I decided to use the <span class="concept">Wikidata API</span> to programmatically populate a list of all the characters within the <span class="person">Harry Potter</span> Universe using a SPARQL query.
+            </p>
+            <p>One important thing to note is that this may not be completely accurate. I’m assuming Wikidata has every character in the series and all the names are spelled correctly, which is not guaranteed.
+            </p>
+            <ul>
+              <p><span class="concept">Character relationship analysis</span> was pretty complicated to wrap my head around. I went through a couple different approaches and got stuck before finally discovering the solution I implemented. Here’s a couple of the initial ideas I played around with:
+              </p>
+              <li>Approach 1: Put each instance of every character name into a list in the order it appears in the text and run some average distance calculation to determine the number of people between two characters. However, this doesn’t take into account how many other non-character-name words are in between the character names, so if that number is large then the characters aren’t really close and the code assumes they are.</li>
+              <li>Approach 2: Break my text into a bag-of-paragraphs and determine which characters frequently appear in the same paragraphs together. When I wrote and tested this code, it didn’t appear very accurate. I think this is because the paragraph lengths vary drastically and sometimes a paragraph can be just a single line response in a conversation.</li>
+            </ul>
+            <p>I had initially assumed character analysis is an equal relationship between two characters. After thinking about this a lot and hacking on the code I wrote for the approaches above, I realized relationship strength is two-directional. So <span class="person">Harry Potter</span>’s relationship to <span class="person">Sirius Black</span> may be different than <span class="person">Sirius Black</span>’s relationship to <span class="person">Harry Potter</span>.
+            </p>
+            <p>Eventually, I decided the best approach is to first pick a viewpoint character and target character (character whose relationship to the viewpoint character we are analyzing). Let’s pick <span class="person">Harry Potter</span> as the viewpoint character and <span class="person">Sirius Black</span> as the target character. Then, I capture every instance where “Sirius” appears within 40 words before and 40 words after every instance of “Harry” and compare this number to the total number of times “Harry” appears in the text. This assumes the characters have a relationship (whether it’s positive or negative is another question), because they are either physically close at that time or one is mentioning the other in conversation.
+            </p>
+            <figure id="f16">
+                <img src="../images/img_medium/img_16.png"/>
+            </figure>
+            <p>The output shows there was no relationship at all between Harry and Sirius in the first two books. Since Sirius was only introduced as a character in the third book, this makes sense. The 8.88% from Harry to Sirius in HP 3 can be read as <q>when the word Harry appears, if you look 40 words to the left and 40 words to the right, 8.88% of the time Sirius also appears</q>. Similarly, Sirius’ relationship to Harry in HP 3 can be described as <q>69.17% of the time Sirius appears, Harry appears within 40 words</q>. I’m making the assumption that if names appear within 40 words of each other, they are together or talking about each other (hence, strengthening their relationship score).
+            </p>
+            <p>Harry’s relationship to Sirius drops to 7.37% in HP 4. This is probably because Sirius spends most of HP 4 in hiding and does not see Harry (or anyone) often. Their communication is mainly via an occasional owl post. In HP 5 their relationship grows stronger, likely due to the time spent together at the Order of Phoenix headquarters at the beginning of the book. Sadly, after Sirius’ tragic death at the end of HP 5, Harry’s relationship score to Sirius dwindles to around 2% for the rest of the series. It doesn’t drop to 0% because Harry still speaks about Sirius to others, spends time in Sirius’ home and mourns Sirius’ death.
+            </p>
+            <p>In each relationship I analyze, the other character’s relationship scores to Harry is much stronger than Harry’s relationship score to them. Since Harry is the main character and the majority of the story takes places from Harry’s narrative, this makes sense. Harry’s name appears significantly more than any other name in the series. So even after Sirius’ death, when Sirius’ name appears in the text, it is around Harry’s at least 80% of the time.
+            </p>
+            <p>Below is a chart which shows Harry’s overall relationship score to and from other major characters. The size of the circles correspond to the number of times that name appears in the 7 books and the thickness of the line represents the relationship score.
+            </p>
+            <figure id="f17">
+                <img src="../images/img_medium/img_17.png"/>
+            </figure>
+            <p>It appears that <span class="person">Harry</span> is closest to <span class="person">Hermione</span> and <span class="person">Ron</span>, which is accurate.
+            </p>
+            <p>There are a few edge cases my code doesn’t account for. For instance, say Harry’s name appears at the very end of a chapter and the next chapter is a completely different place or time, but Sirius’ name appears within the first 40 words of that next chapter. My analysis still assumes they are either together or talking about each other, even though that may not be the case. However, I think the error rate here is low enough to be acceptable.
+            </p>
+            <p>Also, my code searches for only one name per character, so Sirius Black is only referenced by <span class="person">Sirius</span> in the code, even though in the text he may sometimes be mentioned by only last name. In the future, I’ll update my code to allow for nicknames and multiple names for characters. Right now, I picked whichever name I think the character is referenced by most in the text (ex: Dumbledore for <span class="person">Albus Dumbledore</span>).
+            </p>
+            <p>Here are some of the relationship scores:</p>
+            <table>
+                <tr>
+                  <th></th>  
+                  <th>HP 1</th>
+                  <th>HP 2</th>
+                  <th>HP 3</th>
+                  <th>HP 4</th>
+                  <th>HP 5</th>
+                  <th>HP 6</th>
+                  <th>HP 7</th>
+                </tr>
+                <tr>
+                  <td>Harry to Ron</td>
+                  <td>33.55</td>
+                  <td>41.01</td>
+                  <td>35.26</td>
+                  <td>31.53</td>
+                  <td>29.42</td>
+                  <td>31.02</td>
+                  <td>35.88</td>
+                </tr>
+                <tr>
+                  <td>Ron to Harry</td>
+                  <td>86.34</td>
+                  <td>83.41</td>
+                  <td>77.01</td>
+                  <td>79.90</td>
+                  <td>78.07</td>
+                  <td>85.16</td>
+                  <td>78.93</td>
+                </tr>
+                <tr>
+                    <td>Harry to Hermione</td>
+                    <td>23.25</td>
+                    <td>18.52</td>
+                    <td>33.98</td>
+                    <td>28.08</td>
+                    <td>29.74</td>
+                    <td>28.18</td>
+                    <td>39.31</td>
+                  </tr>
+                  <tr>
+                    <td>Hermione to Harry</td>
+                    <td>85.27</td>
+                    <td>79.66</td>
+                    <td>82.25</td>
+                    <td>76.63</td>
+                    <td>75.00</td>
+                    <td>85.47</td>
+                    <td>80.31</td>
+                  </tr>
+                  <tr>
+                    <td>Harry to Ginny</td>
+                    <td>0.66</td>
+                    <td>7.34</td>
+                    <td>1.18</td>
+                    <td>1.13</td>
+                    <td>5.94</td>
+                    <td>9.16</td>
+                    <td>3.56</td>
+                  </tr>
+                  <tr>
+                    <td>Ginny to Harry</td>
+                    <td>100.00</td>
+                    <td>74.26</td>
+                    <td>88.24</td>
+                    <td>63.64</td>
+                    <td>78.08</td>
+                    <td>79.82</td>
+                    <td>72.22</td>
+                  </tr>
+                  <tr>
+                    <td>Ron to Hermione</td>
+                    <td>47.56</td>
+                    <td>38.20</td>
+                    <td>62.47</td>
+                    <td>61.22</td>
+                    <td>58.24</td>
+                    <td>58.99</td>
+                    <td>68.63</td>
+                  </tr>
+                  <tr>
+                    <td>Hermione to Ron</td>
+                    <td>70.93</td>
+                    <td>77.93</td>
+                    <td>65.67</td>
+                    <td>68.77</td>
+                    <td>52.95</td>
+                    <td>69.42</td>
+                    <td>63.40</td>
+                  </tr>
+                  <tr>
+                    <td>Fred to George</td>
+                    <td>64.71</td>
+                    <td>68.00</td>
+                    <td>74.03</td>
+                    <td>74.81</td>
+                    <td>79.87</td>
+                    <td>58.44</td>
+                    <td>60.00</td>
+                  </tr>
+                  <tr>
+                    <td>George to Fred</td>
+                    <td>72.41</td>
+                    <td>78.16</td>
+                    <td>81.67</td>
+                    <td>87.50</td>
+                    <td>87.08</td>
+                    <td>86.00</td>
+                    <td>66.18</td>
+                  </tr>
+              </table>
+        </section>
+    </body>
+</html>
