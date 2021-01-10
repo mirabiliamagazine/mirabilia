@@ -1,0 +1,156 @@
+@font-face{
+	font-family: 'Shorelines';
+	src: url(../font/Shorelines_Script_Bold.otf);
+}
+
+@font-face{
+	font-family: 'Roboto-Light';
+	src: url(../font/Roboto-Light.ttf);
+}
+
+
+
+
+nav{
+    margin: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Shorelines';
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    height: 8vh;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding:10px;
+    text-align: right;
+    color: black;
+   
+    
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav li{
+    display: inline;
+    padding: 10px;
+    
+    
+}
+
+
+section a {
+    text-decoration: underline;
+}
+
+a:link {
+    color: black;
+  }
+  
+a:visited {
+    color: black;
+  }
+  
+a:hover {
+    color: red;
+ 
+  }
+
+  a:active {
+    color: black;
+  }
+
+  /*---------------------------------------------------*/
+
+  div.first_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center!important;
+    border-bottom: 1px solid black;
+    width: 100%;
+    
+  }
+  
+  div.first_menu li {
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  div.first_menu li a, .dropbtn {
+    display: inline-block;
+    font-family: 'Roboto-Light';
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  div.first_menu li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+    color: white;
+  }
+  
+  div.first_menu li.dropdown {
+    display: inline-block;
+  }
+  
+  div.first_menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  div.first_menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  div.first_menu .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  div.first_menu .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .menu_stili{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top:1px solid black;
+      border-bottom:1px solid black;
+      text-align: center;
+  }
+
+  .clear{
+      width: 100%;
+      padding-bottom:100px;
+      background-color: grey;
+  }
+
+  footer{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-family: "Roboto-Light";
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    border-top: 1px solid black;
+    height: 2vh;
+    
+}

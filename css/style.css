@@ -1,0 +1,95 @@
+@font-face{
+	font-family: 'Shorelines';
+	src: url(../font/Shorelines_Script_Bold.otf);
+}
+
+header{
+  display: flex;
+  background: #fdfdfd;
+  padding-top: 5em;
+  justify-content: center;
+}
+
+
+body {
+  text-align: center;
+  background-color: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.typewriter{
+  /* width: 30vw; */
+}
+
+.typewriter h1 {
+  color: black;
+  
+  padding-left: 1rem;
+  font-size: 60px;
+  font-family: 'Shorelines';
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  
+  /*letter-spacing: .15em; Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end 5; 
+}
+
+/* .anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+} */
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-right: 3px solid black; }
+}
+
+
+img{
+  /* margin: auto; */
+  width: 90%;
+}
+
+h2{
+  font-family: 'Shorelines';
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 375px) {
+    
+  /* header{
+    padding-top: 80%;
+    background-color: red;
+  } */
+
+}
+
+@media only screen and (max-width: 600px) {
+ h1{
+   font-size: 45px!important;
+ }
+}
