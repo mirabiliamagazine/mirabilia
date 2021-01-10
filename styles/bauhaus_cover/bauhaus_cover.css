@@ -1,12 +1,12 @@
 
 @font-face{
   font-family: 'Bayer';
-  src: url('/fonts/BayerUniversal.ttf');
+  src: url('../../fonts/BayerUniversal.ttf');
 }
 
 @font-face{
   font-family: 'Prime';
-  src: url('/fonts/primerPrint.ttf');
+  src: url('../../fonts/primerPrint.ttf');
 }
 
 @keyframes animation {
