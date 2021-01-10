@@ -1,0 +1,904 @@
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./css/style_documentation.css">
+    </head>
+    
+    <body>
+        <script>
+            function on(id) {
+              document.getElementById(id).style.display = "block";
+            }
+            
+            function off(id) {
+              document.getElementById(id).style.display = "none";
+            }
+        </script>
+         
+         <script>
+            function myFunction() {
+              var x = document.getElementsByClassName("dropdown-content")[0];
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            function myFunction1(){
+              var x = document.getElementsByClassName("dropdown-content")[0];
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              }
+            }
+        </script>
+     
+     <div class="topnav">
+        <a href="homepage.html" class="mirabilia1">Mirabilia</a>
+        <a href="loader.html" class="element1">Explore</a>
+        <a href="documentation.html" class="element2">Documentation</a>
+        <a href="disclaimer.html" class="element3">Disclaimer</a>
+        <a href="about.html" class="element4">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+    </div>
+    <div class="topnav_mobile">
+      <a href="homepage.html" class="mirabilia1">Mirabilia</a>
+      <div class="dropdown hamburgers1" onclick="myFunction()">
+        <a class="hamburger">
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+        </a>
+        <div class="dropdown-content" style="display: none;">
+            <a href="loader.html" id="navbar"> Explore</a>
+            <a href="documentation.html" id="navbar"> Documentation</a>
+            <a href="disclaimer.html" id="navbar"> Disclaimer</a>
+            <a href="about.html" id="navbar"> About</a>
+        </div>
+      </div>
+    </div>
+
+        <div id="overlay1" onclick="off('overlay1')">
+            <div class="popup1">
+                <section class="section1">
+                    <h1 class="medieval_h1">1450</h1>
+                    <p>As for the pre-1500 style, I decided to draw inspiration from Western <span class ="bold">illuminated manuscripts</span>, specifically the late medieval / early Renaissance ones.</p>
+                    <p>In fact, I thought it might be interesting to try to reproduce a structure that would give a lot of space to the decorative aspect. I analyzed numerous codices, trying to abstract the most significant and recurring elements, to create a summary layout.</p>
+                    <p>In the process of reproduction, I tried to achieve the right balance between historical rendering and legibility. Consequently, I opted for a lightening of the decorative aspect, while still trying to stick as closely as possible to the original examples</p>
+                    
+                    <figure id="f01_medieval">
+                        <div class="prima_parte">
+                        <img src="./images/img_1450_documentation/img1_medieval.jpg"/>
+                        <img src="./images/img_1450_documentation/img2_medieval.jpg"/>
+                        </div>
+                        <figcaption>fig. 1: Examples of illuminated manuscripts</figcaption>
+                    </figure>
+            </section>
+            <section>
+                    <h2 class ="medieval_h2">Layout</h2>
+                    <h3 class ="medieval_h3">Page organization: columns, paddings and margins</h3>
+                    <p>Most of the <span class ="italic">codices</span> I have considered prefer a two-column structure, however some richly decorated ones present the text in a single block.</p>
+                    <p>Consequently, I chose to keep a single block for the first section of the articles and set a <span class ="bold">bi-columnar</span> structure for the rest of the text, testifying the co-existence of <span class ="italic">rigorous and variegate layout structures</span> in an earlier era to the invention of printing.</p>
+                    <p>In the columns, I minimized the margin between the paragraphs and unified the blockquotes to the rest of the text to make the layout more homogeneous and similar to the original examples. I set the <span class ="italic">column-gap</span> property with a value of <span class ="bold">5vw</span> following the proportions of some examples I took into consideration. I used the <span class ="italic">overflow-wrap</span> property with the value <span class ="bold">word-break</span> to further increase the impression of homogeneity. </p>
+                    <figure id="f02_medieval">
+                        
+                        <img src="./images/img_1450_documentation/img3_medieval.png"/>
+                        <img src="./images/img_1450_documentation/img4_medieval.png"/>
+                        
+                        <figcaption>fig. 2: the two different structures of the 1450 style </figcaption>
+                    </figure>
+        
+                    <p>To give the impression of decorative density and density of the page, I preserved the absence of padding between the textual element and the <span class ="italic">marginalia</span>, that is, the decorations that surround the manuscript page, because it is a characteristic that I found in most of the illuminated manuscripts taken into consideration.</p>
+                    <figure id="f03_medieval">
+                        <div class="prima_parte">
+                        <img src="./images/img_1450_documentation/img5_medieval.png"/>
+                        <img src="./images/img_1450_documentation/img6_medieval.png"/>
+                        </div>
+                        <figcaption>fig. 3: The absence of padding between the text and the <span class ="italic">marginalia</span></figcaption>
+                    </figure>
+                    <h3 class ="medieval_h3">Cover section and headings</h3>
+                    <p>I set a larger <span class ="italic">font-size</span> (230%) for the title than the rest of the text to highlight it and placed it on the center of the page. It was a personal choice because, in most of the texts I referred to, the text wasn't provided of a title. I set a slight space between the letters through the <span class ="italic">letter-spacing</span> property and a value of <span class ="bold">1 em</span>. I capitalized it through the <span class ="italic">text-transform</span> property and aligned it to the center.</p>
+                    <p>I have adopted the same type of solution for the <span class ="bold">h2s</span>, clearly reducing the size of the text.</p>
+        
+                    <figure id="f04_medieval">
+                        <img src="./images/img_1450_documentation/img7_medieval.png"/>
+                        <figcaption>fig. 4: An example of title from the 1450 style</figcaption>
+                    </figure>
+        
+                    <h3 class ="medieval_h3">Borders and frames</h3>
+        
+                    <p>I wanted to accentuate the importance of the <span class= "italic">marginalia</span> and the finely decorated borders that usually surrounded the text trying to preserve their ratio, but since there is no precise information about it- or better, it often variates- I tried to maintain a proportionality that was as close as possible to some examples I took into consideration. </p>
+                    <p>I consequently set the <span class ="italic">border-left-width</span> property with a value of <span class ="bold">100</span> and a <span class ="italic">border-right-width</span> of <span class ="bold">200</span>, having realized that often the left margin was half of the right one. Instead, I decided to give up the decorations of the upper and lower marginalia, because it would have compromised the readability of the text, which is much longer than the examples that inspired me, and it would have been impossible to preserve the design of the border itself without some unappealing distortions.</p>
+                    <figure id="f05_medieval">
+                        
+                        <img src="./images/img_1450_documentation/img8_medieval.png"/>
+                        <img src="./images/img_1450_documentation/img9_medieval.png"/>
+                        
+                        <figcaption>fig. 5: The marginalia from which I was inspired the most and their reproduction on the style</figcaption>
+                    </figure>
+                    <p>I then chose a further frame for the first section of the text, that is, the non-columned one, because I thought it offered a space open to decorations and that it certainly represented a possibility of filling that the illuminated manuscripts would never have given up.</p>
+                    <figure id="f06_medieval">
+                        <img src="./images/img_1450_documentation/img10_medieval.png"/>
+                        <figcaption>fig. 6: The first section frame</figcaption>
+                    </figure>
+                    <p>Since there are numerous frames on the web that recall the medieval period but sometimes they are rough remakes or in formats that are not compatible with the intent of inserting them in the layout, I decided to redraw them and export them in a PNG format, to comfortably adapt them to the background.</p>
+                    <p>I therefore selected one of the <span class= "italic">marginalia</span> that I considered most representative in terms of decorations and colors and redesigned it by changing some details to make it more adaptable to the context of insertion. </p>
+                    <figure id="f07_medieval">
+                        <div class="prima_parte">
+                        <img src="./images/img_1450_documentation/img11_medieval.jpg"/>
+                        <img src="./images/img_1450_documentation/img12_medieval.png"/>
+                        </div>
+                        <figcaption>fig. 7: A fragment of the original <span class= "italic">marginalia</span> and the redrawed one</figcaption>
+                    </figure>
+                    <p>I then chose a suitable frame to embrace the first section of text and reproduced it using the same colors as the <span class= "italic">marginalia</span> to make the final result more homogeneous.</p>
+                    <figure id="f08_medieval">
+                        
+                        <img src="./images/img_1450_documentation/img13_medieval.png"/>
+                        <img src="./images/img_1450_documentation/img14_medieval.png"/>
+                        
+                        <figcaption>fig. 8: A fragment of the original section frame and the redrawed one</figcaption>
+                    </figure>
+                    <p>For the borders of the images, I opted for a double border with a gold-colored filling, that I obtained by combining the <span class= "italic">outline</span> (<span class= "bold">5px solid #d4af37</span>;), <span class= "italic">box-shadow</span> (<span class= "bold">0 7px 0 0 #34251f; 0 7px 0 0 #34251f; 7px 0 0 0#34251f; 7px 0 0 0 #34251f; 0 0 0 7px #34251f;</span>) and <span class= "italic">border</span> (<span class= "bold">2px solid #34251f</span>) properties. I found the golden frame solution in the most precious manuscripts I analyzed and therefore emulated it. </p>
+                    <figure id="f09_medieval">
+                        
+                        <img src="./images/img_1450_documentation/img15_medieval.png"/>
+                        <img src="./images/img_1450_documentation/img16_medieval.png"/>
+                       
+                        <figcaption>fig. 9: An example of border from the style and one I was inspired to.</figcaption>
+                    </figure>
+                    <h3 class ="medieval_h3">Decorations</h3>
+                    <ul>
+                        <p>As for the typographic aspect, <span class ="italic">L’Abeille de la Nouvelle-Orléans</span> is interesting because it uses different types of fonts for its pages, probably to highlight articles and inserts that would otherwise be too anonymous in a context so full of text.</p><br>
+                        <li><span class ="bold">The ruling</span>: in the Middle Ages the pages of the most precious manuscripts were characterized by the ruling, that is, by lines that served as a guide for scribes. The more important the book was, the more elaborate the ruling, and from this it is easy to deduce that the beautifully illuminated manuscripts had actual guidelines. In an attempt to recreate the impression of these guidelines, I decided to add a delicate underline to the text through the <span class= "italic">text-decoration</span> property (0.3px underline). The choice to opacify it (<span class= "italic">text-decoration-color</span> rgba(212, 31, 24, 0.07)) was then dictated by the fact that the ruling was sometimes done by exerting pressure with a blade on the parchment, and I wanted to re-create this impression.</li><br>
+                        <figure id="f10_medieval">
+                            
+                            <img src="./images/img_1450_documentation/img18_medieval.jpg"/>
+                            <img src="./images/img_1450_documentation/img17_medieval.png"/>
+                            
+                            <figcaption>fig. 10: An example of ruling from a manuscript and the reproduction </figcaption>
+                        </figure>
+                        <li><span class ="bold">The <span class ="italic">inside-the-text</span> decorations</span>: the text of the illuminated manuscripts was often interspersed with decorative elements, positioned on the same line as the text and often recalling the colors or motifs of the main decoration. I therefore selected one of these decorative elements by extrapolating it from a manuscript and then adapted it to the content of my articles. I used the same decoration as <span class ="italic">background-image</span> of the h2s.</li>
+                        <figure id="f11_medieval">
+                            <img src="./images/img_1450_documentation/img19_medieval.png"/>
+                            <figcaption>fig. 11: An example of <span class ="italic">inside-the-text</span> decorations</figcaption>
+                        </figure>
+                    </ul>
+        
+                    <h2 class ="medieval_h2">Typography</h2>
+                    <ul>
+                        <p>As for the typographic aspect, one of the evident characteristics of medieval manuscripts is, to us, the poor legibility of the handwriting, whose typeface is extremely distant from ours. </p>
+                        <li>I therefore selected a font that echoes medieval writing, the <span class ="bold">Seagram</span>, and I set the <span class ="italic">letter-spacing</span> property with a value of <span class ="bold">-1.5px</span>, that seemed to me the middle ground between not losing the historical rendering but not even legibility.</li><br>
+                        <li>The first pages of the <span class ="italic">codices</span> I analyzed are often characterized by colored and golden decorated drop caps. To reproduce this effect, I therefore chose a decorative medieval font called <span class ="bold">Royal-7B3K</span>, and I used a linear-gradient property selecting particularly bright shades of gold where I wanted to create a sort of glossy effect. I set the capital letter for every first section of the text through by selecting, through the Javascript function <span class ="italic">getElementsByTagName</span>, every first paragraph of every second section (the first section being the cover) and adding a class (<span class ="italic">classList.add</span>). Then I recalled in the CSS file and through the pseudo-selector <span class ="italic">::first letter</span> I set the values I wanted in the best way I could. </li><br>
+                        <figure id="f12_medieval">
+                            <div class="prima_parte">
+                            <img src="./images/img_1450_documentation/img20_medieval.jpg"/>
+                            <img src="./images/img_1450_documentation/img21_medieval.jpg"/>
+                            </div>
+                            <figcaption>fig. 12: Two examples of first colored/golden letters</figcaption>
+                        </figure>
+                        <figure id="f13_medieval">
+                            <img src="./images/img_1450_documentation/img22_medieval.png"/>
+                            <figcaption>fig. 13: Golden letter reproduction</figcaption>
+                        </figure>
+                    </ul>
+        
+                    <h2 class ="medieval_h2">Colors</h2>
+                    <ul>
+                        <p>For the choice of colors, after looking at many pages of codices and gathering information about the most used inks, I decided to use the following most used shades that I maintained for the elements of the text and for the redrawing of the borders and frames. Each color has been sometimes introduced in a context in which it has been opacized or adapted to the context, but the guideline remains the same.</p>
+                        <li><span class ="bold">Iron gall</span> ink: for the body of the text. The use of this ink dates back to the first centuries after Christ, a favorite choice above all for its indelibility. Since the solutions proposed by the web were not exhaustive, I selected several color examples through a color-picker (the main ones being: #34251ff8, #413029f6), and I chose those closest to the originals. Since the illuminated manuscripts were written, of course, by hand, often different shades of ink were created on the sheet as the color “discharged”. This is why I chose to apply a <span class ="italic">linear-gradient</span> with shades of colors close but more opaque to the main color.</li><br>
+                        <li><span class ="bold">Carmine red</span> or <span class ="bold">Cochineal</span>(#960019): an insect-based color, used in illuminated manuscripts and with which I decided to render the titles and some of the blockquotes, since sometimes entire parts in red were found within the text.</li><br>
+                        <li><span class ="bold">Cobalt blue</span> (0047AB): with which I set some decorations and some elements of the borders</li><br>
+                        <li><span class ="bold">Malachite green </span>(3C7A6E): that I used for flower stems of the different borders and decorations.</li><br>
+                        <li><span class ="bold">Gold</span>: the choice of gold was certainly the most difficult one because finding the color closest to the very thin gold leaves that were used in the Middle Ages. Rather than looking for a color code that seemed too <q>fake</q> I used the color picker and experimented with various shades (#ae7f30, #b0863c, #fff77a,#ae7f30, #ae7f30) also through the use of the <span class ="bold">linear-gradient</span> function of CSS.</li><br>
+                    </ul>
+                    <h2 class ="medieval_h2">Cover</h2>
+                    <p>For the realization of the cover I opted for a less decorated and more empty solution, because I noticed that often, in the manuscripts I took as a model, the first pages were always more sparse in decorations than the actual body of the text, overloaded with details.</p>
+                    <p>All the magazine covers feature the Alice in Wonderland rabbit as the protagonist, because we chose to present a special edition of our issues and it seemed to us the best character to embody time, a necessary element to travel through the centuries by selecting the different styles. </p>
+                    <p>I looked for a rabbit that was as similar as possible among the many animal decorations and I set it through the <span class ="italic">background-image</span> of the div containing all of the cover elements. I cut out the image and applied it mirrored and repeated on the four corners of the page through the <span class ="italic">background-position</span> with values <span class ="bold">top, right, bottom, left</span>.</p>
+                    <p>I then chose a frame that seemed suitable for the context of insertion but since it contained elements in my opinion too caricatured and forced, I reproduced the frame following the model and using the same colors as all the other frames, decorative elements and the text of the 1450 style.</p>
+                    <figure id="f14_medieval">
+                        <div class="prima_parte">
+                        <img src="./images/img_1450_documentation/img23_medieval.jpg"/>
+                        <img src="./images/img_1450_documentation/img24_medieval.png"/>
+                        </div>
+                        <figcaption>fig. 14: The original frame and the redrawed one</figcaption>
+                    </figure>
+                    <h2 class ="medieval_h2">References</h2>
+                    <ul>
+                        <li> the Wikipedia page about illuminated manuscripts: <a href="https://en.wikipedia.org/wiki/Illuminated_manuscript">https://en.wikipedia.org/wiki/Illuminated_manuscript</a></li><br>
+                        <li> World History Source: <a href="https://chnm.gmu.edu/worldhistorysources/r/21/whm.html">https://chnm.gmu.edu/worldhistorysources/r/21/whm.html</a></li><br>
+                        <li> Medieval Illuminated Manuscripts: <a href="https://manuscripts.kb.nl/">https://manuscripts.kb.nl/</a></li><br>
+                        <li> Britannica: <a href="https://www.britannica.com/art/illuminated-manuscript">https://www.britannica.com/art/illuminated-manuscript</a></li><br>
+                        <li> National Gallery of Art: <a href="https://www.nga.gov/conservation/paper/manuscript-project.html">https://www.nga.gov/conservation/paper/manuscript-project.html</a></li><br>
+                        <li> The Getty Museum: <a href="https://www.getty.edu/art/exhibitions/making/">https://www.getty.edu/art/exhibitions/making/</a></li><br>
+                        <li> Medieval Manuscript Manual: <a href="http://web.ceu.hu/medstud/manual/MMM/ink.html">http://web.ceu.hu/medstud/manual/MMM/ink.html</a></li>
+                        
+                    </ul>
+            </div>
+        </div>
+        
+        <div id="overlay2" onclick="off('overlay2')">
+            <div class="popup2">
+                <section class="section1">
+                    <h1 class="newspaper_h1">1860</h1>
+                    <p>In the nineteenth century there was a general increase in the circulation of printed newspapers, partly the result of the progressive growth of literacy. Social, cultural and technological innovations also affected the printing sector, in both quantitative and qualitative terms. </p>
+                    <p>The progressive mechanization of the production cycle stimulated the market growth. The invention of the telegraph allowed a <span class="bold">faster transmission of information</span> between journalists and the editorial staff.  </p>
+                    <p><span class ="bold">Advertising</span> became a means of financing for the main newspapers which, at the end of the nineteenth century, became real capitalist enterprises.</p>
+                    <p>These important changes intuitively influenced the <span class ="bold">typographical</span> choices adopted by the main newspapers. The second half of the nineteenth century witnessed an increasingly widespread need for "filling" the page: a <span class ="bold">minimization of white spaces</span> in order to economize and concentrate the greatest amount of information in the smallest possible space. </p>
+                    <p>This trend is reflected in the <span class ="bold">renunciation of a harmonious layout</span> in its organicity in favor of a layout in which the articles seem to almost suffocate, <span class ="bold">full of advertising content</span>.</p>
+                    <p>The 1860 style wants to reproduce the above-mentioned changes, taking inspiration, specifically, from the newspaper <span class ="italic">L’Abeille de la Nouvelle-Orléans</span>, an American broadsheet newspaper (New Orleans, Louisiana), founded in 1827 by François Delaup.</p>
+                    
+                    <figure id="f01_newspaper">
+                        <img src="./images/img_1860_documentation/img1.jpg"/>
+                        <figcaption>fig. 1: <span class ="italic">L'Abeille de la Nouvelle-Orléans</span></figcaption>
+                    </figure>
+            </section>
+            <section>
+                    <h2 class ="newspaper_h2">Layout</h2>
+                    <h3 class ="newspaper_h3">Page organization: columns, paddings and margins</h3>
+                    <p>Although, in terms of content, <span class ="italic">L'Abeille de la Nouvelle-Orléans</span> has a cultural imprint, offering information on the literary, theatrical and musical life of New Orleans, from a visual-aesthetic point of view, it assumes a <span class ="bold">layout in line with its times</span>. </p>
+                    <p>The text is spread over six (or even 7!) columns very close to each other and the articles - usually quite short - are interspersed with large amounts of advertising content.</p>
+        
+                    <figure id="f02_newspaper">
+                        <img src="./images/img_1860_documentation/img2.png"/>
+                        <figcaption>fig. 2: An example of <span class ="italic">L'Abeille de La Nouvelle Orléans</span> page layout</figcaption>
+                    </figure>
+        
+                    <p>I therefore chose to <span class ="bold">minimize the padding</span> as much as possible and set the <span class ="italic">column-gap</span> with a value of <span class ="bold">8px</span>. But, in order not to lose readability, I gave up the six-column organization for a <span class ="bold">three-column layout</span> through the property <span class ="italic">column-count</span>: <span class ="bold">3</span>.</p>
+                    <p>To recreate the newspaper effect, I applied to the background, which emulates a sheet overlay, the <span class ="italic">box shadow</span> property with a black color as value, setting an <span class ="italic">opacity</span> of <span class ="bold">0.5</span>.</p>
+        
+                    <figure id="f03_newspaper">
+                        <img src="./images/img_1860_documentation/img3.png"/>
+                        <figcaption>fig. 3: The 3-column layout of the 1860 style</figcaption>
+                    </figure>
+        
+                    <p>To give a further effect of condensation of the text I <span class ="bold">minimized the margin</span> between the individual paragraphs (<span class ="italic">margin-top</span>: 0, <span class ="italic">margin-bottom</span>: 0) and decreased the <span class ="italic">line-height</span> up to the limit beyond which the text would have been difficult to read, that is <span class ="bold">0.9</span> em. I justified the text following the original template and, additionally, I <span class ="bold">reduced the whitespaces</span> thanks to the <q><span class ="italic">overflow-wrap</span> break word</q> property that allowed me to break and wrap onto the next line. Finally, following the original, I indented the text of the first line of each paragraph through the <span class ="italic">text-indent</span> property with a value of <span class ="bold">1 em.</span></p> 
+                    
+                    <figure id="f04_newspaper">
+                        <img src="./images/img_1860_documentation/img4.png"/>
+                        <figcaption>fig. 4: The <span class ="italic">column-gap</span>, the reduced <span class ="italic">line-height</span> and the <span class ="italic">text-indent</span> property.</figcaption>
+                    </figure>
+        
+                    <h3 class ="newspaper_h3">Cover section and headings</h3>
+        
+                    <p>Instead, I wanted to highlight the <span class ="bold">headings</span> (the h1 and h2 selectors) since the titles, in the case of <span class ="italic">L’Abeille de la Nouvelle-Orléans</span>, seem to be the only elements that allow themselves more space and dimension than the rest of the text. So I kept the normal <span class ="italic">line-height</span> value and in the <span class ="bold"></span>h2s</p> 
+                    <p>I slightly increased the space between each letter and each word (<span class ="italic">letter-spacing</span>: 0.1em ; <span class ="italic">word-spacing</span>: 0.2em). </p>
+        
+                    <figure id="f05_newspaper">
+                        <img src="./images/img_1860_documentation/img5.png"/>
+                        <figcaption>fig. 5: One of the titles from which I was inspired</figcaption>
+                    </figure>
+        
+                    <figure id="f06_newspaper">
+                        <img src="./images/img_1860_documentation/img6.png"/>
+                        <figcaption>fig. 6: The <span class ="bold">h1</span></figcaption>
+                    </figure>
+        
+                    <p>I applied the same type of reflection for the cover image, of which I kept the dimensions, to emphasize the structure of the original layout, which prefers a larger size for the header elements and then a considerable simplification and a reduced size in the text columns. </p>
+                    
+                    <figure id="f07_newspaper">
+                        <img src="./images/img_1860_documentation/img7.png"/>
+                        <figcaption>fig. 7: An example of a main image on a page of <span class ="italic">L'Abeille</span> </figcaption>
+                    </figure>
+        
+                    <figure id="f08_newspaper">
+                        <img src="./images/img_1860_documentation/img8.png"/>
+                        <figcaption>fig. 8: The cover image of the 1860 style</figcaption>
+                    </figure>
+        
+                    <h3 class="newspaper_h3">Borders</h3>
+        
+                    <p>To reproduce the presence of the numerous advertising inserts and the various theatrical or literary information that characterized the newspaper, often highlighted through different types of borders, I have chosen that the lists (ul, ol) - the elements in my opinion most similar to the original sections - had an alternating border. I therefore reproduced a thick black frame through the <span class ="italic">border</span> property and a value of <q>5px black</q> with a slight <span class ="italic">border-radius</span> (15px) and opacity (0.5) for the <span class ="bold">unordered lists</span> of which I reduced the <span class ="italic">font-size</span>, following the original pattern and applied a thin double border to the <span class ="bold">ordered lists</span>.</p>
+                    <p>Instead, I applied a thin (1px) black border to the odd images and a dotted border to the even ones selecting the latters through the pseudo-selector <span class ="italic">section:nth-child(even)</span>. I left a slight padding (2%) to the figure captions, which I noticed to be slightly emphasized over the rest of the text.</p>
+                    <figure id="f09_newspaper">
+                        <div class="prima_parte">
+                        <img class="img1" src="./images/img_1860_documentation/img_9_1.png"/>
+                        <img class="img2" src="./images/img_1860_documentation/img_9_2.png"/>
+                        </div>
+                        <br>
+                        <div class="seconda_parte">
+                        <img class="img3" src="./images/img_1860_documentation/img_9_3.png"/>
+                        <img class="img4" src="./images/img_1860_documentation/img_9_4.png"/>
+                        </div>
+                        <figcaption>fig. 9: Some examples of <span class ="bold">borders</span> from the original newspaper</figcaption>
+                    </figure>
+        
+                    <figure id="f10_newspaper">
+                        <div class="terza_parte">
+                            <img class="img1" src="./images/img_1860_documentation/img_10_1.png"/>
+                            <img class="img2" src="./images/img_1860_documentation/img_10_2.png"/>
+                        </div>
+                            <br>
+                        <div class="quarta_parte">
+                            <img class="img3" src="./images/img_1860_documentation/img_10_3.png"/>
+                            <img class="img4" src="./images/img_1860_documentation/img_10_4.png"/>
+                            </div>
+                        <figcaption>fig. 10: Some examples of <span class ="bold">borders</span> of the 1860 style</figcaption>
+                    </figure>
+        
+                    <h3 class="newspaper_h3">Decorations</h3>
+                    <p>I then divided the sections emulating the <span class ="italic">modus operandi</span> that <span class ="italic">L’Abeille de la Nouvelle-Orléans</span> adopts for the separation of the various articles from the advertising inserts, i.e. by applying a <span class ="bold">section end indicator</span> that was as similar as possible to the original. To do so, I used the <span class ="italic">background-image</span> property, positioning it on the bottom and giving a padding of <span class ="bold">30px</span>.</p>
+                    <figure id="f11_newspaper">
+                        <div class="altra_parte">
+                            <img class="img1" src="./images/img_1860_documentation/img_11_1.png"/>
+                            <img class="img2" src="./images/img_1860_documentation/img_11_2.png"/>
+                        </div>
+                        <figcaption>fig. 11: the <span class ="bold">decorative section end indicator</span> of the original version compared with that of the 1860 style</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h2 class="newspaper_h2">Typography</h2>
+                    <ul>
+                        <p>As for the typographic aspect, <span class ="italic">L’Abeille de la Nouvelle-Orléans</span> is interesting because it uses different types of fonts for its pages, probably to highlight articles and inserts that would otherwise be too anonymous in a context so full of text.</p><br>
+                        <li>For the body of the text I adopted a digitalized version of the font-family <span class ="italic">Didot</span>, a geometric serif font with very fine graces created by Firmin Didot in the late 1700s and then widely used throughout the nineteenth century, especially by French language publications.</li><br>
+                        <li>For the h1, I used <span class ="bold">Cheltenham Extra Condensed Bold</span>, that I found in one of the many titles that inspired me.</li><br>
+                        <li>I then alternated the <span class ="bold">Cheltenham Extra Condensed Bold</span> and the <span class ="italic">Franklin Gothic</span> (Std Extra Condensed) through the pseudo-selector <span class ="italic">section:nth-child(even/odd)</span> so that each section has its <span class ="bold">h2s</span> visually diverse. I liked the fact of the coexistance of a sans-serif font and a serif font for the same element and it appeared many times in the examples I had.</li><br>
+                        <li>For the publication date, the byline and the figure captions I used the sans-serif font <span class ="italic">Franklin Gothic</span> (Std Extra Condensed), which, despite being designed in the early 1900s, recalls and is remarkably close to the original.</li><br>
+                        <li>As for the subtitles, I decided to use a font that emulates the one that <span class ="italic">L’Abeille de la Nouvelle-Orléans</span> uses in the title of the newspaper itself, that is called <span class ="bold">Deutch</span>, because I wanted the coexistence of numerous fonts on the same page to emerge as much as possible.</li><br>
+                        <li>For the figure-caption of the cover image – the cover being the space in which the variety of fonts emerges the most- I selected a font that emulates the <span class ="bold">Lehmann Egyptian</span> typeface. It was quite common, for the time, to find inserts or titles that use slab serif (or Egyptian typefaces).</li><br>
+                    </ul>
+                    <figure id="f12_newspaper">
+                        <img src="./images/img_1860_documentation/img_12.png"/>
+                        <figcaption>fig. 12: Some typeface examples from <span class ="italic">L'Abeille de la Nouvelle-Orléans</span></figcaption>
+                    </figure>
+                    <figure id="f13_newspaper">
+                        <img src=""/>
+                        <figcaption>fig. 13: Some fonts from the 1860 style</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h2 class="newspaper_h2">Colors</h2>
+                    <p>As for the choice of colors, I applied a <span class ="bold">grayscale filter</span> to my background to give a homogeneous impression of a whitish page. The same filter affects my images, but on them I specified a percentage of brightness (60% and again 150%) and accentuate the contrast (150%) to give an older effect to them.</p>
+                    <p>I then chose the <span class ="bold">black</span> color for the text of the entire page and set a very slight opacity (<span class ="bold">rgba(0, 0, 0, 0.8)</span>) that served to simulate a flat and not bright black, the effect of using less valuable inks for printing newspapers.</p>
+                </section>
+                <section>
+                    <h2 class="newspaper_h2">Cover</h2>
+                    <p>The cover presents, instead of the emblem depicting the bee of the reference newspaper, our <q>character of the month</q>, that is the rabbit from Alice in Wonderland, specially redesigned to take on a style more similar to the represented era. I then kept the publication date with a thin double border (<span class ="italic">border-bottom/border top</span>: double black). </p>
+                    <p>Finally, I decided to take a little more risk in the layout of the article titles, giving a different border to each one - the same I used for the lists and images of the articles - and creating a slightly shaded effect through the <span class ="italic">box-shadow</span> property and bottom and top of the borders and with a slight opacity. The latter effect was conceived because in some of the original advertisements a perspective and depth effect was simulated through a <q>three-dimensional</q> drawn border. </p>
+                    <p>The reason why I wanted to recreate the effect of the advertisements within the pages of <span class ="italic">L'Abeille de la Nouvelle-Orléans</span> for my cover was due, on the one hand, because of the spatial importance they assumed for the newspaper and on the other hand because, to emphasize them, they were the elements in which more decisive typographical choices and layouts emerged.</p>
+                </section>
+                <section>
+                    <h2 class="newspaper_h2">References</h2>
+                    <ul>
+                        <li> The Wikipedia page of <span class= "italic">L'Abeille de la Nouvelle-Orléans</span>: <a href="https://fr.wikipedia.org/wiki/L%27Abeille_de_la_Nouvelle-Orl%C3%A9ans">https://fr.wikipedia.org/wiki/L%27Abeille_de_la_Nouvelle-Orl%C3%A9ans</a></li><br>
+                        <li> Google News Archive: <a href="https://news.google.com/newspapers?nid=nlKf13ul9_IC&dat=19100301&b_mode=2&hl=it">https://news.google.com/newspapers?nid=nlKf13ul9_IC&dat=19100301&b_mode=2&hl=it</a></li><br>
+                        <li> Library of Congress: <a href="https://www.loc.gov/item/sn86079022/">https://www.loc.gov/item/sn86079022/</a></li><br>
+                        <li>Guilty Novin, History of Layout Design and Modern Newspaper & Magazins, Chapter 58: <a href="http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html#Three">http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html#Three</a><br>
+                    </ul>
+        
+                </section>
+            </div>
+        </div>   
+
+        
+            <div id="overlay3" onclick="off('overlay3')">
+                <div class="popup3">
+                    <section>
+                        <h1 class="Bauhaus_h1">Bauhaus</h1>
+                            <p>The 1920’s decade saw a ferment of both radical and conservative typographic ideas.</p><p> From the experimental came a sense of the Modern, meanwhile the peaks of typographic history were revived by traditionalists as representing values that needed to be restored. </p>
+                            <p>The ideas and activities of these years reveal the emerging significance of typography, its position in the flux of creativity between fine art and architecture, and its value as a crucial political and commercial tool. </p>
+                           <p> At the centre of the emergence of a new typography was the Bauhaus. This radically new school, which taught architecture and the applies arts as interdisciplinary subjects, was founded in Weimar in 1919. </p>
+                            <p>To represent the style of the first half of the twentieth century.</p>
+                        
+                            <figure id="f01_bauhaus">
+                                <img src="./images/img_bauhaus_documentation/fig1.jpg"/>
+                                <figcaption> fig. 1: The Bauhaus building in Dessau was designed by Walter Gropius. It was the longest serving of the three Bauhaus locations (1925–1932).</figcaption>
+                            </figure>
+                            <p>I did not take inspiration from a particular article, but I understood the peculiarities of the Bauhaus and I tried to reproduce them in the best way I could. </p>
+                    </section>
+                 <section>
+                        <h2 class="Bauhaus_h2">Layout</h2>
+                            <p>The proponents of the Bauhaus looked forward to the pages of grey text being transformed into colourful narratives and being conceived  as a dramatic whole so that individuals’ pages were part of a sequence more similar to film frames. </p>
+                           <p> Tensions were to be introduced into the layouts by contracting visual elements- such as <span class="decoration">empty/full, light/dark, vertical/horizontal, upright/oblique-</span> and these were to be achieved chiefly through the disposition the elements. </p>
+              
+                        <figure id="f02_bauhaus">
+                            <div class="prima_parte_bauhaus">
+                            <img class="img1" src="./images/img_bauhaus_documentation/fig2.jpg"/>
+                            <img class="img2" src="./images/img_bauhaus_documentation/fig3.png"/>
+                    </div>
+                            <figcaption>fig. 2 and fig.3 from left to right : Herbert Bayer, "On Typography"</figcaption>
+                       </figure>
+             
+                            <p>A strong difference distinguishes the<span class="decoration1"> box </span> the <span class="decoration1"> cover. </span></p><p> The latter, that includes the title, the publication date, the by line and the subtitle, I let myself be carried away by the recklessness, the vivacity but above all by the ambiguity of the Bauhaus posters.</p> 
+                            <p>I added the flex value to the display property, just to easily manage the content. <span class="decoration1"> 'Flex-direction: column' </span> rule allowed me to arrange the elements vertically since everything had to be outside the columns, instead through the rule <span class="decoration1"> 'column-span:all' </span> the elements of the cover resulted outside the column structure, since the cover and the box had to appear as distinct entities.</p><p> Going forward, I added the<span class="decoration1"> 'word-break: break-all' </span> rule to some elements (URL’s) for visual reasons since without it the text would have come out from the edges of the box itself.</p>
+                            <p>Bauhaus is one of the most renowned graphic design visionary firms and changed graphic design by creating a utopian vision. To represent these characteristics, thanks to the property <span class="decoration1"> 'transform: rotate(-10deg)' </span>, I tilted the entire cover to the left, including any contained image.</p>  
+                            <figure id="f04_bauhaus">
+                                <img src="./images/img_bauhaus_documentation/fig4.png"/>
+                                <figcaption>fig. 4 : Representation of Bauhaus Style Cover</figcaption>
+                            </figure>
+                            <p>In opposition, for the representation of the box I used the layout of Bauhaus newspapers.</p> 
+                            <p>The text is divided into two columns and were and alignment is justified, because the expression must be of clarity and absoluteness.</p> <p> The column-gap it's minimal because this how it used to be in the articles of the first half of the twentieth century.</p>
+                            <p>Despite this, I still wanted to combine some characteristics of the Bauhaus posters, having been very impressed by them.</p> <p>Therefore the images, contained within the columns with the object-fit property and the rule <span class="decoration1"> 'display: block '</span> to occupy all the available space, allow the user to interact with them: the ScaleX(-1) value of the transform property resizes an element along the x axis (horizontally). </p>
+                            <p> This unconventional choice is dictated by the awareness that the Bauhaus was born as a very rigid architectural style framed in its own geometrical forms which, although changing in the different buildings, did not change its essence. </p>
+                            <figure id="f05_bauhaus">
+                                <img src="././images/img_bauhaus_documentation/fig5.png"/>
+                                <figcaption>fig. 5 : Reppresentation Bauhaus Box</figcaption>
+                            </figure>
+                            <figure id="f06_bauhaus">
+                                <br>
+                            <div class="seconda_parte">
+                            <img class="img3" src="././images/img_bauhaus_documentation/fig6.png"/>
+                            <img class="img4" src="./images/img_bauhaus_documentation/fig7.png"/>
+                            </div>
+                                <figcaption>fig. 6 : Image hover</figcaption>
+                            </figure>
+                 </section>
+                    <section>
+                        <h3 class="Bauhaus_h3">Padding, Margin and Borders </h3>
+                            <p>No borders have been added inside the box and the cover, instead regarding the padding, in the first one I gave a value of 30 pixels to ensure that the text was well readable.</p> 
+                            <p>The H2 has padding of 5 pixels to have a minimum space between sections.</p><p> The separate headers are a deliberate effect: it creates geometric disorder typical of posters but not of newspapers: my desire to combine the two types of representation, albeit very different, remains clear.</p>
+                            <p>The margin has the value auto, this means that the box is placed in the centre of the page that contains it.</p> <p>The figure caption has 10pixels of padding to be a little bit distinct from the image.</p> 
+                            <p>To maintain the distance between the cover and the box even in the case of smaller screens I have given the last element, therefore at the date of publication, a  rule <span class="decoration1">'margin-bottom: 25vh'.</span></p> <p>The title has the rule <span class="decoration1"> 'margin-top: 20vh' </span> so as not go outside of the box and all elements present in the cover have the rule <span class="decoration1"> 'text-align: center' </span>, for clearer readability.</p>
+                </section>
+                <section>
+                        <h3 class="Bauhaus_h3" >Decorations </h3>
+                
+                        <p>Advertising was of particular interest to Bayer and he promoted ideas on the psychology of advertising and its relationship to the consciousness.</p> <p>The importance of placing arresting and symbolic elements into typographic form was made apparent. </p>
+                           <p> The primacy of <span class="decoration2"> red </span> and <span class="decoration1"> black </span> in two-colour printing, the power of dynamic white space, highly contrasted type sizes used to express relative values of information and the growing use of photomontage were recognize as key concepts.</p> 
+                           <p> Schmidt, Bayer's successor, encouraged a slightly wider range of typefaces and evolved grids that moved away from the strictly modular, experimenting more with overlaying one simple pattern on another to create dynamic complexities. </p>
+                           <p> To merge all these approaches and innovations, inspired by the minimal architectural feature, with a the JavaScript function <span class="decoration1">'document.createElement("DIV") </span>, I added a new element into the HTML and through the classList.add("name") function I assigned a class in order to be able to recall it in the CSS. </p>
+                          <p>  These elements, which are six and are displayed as three elements because every two are superimposed with a slightly different padding to give the idea of three-dimensionality, another typical element of this style. I added the property <span class="decoration1">@keyframe </span> that is a block of rules to specify the initial state, the final state and an arbitrary number of intermediate states. </p>
+                         
+                           <p> After it, I created an animation with the two most significant geometric shapes reminiscent of the Bauhaus: circle, square. In all truly great eras of art the simple forms of geometry  were brought back into use; since the body of the work of art, its internal structure, can only be based on these eternal primary forms that give rise to an order of constant and invariant primary sensations in all men, with minimal variations.</p>
+                          <p>  In fact, the square will always give the sensation of stability, while the circumference that of indefinite continuity. A straight horizontal line will give the impression of continuous and calm movement, a broken line leads to discontinuous movement and rhythm. </p>
+                            <p> These two alternates in an automatic way. The circle has width and height with value 100 pixels and the border radius with value 50%, rounding values for all four corners. On the contrary, the square has width with value 50 pixels, height, and border-radius with value 0.</p> 
+                           <p> The position of the element is absolute. I managed to superimpose it on the Cover. The text remains visible thanks to the opacity property with a value of 0.2. The column span also here has the property all to place itself directly above the cover, without obscuring it.</p> <p>Both geometric shapes are shown inclined as all the writings always thanks to the property <span class="decoration1">'transform: rotate(-25deg).</span></p>
+                         <p>This choice is justified by my personal desire to give even more effort to style and always inspired by the Bauhaus posters.</p>
+                   
+                    <figure id="f06_bauhaus">
+                            <div class="terza_parte">
+                                <img class="img1" src="././images/img_bauhaus_documentation/animazione2.png"/>
+                                <img class="img2" src="./images/img_bauhaus_documentation/animazione3.png"/>
+                            </div>
+                                <br>
+                            <div class="quarta_parte">
+                                <img class="img3" src="././images/img_bauhaus_documentation/animation3.png"/>
+                                <img class="img4" src="././images/img_bauhaus_documentation/animation4.png"/>
+                            </div>
+                                 <figcaption>fig. 7 : Decorations</figcaption>
+                   </figure>
+                </section>
+                <section>
+                        <h2 class="Bauhaus_h2">Typography</h2>
+                            <p>The minimalist sans serif face was one of the several proposals for such a reductive typeface.</p> <p>The argument for a single alphabet was based since the upper case is not heard but is only seen.</p> <p>It made written language and its presentation more complex and expensive, demanded more effort in the learning and then in the setting as well as the typesetter’s carrying of more characters. Bayer’s single alphabet proposal is distinctive for generating its forms from a declared reductive range of a few angles, arcs, and selected lines.</p>
+                           <p> In 1925 Walter Gropius commissioned Bayer to design a typeface to be used for all official Bauhaus communications.</p> <p>Following this functionalist approach, Bayer designed an <span class="decoration1">"idealistic font".</span> </p>
+                           <figure id="f07_bauhaus">
+                                <img src="././images/img_bauhaus_documentation/bho.png"/>
+                                <figcaption>fig. 8 : Bayer Font</figcaption>
+                            </figure>
+                </section>
+                <section> 
+                        <h2 class="Bauhaus_h3">Font Box</h3>
+                            <p>Following these assumptions, inside the box I used two fonts that alternate: for the article, the font ‘Prime’ and for the h2 the so-called ‘Bayer’ font, both without any world in upper case with the rule <span class="decoration1">'text-transform: lowercase'.</span> </p>
+                            <p> For the article, the font weight is bold and font-size 20 pixels. </p>
+                            <p> The feature of h2 is <span class="decoration1"> 'text-decoration: underline, dotted'.</span></p> <p>The architectural signs of this style are the circle, the square and the triangle and with this decoration I wanted to recall it also within the text.</p>
+                            <figure id="f08_bauhaus">
+                                <img src="././images/img_bauhaus_documentation/h2 dotted.png"/>
+                                <figcaption>fig. 9 : h2 underline dotted</figcaption>
+                            </figure>
+                    </section>
+                    <section>
+                        <h2 class="Bauhaus_h3">Font Cover </h3>
+                        <p>For the title I used the so-called Bayer font.</p><p> The same situation of mixed fonts is found inside the Cover where the subtitle, by line and publication date have the 'Prime' font of the text, all strictly without masculine letters. </p>
+                           <p> The title has the rule <span class="decoration1"> 'font-size: 50 pixels'</span> while everything else remains at font size 20 pixels.</p> <p> The by line and the publication date also have the rule <span class="decoration1">'text decoration: underline'.</span></p> <p>All these choices remain justified by the desire to reproduce an original style while maintaining the main canons and colours of the Bauhaus.</p>
+                            <figure id="f09_bauhaus">
+                                <img src="././images/img_bauhaus_documentation/fig9.png"/>
+                                <figcaption>fig. 10 : By line and Pubblication Date</figcaption>
+                            </figure>
+                </section>
+            
+                <section>
+                        <h2 class="Bauhaus_h2">Colors</h2>
+                        <p>Bauhaus art uses very few colours that give light back to natural shadows.</p><p> Each secondary colour arises from the union of the two primary colours <span class="decoration1"> black</span> and <span class="decoration1"> white.</span></p> <p>The only colours used are black, white, red, yellow and blue.</p>
+                           <p> These were used into the Bayer’s lessons: his teaching was not formal.</p><p> He directed the work of students on real commissions that were pulled into the department.</p><p> Advertising was of particular interest to him and the primacy of red and black in two-colour printing, the power of dynamic white space, highly contrasted type sizes used to express relative values and the use of collage. </p>
+                           <p> Within the animation I alternated some main colours within the two geometric shapes: red, blue, and yellow.</p><p> The title is black with red text decoration underline.</p><p> The alternation of red and black creates a visual effect of energy, just as Bayer said.</p>
+                            <p>As background colour I used a color called 'Romance'.</p>
+                        <figure id="f010_bauhaus">
+                           <img class="img1" src="././images/img_bauhaus_documentation/fig10.png"/>
+                                    <figcaption>fig. 11: Colors Palette </figcaption>
+                    </figure>
+                           
+                        <figure id="f011_bauhaus">
+                                <img class="img2" src="././images/img_bauhaus_documentation/fig11.png"/>
+                         
+                            <figcaption>fig. 11: Background Color </figcaption>
+                        </figure>
+                           
+              
+                </section>
+                <section>
+                        <h2 class="Bauhaus_h2">Cover </h2>
+                        <p>For the Cover I kept the stylistic characteristics contained in the style.</p><p> The animations, in addition to having been reduced to two and therefore to four elements added through JavaScript, have the same principles.</p> 
+                           <p> I added the borders, I increased the opacity and I removed every colour. The whole is motivated by the addition of a background image.</p>
+                           <p> The title has a font-size of 90 pixels compared to 30 pixels at the date of publication and the title is also aligned in the centre.</p> <p>The three elements contained in the HTML, each with title of the collection, author and date have a padding of 30 pixels to be well spaced and fill the entire cover.</p> <p>To the first element, called 'first', I added the rule <span class="decoration1">'border-right:black 20px',</span> and  <span class="decoration1"> 'border-left:yellow 20x',</span> while to the second element a <span class="decoration1"> 'border-left:red 20px'.</span> </p>
+                            <p>Finally, at the last element a rule <span class="decoration1">border-top: blue</span> and a <span class="decoration1">border-right: yellow.</p><p> I recalled all the titles, removing the underline of the URL with text-decoration: none, and I gave them all a font-size of 40 pixels. In addition, with a: hover the colour changes for each title, always taking up the yellow, red and blue of the Bauhaus.</p>
+                </section>
+                
+                <section>
+                        <h2 class="Bauhaus_h2">References </h2>
+                        <ul>
+                            <li> Bauhaus | The Art Newspaper <a href="https://www.theartnewspaper.com/bauhaus"> https://www.theartnewspaper.com/bauhaus</a> </li>
+                            <br>
+                            <li> Bauhaus Movement <a href="http://www.magazine.bauhaus-movement.com/">http://www.magazine.bauhaus-movement.com/</a></li>
+                            <br>
+                            <li>Bauhaus journal 1926-1931<a href="https://www.lars-mueller-publishers.com/bauhaus-journal-1926%E2%80%931931">https://www.lars-mueller-publishers.com/bauhaus-journal-1926%E2%80%931931</a></li>
+                            <br>                            
+                            <li>How Bauhaus Redefined What Design Could Do for Society <a href="https://www.nytimes.com/2019/02/04/t-magazine/bauhaus-school-architecture-history.html">https://www.nytimes.com/2019/02/04/t-magazine/bauhaus-school-architecture-history.html</a></li>
+                        </ul>
+                </section>
+            </div>
+            </div>
+            <div id="overlay4" onclick="off('overlay4')">
+                <div class="popup4">
+                    <section>
+                        <h1 class="Rolling_h1"> Rolling Stone</h1>
+                        <p>The article that I have chosen for representing the second half of the 20th century fits into the trend labelled “youth culture”, created by and for teenagers and twenty-somethings, product of the post war baby boom and a generation crucially free from the experience of war and the values of the earlier era.</p> 
+                        <p> It is called  “The Rolling Stone”, a biweekly American magazine that reports on music, pop culture, and politics.</p><p> It was founded in San Francisco in 1967 by Jann Wenner, a former student at the University of California, Berkeley, and Ralph Gleason, a jazz critic for the San Francisco Chronicle newspaper.</p>
+                        <p>Like many other countries in the world, Italy also had its own edition of Rolling Stone: the Italian edition was published for the first time in 1980, and the first issue was published in April. </p>
+                        <p> Co-founders of the Rolling Stone Italian Edition were Franco Schipani and Joseph Lodato.</p> <p> In addition to the newspaper publication, the Italian editorial staff also took care of organizing concerts by foreign artists; this attempt, however, had an ephemeral life.</p>
+                        <p> The article that I took as a point of reference in the creation of this style belongs to the Italian edition, year 1 number 6, 28 June - 11 July 1980. </p>
+                         
+                    
+                <figure id="f01_rolling">
+                                <img src="./images/img_rolling_documentation/fig1.png"/>
+                                <figcaption> fig. 1: Rolling Stone Italian Edition - Bob Marley - Year 1 Number 6 - 1980.</figcaption>
+                            </figure>
+
+            </section>
+
+
+                    <section>
+                        <h2 class="Rolling_h2"> Layout </h2>
+                        <p>I used two different layout organizations for the <span class="decoration1">cover</span> and <span class="decoration1">the box.</span></p> 
+                           <p> Starting from the <span class="decoration1"> box </span>, the first real challenge for me was trying to understand how to place all the elements within 3 columns and secondly thinking about how this could have seemed as similar as possible to the article chosen, so I used the property <span class="decoration1">'column-count: 3'</span> and <span class="decoration1"> 'column-gap: 2em' </span> to leave a minimum space between one column and another and to conclude the rule <span class="decoration1">'column-rule:2px'.</span> </p>
+                           <p> The text is justified for representing every article in the columns in an orderly manner, thanks also to the rule <span class="decoration1">'column-fill: balance'.</span> </p>
+                           <p> For the background, I decided to insert an image that represents the paper of a newspaper.</p><p> The choice remains justified by the desire to represent the article in a more similar way to that of the Rolling Stone.</p>
+                            <p>Instead for the <span class="decoration1"> cover</span>, one of the hardest operations was to give the same order to the title and the subtitle.</p>
+                            <p> With the property “display: table” I set a hierarchy and thanks to the attribute “table-header-group” the Subtitle has moved above the other elements. The title with the attribute “table-row-group” is positioned in the centre and finally the by line and the publication.</p> 
+                           <p> To stay as faithful as possible to the article, the by line has <span class="decoration1">'text-decoration: underline'</span>. </p>
+                           <p> I used the rule <span class="decoration1">'text-align: justify'</span> for both cover and subtitle but this last has a smaller font-size, to faithfully reproduce the subtitle at the top of the article. </p>
+                      <figure id="f02_rolling">
+                    
+                    <img class="img1" src="./images/img_rolling_documentation/fig4.png"/>
+                           <figcaption> fig. 2: Layout </figcaption>
+                            </figure>
+
+                        <div class="terza_parte_rolling">
+
+                                <img class="img2" src="./images/img_rolling_documentation/fig2.jpg"/>
+                            <img class="img3" src="./images/img_rolling_documentation/fig3.png"/>
+                            </div>
+                                <figcaption> fig. 3 and fig. 4 from left to right: Background image and Layout Cover</figcaption>
+                            </figure>
+
+
+                </section>
+            
+                    <section>
+                        <h3 class="Rolling_h3">Padding, Margin and Borders</h3>
+            
+                        <p>Analysing the box, at first glance I noticed a border with two styles: the <span class="decoration1">outline</span> property has value <span class="decoration1">‘solid’</span> and the border has value <span class="decoration1">‘double’</span>.</p><p> I gave more pixels to the border because outline is external and exactly as the image of the article shows a clear detachment with the outer body. I also gave a <span class="decoration1">'border-spacing:10px'</span>, which is the horizontal space into the table.</p>
+                           <p> The images have a display block which takes up all available space, so it does not accept other elements in the same row, a width of 100%, a black border and a red outline exactly like the pictures in the chosen article. </p>
+                            
+                  
+                            <figure id="f03_rolling">
+                                <img src="./images/img_rolling_documentation/fig5.png"/>
+                                <figcaption> fig. 4: Images</figcaption>
+                            </figure>
+                </section>
+
+            
+                    <section>
+                        <h2 class="Rolling_h2">Typography </h2>
+                        <p>The choice of fonts turned out to be much simpler.</p><p> For the box I imported the font face  <span class="decoration1">‘Rene’</span>, which is sans serif to best represent the simplicity of the 1980’s article.</p>
+                        <p>In stark contrast to the added title 'Rolling Stone' I used the typical <span class="decoration1">'Roya'</span> font. </p>
+                       <p> The <span class="decoration1">'font-size:15px'</span> within a box was chosen to be legible, just like a real large and clear newspaper page, and still trying to reproduce the article, the font of the h1 is  <span class="decoration1">‘Roya’.</span></p><p> The value of the font size property in this case is completely different with a value of 35 pixels, and the rule  <span class="decoration1"> 'font-weight:bold'</span> was to give it more thickness.</p> <p>In this case the difficulty was to position it completely to the right as closely as possible to the column. </p>
+                       <p> The  <span class="decoration1">'line- height:1em'</span> and the letter-spacing helped me to compact it, without making it look too squashed and unreadable.</p><p> The rule  <span class="decoration1">'text-align: right'</span> value moved the title as close as possible to the right column, making it very similar to the title to be represented. </p>
+                       <p> Thanks to the DOM JavaScript I could added a new class without modifying the HTML.</p><p> Then, I added to it a Class called “Rolling”.</p><p> This element it is very useful to show at first glance that I have chosen the style of the Rolling Stone magazine.</p><p> The font is ‘Rene’, with a text shadow black and the colour red.</p><p> The position is fixed, in such a way that it remains fixed even if you scroll through the article, and the value “left” and “right” to make it central between columns. </p>
+                       <p> Capitalize the first letter in the most harmonious way possible in the text, trying not to leave empty spaces or not to let the letter out of the edges, was yet another challenge.</p>
+                       <p> The rule in this case is <span class="decoration1">' section > p:nth-child(1):: first-letter' </span> and the four important properties are   <span class="decoration1">font-size, line-height, margin-right and padding. </span></p> <p>Turning everything into uppercase and floating to the left, it was a set of measures to match to make the letters fit perfectly with a depth of 4 columns.</p>
+                    <figure id="f04_rolling">
+                              
+
+                                <img src="./images/img_rolling_documentation/fig7.png"/>
+       <figcaption> fig. 5: H1 Title</figcaption>
+                                 <img src="./images/img_rolling_documentation/fig8 .png"/>
+   <figcaption> fig. 6: Added title</figcaption>
+                    </figure>
+    <figure id="f05_rolling">
+                                <img src="./images/img_rolling_documentation/fig9.png"/>
+
+                                <figcaption> fig. 7: Captalize Letter</figcaption>
+                            </figure>
+
+
+ </section>
+
+
+                    <section>
+                        <h2 class="Rolling_h2">Colours</h2>
+                        <p>Through the colour picker directly on the image of the chosen article, the main colours representative of the article but in general of the newspaper 'Rolling Stone' are black, red and yellow.</p>
+                    <p>The red and black chosen for added title were been found with colour picker from the Figure 8, while the red border of the images also found with colour picker was found from the chosen article in Figure 1. </p>
+                     <figure id="f06_rolling">
+                                <img src="./images/img_rolling_documentation/fig8.jpg"/>
+
+                                <figcaption> fig. 8: Covers</figcaption>
+                            </figure>
+                    </section>
+                    <section>
+                        <h2 class="Rolling_h2">Cover </h2>
+                        <p>I reproduced the cover of the chosen article, Italian edition, year 1, number 6 of 1980. Starting from the colours, I used the exact same green of the original for the title and for one of the three borders, that is the last one created with the <span class="decoration1">box-shadow</span> property.</p><p> The middle border was created with the outlinein a yellow color and the border itself has the same red as the one used for the added title ‘Rolling Stone’ into the style. </p>
+                       <p> Authors and dates of the three elements have a yellow text-decoration, miming the original and the URL’s they do not have any decoration, for greater readability and are in black colour.</p>
+                     <figure id="f07_rolling">
+                                <img src="./images/img_rolling_documentation/fig10.png"/>
+
+                                <figcaption> fig. 8: Cover of </figcaption>
+                            </figure>
+</section>
+<section>
+   <h2 class="Rolling_h2">References </h2>
+
+<ul>      <li>Color Picker <a href="https://imagecolorpicker.com/">https://imagecolorpicker.com/</a></li>
+<br>
+                            <li> Rolling Stone Edizione Italiana <a href="https://picclick.it/Rolling-Stone-Edizione-Italiana-Bob-Marley-233773853592.html"> https://picclick.it/Rolling-Stone-Edizione-Italiana-Bob-Marley-233773853592.html</a> </li>
+                            <br>
+                            <li> Rolling Stone <a href="https://www.rollingstone.it/">https://www.rollingstone.it/</a></li>
+                            <br>
+                            <li>Rolling Stone Wikipedia<a href="https://it.wikipedia.org/wiki/Rolling_Stone">https://it.wikipedia.org/wiki/Rolling_Stone</a></li>
+                          
+                        </ul>
+
+</section>
+                </div>
+            </div>
+            <div id="overlay5" onclick="off('overlay5')">
+                <div class="popup5">
+                    <section>
+                        <h1 class = "h1_raygun">1992</h1>
+                        <p>Grunge typography became increasingly popular in the 1990s. This art movement was spectacular, expressive and rebellious. A messy and chaotic style; based on experimentation, reinvention and destruction, with the main purpose of breaking all the rules. The charm of grunge was built on a basic idea: it had never been seen before. It wasn't just the experimental design of the letters, but the way they were positioned on the page. In fact it appears illegible at first glance because what matters is to communicate; it is not important that the message is read, but it has to be communicative.</p>
+                        <p>David Carson is considered the father of grunge typography. He was one of the most famous and influential graphic designers of the 1990s. His ability to experiment and take risks to create unique designs made him esteemed and imitated by designers around the world. It can be said that his style defined the era of grunge typography. He became famous for his experimental and deconstructive typography designs and the art direction of Ray Gun magazine.</p>
+                        
+                        <figure id="f01_raygun">
+                            <img src=""/>
+                            <figcaption>fig. 1: David Carson's motto</figcaption>
+                        </figure>
+            
+                        <p>Ray Gun is an American alternative rock-and-roll magazine, first published in 1992 in Santa Monica, California. Led by artistic director David Carson, Ray Gun explored the experimental use of typography, starting some of the most original experiments among those that have involved typography in the last twenty years. The result was an abstract, chaotic, unconventional style, not always legible, but incredibly distinctive and recognizable.</p>
+                        <p>The main contents of the magazine were musical artists, pop culture, lifestyle, advertising, celebrity icons.</p>
+                    </section>
+            
+                    <section>
+                        <h2 class = "h2_raygun">Layout</h2>
+                        <h3 class = "h3_raygun">Page organization: columns, paddings and margins</h3>
+                        <p>The background reproduces the sheet of a two-sided magazine, was created using the "background-image" property applied to the div containing the style, and the image of a blank magazine was chosen.</p>
+                        
+                        <figure id="f02_raygun">
+                            <img src=""/>
+                            <figcaption>fig. 2: The empty background with the sheet of a two-sided magazine</figcaption>
+                        </figure>
+                        
+                        <p>The layout is unstructured, there is no formal grid structure, the page is conceptually divided into 4 columns, applying the “column-count: 4” property to the div containing element. The columns are compact, in fact their column-gap is just 5px.</p>
+                        
+                        <figure id="f03_raygun">
+                            <img src=""/>
+                            <img src=""/>
+                            <img src=""/>
+                            <figcaption>fig. 3: Some examples from the original magazine</figcaption>
+                        </figure>
+            
+                        <figure id="f04_raygun">
+                            <img src=""/>
+                            <img src=""/>
+                            <img src=""/>
+                            <figcaption>fig. 4: Some examples of reproduction from the 1992 style</figcaption>
+                        </figure>
+            
+                        <p>It should be noted that some elements are turned slightly to the left. In my case, this rotation was applied every time a blockquote is encountered, using the “transfrom: rotate ()” property (define rotate). In addition, where the references are present, a slight inclination has been applied, using the "transfrom: swek" property.</p>
+                        
+                        <figure id="f05_raygun">
+                            <img src=""/>
+                            <img src=""/>                
+                            <figcaption>fig. 5: Some examples of elements with a slight rotation to the left</figcaption>
+                        </figure>
+            
+                        <h3 class = "h3_raygun">Titles, subtitles, citations and images</h3>
+            
+                        <p>For the reproduction of the title, a grunge-style sans-serif font was chosen, Boycott font, adding some details such as the purple rectangle at the beginning, which was reproduced by selecting the first letter with the pseudo-selector h1 :: first-letter and then adding a padding-left, to create an indent, then the letter was given a background-color and the edges were rounded with border-radius. </p>
+                        <p>In addition there is a barcode, applied to the H1 selector through the background-image property. The barcode is set up differently than its usual one. This artistic choice, wanted by David Carson, was made to make visible and more appreciated, an element such as a barcode, not typically considered in a meaningful way by the reader.</p>
+                        
+                        <figure id="f06_raygun">
+                            <img src=""/>
+                            <img src=""/>                
+                            <figcaption>fig. 6: The original title compared to the 1992 style reproduction</figcaption>
+                        </figure>
+            
+                        <p>Paragraphs have different forms. The diversity in their shape has been reproduced by creating an elliptical div element, using the “shape-outside” property, which is positioned alongside - on the left side - of some paragraphs - selected via javascript- . Since no rules are given to the div to make it visible, the effect obtained is that of an elliptical or rectangular space between one paragraph and another.</p>
+                        <p>In addition it can be seen that some paragraphs are read from right to left, this effect has been recreated thanks to the combination of the properties “direction: rtl” and “unicode-bidi: bidi-override”. Those paragraphs are usually not justified, the latter characteristic being typical for the rest of the paragraphs.</p>
+                        <p>Another typical Raygun feature is the different color of the text. Since there is almost no distance between the paragraphs, to make the division into columns more visible, a different color is used, usually black and gray alternate.</p>
+            
+                        <figure id="f07_raygun">
+                            <img src=""/>              
+                            <figcaption>fig. 7: A focus on the different colors used for the text in order to highlight the column structure</figcaption>
+                        </figure>
+            
+                        <p>In the Raygun magazine it is very common to find parts of the text underlined, usually in black. For this reason, every time there is a quotation inside the paragraph (“<q>”), a different type of font has been applied to give it greater prominence: Typenoksidi regular Font. To recreate the effect highlighted, the font color is white and the background-color is black.</p>
+                        
+                        <figure id="f08_raygun">
+                            <img src=""/> 
+                            <img src=""/> 
+                            <img src=""/>              
+                            <figcaption>fig. 8: A comparison between the original black underlined text and the reproduction</figcaption>
+                        </figure>
+            
+                        <p>The titles of the selections have the letters spaced apart, applying the letter-spacing property with a value of 5px to the h2 element.</p>
+                        
+                        <figure id="f09_raygun">
+                            <img src=""/> 
+                            <img src=""/>            
+                            <figcaption>fig. 9: The h2 element</figcaption>
+                        </figure>
+            
+                        <p>Some images are in color, but a 40% sepia filter is applied to them (using the “filter” property). Other images are instead in black and white, in this case the “filter” property was used with the values: grayscale (100%) saturated (50%). In fact, it is typical for raygun magazine to have the coexistence of colored images and black and white images on the page. This alternation is made possible by the selector “: nth-child (odd)”, which, applied to the section element, allows you to select the odd sections, then through a hierarchical selector you can apply the filter to the images of the section.</p>
+                        <p>For the descriptions of the images - where present - the font used is Nimbus Sans Becker PBla Regular. In addition, the space between characters and words is less than the usual one, practically non-existent. This effect has been recreated, horizontally, with the “letter-spacing” property with value -1 and, vertically, with the “line-height” property with value 0.7. The description of the images usually overlaps the image. To achieve this overlap, the "position" property with relative value was used, so it was possible to move the div element, containing the description, in relation to its natural position. The shift took place with “top: -130px” and “right: 6px”.</p>
+            
+                        <figure id="f10_raygun">
+                            <img src=""/> 
+                            <img src=""/>            
+                            <figcaption>fig. 10: The figure captions compared</figcaption>
+                        </figure>
+            
+                        <h3 class = "h3_raygun">Decorations</h3>
+            
+            
+                        <h2 class = "h2_raygun">Typography</h2>
+            
+                        <p>As for the fonts used, it is typical of the grunge style to use multiple fonts on a single page. All fonts used are san-serif fonts. In some cases they are enriched with details, such as scratches, to express originality and to be unconventional.</p>
+                        <p>The font used for the titles is Boycott font, a grungy display font with noisy design and a little rough around the edges. </p>
+                        
+                        <figure id="f11_raygun">
+                            <img src=""/>           
+                            <figcaption>fig. 11: The title font</figcaption>
+                        </figure>
+            
+                        <p>For the h2 elements I have chosen the DINfun Pro fonts which are special versions of the classic DIN 1451 Mittelschrift font (these new fonts are very different from the serious and concrete roots of the original font). Specifically, the variant used is DINfunProCounterless, where the counters of the letters are full.</p>
+                        
+                        <figure id="f12_raygun">
+                            <img src=""/>            
+                            <figcaption>fig. 12: The h2 elements font</figcaption>
+                        </figure>
+            
+                        <p>For the paragraphs the font chosen is Enuverse font, created specifically for Ray Gun magazine. Used for the first time in the issue number 59 (1998).</p>
+            
+                        <figure id="f13_raygun">
+                            <img src=""/>            
+                            <figcaption>fig. 13: The paragraphs font</figcaption>
+                        </figure>
+                        <p>For internal citations I used Typenoksidi regular Font. A typewriter font, which sometimes has slight irregularities, to give a more realistic effect.</p>
+            
+                        <figure id="f14_raygun">
+                            <img src=""/>            
+                            <figcaption>fig. 14: The internal citations font</figcaption>
+                        </figure>
+                        
+                        <p>For blockquotes the font used is the BV variant of the DISTRO font, in which the outline is marked and the body of the character is empty to give greater thickness.</p>
+            
+                        <figure id="f15_raygun">
+                            <img src=""/>
+                            <img src=""/>                       
+                            <figcaption>fig. 15: The blockquotes font</figcaption>
+                        </figure>
+            
+                        <p>The DISTRO M variant was used for the names of people, places and entities, very common in grunge typography as it has several irregularities from a font-weight point of view.</p>
+            
+                        <figure id="f16_raygun">
+                            <img src=""/>
+                            <img src=""/>                       
+                            <figcaption>fig. 16: Places, people, entities</figcaption>
+                        </figure>
+            
+                        <p>Nimbus Sans Becker PBla Regular font was used for the figure captions.</p>
+            
+                        <figure id="f17_raygun">
+                            <img src=""/>
+                            <img src=""/>                       
+                            <figcaption>fig. 17: The figure captions font</figcaption>
+                        </figure>
+            
+                        <p>The Fliped font was used for lists since it has scratches, a typical characteristic of the grunge style.</p>
+            
+                        <figure id="f18_raygun">
+                            <img src=""/>
+                            <img src=""/>                       
+                            <figcaption>fig. 18: The lists font</figcaption>
+                        </figure>
+            
+                        <h2 class = "h2_raygun">Colors</h2>
+                        <ul>
+                            <p>As for the colors, the following were chosen:</p>
+                            <li>white (darker rgb 248,244,235) for the background.</li>
+                            <li>green (rgb 42,82,51) for the color of the section titles.</li>
+                            <li>purple (142,127,146) for the decorative elements. Names, places, entities highlighted in the paragraphs and details in the titles.</li>
+                            <li>black and gray for the color of the paragraphs, which alternate both to make the text more readable.</li>
+                        </ul>
+            
+                    </section>
+                    <section>
+                        <h2 class = "h2_raygun">Cover</h2>
+            
+                        <p>In reproducing the cover I was inspired by the release number 39, in 1996. The font used for the title and for the titles of the articles is DINfunProCounterless. The articles are centered and slightly inclined as in the original. On the backgorund, instead of Beck, the artist to whom the release is dedicated, there is the image of Alice in Wonderland's rabbit in a grunge version. The image is blurred as in the original to make the text more readable.</p>
+                        
+                        <figure id="f19_raygun">
+                            <img src=""/>                      
+                            <figcaption>fig. 19: The cover from which the 1992 one was inspired</figcaption>
+                        </figure>
+                    </section>
+            
+                    <section>
+                        <h2 class= "h2_raygun">References</h2>
+                        <ul>
+                            <li> <a href="https://it.wikipedia.org/wiki/Ray_Gun">https://it.wikipedia.org/wiki/Ray_Gun</a></li>
+                            <li> <a href="https://en.wikipedia.org/wiki/Ray_Gun_(magazine)">https://en.wikipedia.org/wiki/Ray_Gun_(magazine)</a></li>
+                            <li>Martin Scott Jarrett, Ray Gun: The Bible of Music and Style (first published in 2019) </li>
+                        </ul>
+                    </section>
+               </div>
+            </div> 
+
+            <div id="overlay5" onclick="off('overlay5')">
+                <div class="popup5">
+               </div>
+            </div> 
+
+
+        <section class="section1">
+           <div class="container">
+                <div class="subcontainer1">
+                    <div class="div1">
+                        <div class="title">
+                        <p>1450</p>
+                        </div>
+                        <a href="#" onclick="on('overlay1')"><img src="./img/manoscritto.jpg" alt="omini"></a>
+                    </div>
+                    <div class="div2">
+                        <div class="title">
+                            <p>1860</p>
+                        </div>
+                        <a href="#" onclick="on('overlay2')"><img src="./img/macchina_scrivere.jpg" alt="omini"></a>
+                    </div>
+                    <div class="div3">
+                        <div class="title">
+                            <p>1920</p>
+                        </div>
+                        <a href="#"  onclick="on('overlay3')"><img src="./img/bauhaus_img.jpg" alt="omini"></a>
+                    </div>
+                </div>
+                <div class="subcontainer2">
+                    <div class="div4">
+                        <div class="title">
+                            <p>1970</p>
+                        </div>
+                        <a href="#" onclick="on('overlay4')"><img src="./img/Rolling_Stones.jpg" alt="omini"></a>
+                    </div>
+                    <div class="div5">
+                        <div class="title">
+                            <p>1992</p>
+                        </div>
+                        <a href="#" onclick="on('overlay5')"><img src="./img/raygun.jfif" alt="omini"></a>
+                    </div>
+                    <div class="div6">
+                        <div class="title">
+                            <p>2040</p>
+                        </div>
+                        <a href="#" onclick="on('overlay6')"><img src="./img/futuro.jpg" alt="omini"></a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+		
+		<footer>
+            <span class="footer_content">
+                All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2020 © Gemma Centrone, Francesca Genovese and Giulia Manganelli. 
+            </span>
+        </footer>
+    </body>
+</html>
