@@ -31,7 +31,7 @@ body {
     column-fill: balance;
 
     padding:10px;
-    background-image: url('/images/backRolling.jpg');
+    background-image: url('../../images/backRolling.jpg');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center center;
