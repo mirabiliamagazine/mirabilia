@@ -1,11 +1,11 @@
 @font-face{
     font-family: 'Rene';
-    src: url('/fonts/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf');
+    src: url('../../fonts/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf');
 
 }
 @font-face{
     font-family: 'Roya';
-   src: url('/fonts/Royalacid.ttf');
+   src: url('../../fonts/Royalacid.ttf');
 
 }
 body {
