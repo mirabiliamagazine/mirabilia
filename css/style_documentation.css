@@ -10,7 +10,7 @@
 /*-------------------------------------------------------------------------------------*/
 @font-face {
 	font-family: "seagram";
-	src: url(../../fonts/seagram.ttf);
+	src: url(../font/seagram.ttf);
 	 
    }
 	
@@ -19,39 +19,39 @@
 
 @font-face {
   font-family: "franklin";
-  src: url(../../fonts/Franklin.otf);
+  src: url(../font/Franklin.otf);
 
 }
 
 @font-face {
   font-family: "deutch";
-  src: url(../../fonts/deutch.ttf);
+  src: url(../font/deutch.ttf);
 }
 
 @font-face {
   font-family: "didot";
-  src: url(../../fonts/didot.ttf);
+  src: url(../font/didot.ttf);
 
 }
 
 /*---------------------------------------------------------------------*/
 @font-face{
   font-family: 'Bayer';
-  src: url('/fonts/BayerUniversal.ttf');
+  src: url('../font/BayerUniversal.ttf');
 }
 
 @font-face{
   font-family: 'Prime';
-  src: url(../../fonts/primerPrint.ttf);
+  src: url(../font/primerPrint.ttf);
 }
 @font-face{
     font-family: 'Rene';
-    src: url(../../fonts/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf);
+    src: url(../font/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf);
 
 }
 @font-face{
     font-family: 'Roya';
-   src: url(../../fonts/Royalacid.ttf);
+   src: url(../font/Royalacid.ttf);
 
 }
 
