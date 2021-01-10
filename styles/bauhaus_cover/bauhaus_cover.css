@@ -179,7 +179,7 @@ border-right: 20px solid #ffde17;
 .more1{
 
   animation-name: animation;
-  background: url('/images/coniglio_gemma.png');
+  background: url('../../images//coniglio_gemma.png');
   background-repeat: no-repeat;
   background-size: contain;
   animation-duration: 5s;
@@ -200,7 +200,7 @@ transform: rotate(-10deg);
   animation-name: animation1;
   animation-duration: 5s;
   border-style: solid;
-  background: url('/images/coniglio_gemma.png');
+  background: url('../../images//coniglio_gemma.png');
   background-repeat: no-repeat;
   background-size: contain;
   animation-iteration-count: infinite;
