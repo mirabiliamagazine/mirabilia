@@ -10,7 +10,7 @@
 /*-------------------------------------------------------------------------------------*/
 @font-face {
 	font-family: "seagram";
-	src: url(../../fonts/seagram.ttf);
+	src: url(../fonts/seagram.ttf);
 	 
    }
 	
@@ -19,43 +19,96 @@
 
 @font-face {
   font-family: "franklin";
-  src: url(../../fonts/Franklin.otf);
+  src: url(../fonts/Franklin.otf);
 
 }
 
 @font-face {
   font-family: "deutch";
-  src: url(../../fonts/deutch.ttf);
+  src: url(../fonts/deutch.ttf);
 }
 
 @font-face {
   font-family: "didot";
-  src: url(../../fonts/didot.ttf);
+  src: url(../fonts/didot.ttf);
 
 }
 
 /*---------------------------------------------------------------------*/
 @font-face{
   font-family: 'Bayer';
-  src: url('/fonts/BayerUniversal.ttf');
+  src: url(../fonts/BayerUniversal.ttf);
 }
 
 @font-face{
   font-family: 'Prime';
-  src: url(../../fonts/primerPrint.ttf);
+  src: url(../fonts/primerPrint.ttf);
 }
 @font-face{
     font-family: 'Rene';
-    src: url(../../fonts/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf);
+    src: url(../fonts/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf);
 
 }
 @font-face{
     font-family: 'Roya';
-   src: url(../../fonts/Royalacid.ttf);
+   src: url(../fonts/Royalacid.ttf);
 
 }
 
 /*-------------------------------------------------------------------------*/
+@font-face{
+	font-family: 'DINfunProCounterless';
+	src: url(../fonts/DINfunProCounterless.ttf)
+}
+
+@font-face{
+	font-family: 'typenoksidi_regular';
+	src: url(../fonts/typenoksidi_regular.ttf); 
+}
+
+@font-face{
+	font-family: 'dosis.medium';
+	src: url(../fonts/dosis.medium.ttf);
+}
+@font-face{
+	font-family: 'BOYCOTT';
+	src: url(../fonts/BOYCOTT.ttf);
+}
+
+
+.h1_raygun{
+  font-family:'BOYCOTT' ;
+  text-align: center;
+   font-size: 300%;
+   letter-spacing: 0.3em
+}
+
+.h2_raygun {
+  font-family:'DINfunProCounterless' ;
+  text-transform: uppercase;
+  font-size: 150%;
+   letter-spacing: 0.1em;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.h3_raygun{
+  font-family: 'typenoksidi_regular';
+font-size: 120%;
+    letter-spacing: 0.1em;
+    margin-top: 8%;
+}
+
+.popup6 h1{
+  font-family: 'dosis.medium';
+  font-size: 250%;
+
+}
+
+.popup6 h2, .popup6 h3{
+  font-family: 'dosis.medium';
+}
+
 
 @font-face{
 	font-family: 'BOYCOTT';
@@ -126,6 +179,28 @@ html{
 body{
   margin: 0px;
 }
+.popup5 figcaption {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.popup6 figcaption {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12px;
+}
+a.mirabilia1{
+  float: left;
+  padding: 0 0 0 1rem;
+  font-size: 30px!important;
+    float: left!important;
+    margin-top: 3;
+    position: relative;
+    bottom: 20px;
+}
+
+
+
 
 .topnav {
   overflow: hidden;
@@ -143,7 +218,9 @@ body{
   text-align: right;
   background-color: white;
 }
-
+.img100 {
+  width:100%;
+}
 .topnav_mobile{
   display: none;
 }
@@ -474,6 +551,18 @@ footer {
   margin: auto;
   text-align: justify;
 }
+.popup5 section{
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}
+
+.popup6 section{
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}
+
 
 
 
@@ -527,6 +616,9 @@ footer {
 .popup1 img{
   
   width: 50%;
+}
+#f01_raygun img{
+  width:100%;
 }
 
 .popup1 figure{
@@ -648,6 +740,10 @@ footer {
   width: 50%;
   margin-right: 8px;
 } 
+.img33 {
+width:100%;
+
+}
 
 .quarta_parte{
   display: flex;
@@ -718,6 +814,9 @@ text-align: center;
 #f02_rolling img{
   width: 100%;
 
+}
+#f07_rolling img {
+    width: 60%;
 }
 .Bauhaus_h3{
 
@@ -871,7 +970,19 @@ height: 30vh;
   width: 100%;
 }
 #f08_bauhaus img{
+  width: 80%;
+}
+#f010_bauhaus img{
   width: 100%;
+
+}
+#f011_bauhaus img{
+  width: 100%;
+
+}
+#f012_bauhaus img{
+  width: 100%;
+
 }
 
 .popup3 figcaption{
@@ -916,23 +1027,81 @@ width: 50%;
   width: 100%;
 }
 #f09_bauhaus img{
-  width: 130%;
-
-}
-#f010_bauhaus img{
-  width: 150%;
-
-}
-#f011_bauhaus img{
   width: 100%;
-
 }
+#f01_futuro img{
+  width: 100%;
+}	
+#f02_futuro img{
+  width: 100%;
+}
+	
+#f00_futuro img{
+  width: 100%;
+}
+#f09_futuro img{
+  width: 100%;
+}
+#f11_futuro img{
+  width: 100%;
+}
+.img50{
+width:50%;
+  
+}
+.img50 img{
+width: 100%;
+}
+#f06_raygun .img50 {
+width: 100%;
+}
+img33{
+width: 100%;
+}
+#f07_raygun img{
+width:100%;
+  
+}
+#f14_raygun img{
+width:100%;
+  
+}
+#f04_raygun img{
+width:100%;
+  
+}
+#f18_raygun img{
+width:100%;
+  
+}
+#f17_raygun img{
+width:50%;
+  
+}
+#f16_raygun img{
+width:100%;
+  
+}
+#f13_raygun img{
+width:100%;
+  
+}
+#f10_raygun .img50{
+width:50%;
+  
+}
+#f08_raygun .img33{
+width:60%;
+  
+}
+
 .popup3 p, .popup3 ol, .popup3 ul, .popup3 figcaption{
   font-family: 'Roboto-Light';
 }
 .popup4 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
   font-family: 'Roboto-Light';
 }
+<<<<<<< HEAD
 
 a.mirabilia1{
   float: left;
@@ -940,6 +1109,14 @@ a.mirabilia1{
   padding: 0 0 0 1rem;
 }
 
+=======
+.popup5 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
+  font-family: 'Roboto-Light';
+}
+.popup6 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
+  font-family: 'Roboto-Light';
+}
+>>>>>>> c2b409752d965b5f26fc0177234f8ba6b50eb28f
 
 
 /*------------------------------------------------------------------------------------------*/
