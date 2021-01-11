@@ -929,7 +929,12 @@ width: 50%;
 .popup4 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
   font-family: 'Roboto-Light';
 }
-
+.popup5 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
+  font-family: 'Roboto-Light';
+}
+.popup6 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
+  font-family: 'Roboto-Light';
+}
 
 
 /*------------------------------------------------------------------------------------------*/
