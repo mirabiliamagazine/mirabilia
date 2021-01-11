@@ -666,7 +666,7 @@
 </section>
                 </div>
             </div>
-            <div id="overlay5" onclick="off('overlay5')">
+           <div id="overlay5" onclick="off('overlay5')">
                 <div class="popup5">
                     <section>
                         <h1 class = "h1_raygun">1992</h1>
@@ -685,14 +685,14 @@
                     <section>
                         <h2 class = "h2_raygun">Layout</h2>
                         <h3 class = "h3_raygun">Page organization: columns, paddings and margins</h3>
-                        <p>The background reproduces the sheet of a two-sided magazine, was created using the "background-image" property applied to the div containing the style, and the image of a blank magazine was chosen.</p>
+                        <p>The background reproduces the sheet of a two-sided magazine, was created using the <span class="decoration1">"background-image"</span> property applied to the div containing the style, and the image of a blank magazine was chosen.</p>
                         
                         <figure id="f02_raygun">
                             <img src=""/>
                             <figcaption>fig. 2: The empty background with the sheet of a two-sided magazine</figcaption>
                         </figure>
                         
-                        <p>The layout is unstructured, there is no formal grid structure, the page is conceptually divided into 4 columns, applying the “column-count: 4” property to the div containing element. The columns are compact, in fact their column-gap is just 5px.</p>
+                        <p>The layout is unstructured, there is no formal grid structure, the page is conceptually divided into 4 columns, applying the <span class="decoration1">“column-count: 4”</span> property to the div containing element. The columns are compact, in fact their <span class="decoration1">column-gap is just 5px</span>.</p>
                         
                         <figure id="f03_raygun">
                             <img src=""/>
@@ -708,7 +708,7 @@
                             <figcaption>fig. 4: Some examples of reproduction from the 1992 style</figcaption>
                         </figure>
             
-                        <p>It should be noted that some elements are turned slightly to the left. In my case, this rotation was applied every time a blockquote is encountered, using the “transfrom: rotate ()” property (define rotate). In addition, where the references are present, a slight inclination has been applied, using the "transfrom: swek" property.</p>
+                        <p>It should be noted that some elements are turned slightly to the left. In my case, this rotation was applied every time a blockquote is encountered, using the <span class="decoration1">“transfrom: rotate ()”</span> property (define rotate). In addition, where the references are present, a slight inclination has been applied, using the <span class="decoration1">"transfrom: swek"</span> property.</p>
                         
                         <figure id="f05_raygun">
                             <img src=""/>
@@ -718,8 +718,8 @@
             
                         <h3 class = "h3_raygun">Titles, subtitles, citations and images</h3>
             
-                        <p>For the reproduction of the title, a grunge-style sans-serif font was chosen, Boycott font, adding some details such as the purple rectangle at the beginning, which was reproduced by selecting the first letter with the pseudo-selector h1 :: first-letter and then adding a padding-left, to create an indent, then the letter was given a background-color and the edges were rounded with border-radius. </p>
-                        <p>In addition there is a barcode, applied to the H1 selector through the background-image property. The barcode is set up differently than its usual one. This artistic choice, wanted by David Carson, was made to make visible and more appreciated, an element such as a barcode, not typically considered in a meaningful way by the reader.</p>
+                        <p>For the reproduction of the title, a grunge-style sans-serif font was chosen, <span class="decoration1">Boycott font</span>, adding some details such as the purple rectangle at the beginning, which was reproduced by selecting the first letter with the pseudo-selector  <span class="decoration1">h1 :: first-letter</span> and then adding a padding-left, to create an indent, then the letter was given a background-color and the edges were rounded with border-radius. </p>
+                        <p>In addition there is a barcode, applied to the H1 selector through the  <span class="decoration1">background-image</span> property. The barcode is set up differently than its usual one. This artistic choice, wanted by David Carson, was made to make visible and more appreciated, an element such as a barcode, not typically considered in a meaningful way by the reader.</p>
                         
                         <figure id="f06_raygun">
                             <img src=""/>
@@ -727,8 +727,8 @@
                             <figcaption>fig. 6: The original title compared to the 1992 style reproduction</figcaption>
                         </figure>
             
-                        <p>Paragraphs have different forms. The diversity in their shape has been reproduced by creating an elliptical div element, using the “shape-outside” property, which is positioned alongside - on the left side - of some paragraphs - selected via javascript- . Since no rules are given to the div to make it visible, the effect obtained is that of an elliptical or rectangular space between one paragraph and another.</p>
-                        <p>In addition it can be seen that some paragraphs are read from right to left, this effect has been recreated thanks to the combination of the properties “direction: rtl” and “unicode-bidi: bidi-override”. Those paragraphs are usually not justified, the latter characteristic being typical for the rest of the paragraphs.</p>
+                        <p>Paragraphs have different forms. The diversity in their shape has been reproduced by creating an elliptical div element, using the  <span class="decoration1">“shape-outside”</span> property, which is positioned alongside - on the left side - of some paragraphs - selected via javascript- . Since no rules are given to the div to make it visible, the effect obtained is that of an elliptical or rectangular space between one paragraph and another.</p>
+                        <p>In addition it can be seen that some paragraphs are read from right to left, this effect has been recreated thanks to the combination of the properties  <span class="decoration1">“direction: rtl”</span> and  <span class="decoration1">“unicode-bidi: bidi-override”</span>. Those paragraphs are usually not justified, the latter characteristic being typical for the rest of the paragraphs.</p>
                         <p>Another typical Raygun feature is the different color of the text. Since there is almost no distance between the paragraphs, to make the division into columns more visible, a different color is used, usually black and gray alternate.</p>
             
                         <figure id="f07_raygun">
@@ -736,7 +736,7 @@
                             <figcaption>fig. 7: A focus on the different colors used for the text in order to highlight the column structure</figcaption>
                         </figure>
             
-                        <p>In the Raygun magazine it is very common to find parts of the text underlined, usually in black. For this reason, every time there is a quotation inside the paragraph (“<q>”), a different type of font has been applied to give it greater prominence: Typenoksidi regular Font. To recreate the effect highlighted, the font color is white and the background-color is black.</p>
+                        <p>In the Raygun magazine it is very common to find parts of the text underlined, usually in black. For this reason, every time there is a quotation inside the paragraph (“<q>”), a different type of font has been applied to give it greater prominence:  <span class="decoration1">Typenoksidi regular</span> Font. To recreate the effect highlighted, the font color is white and the background-color is black.</p>
                         
                         <figure id="f08_raygun">
                             <img src=""/> 
@@ -745,7 +745,7 @@
                             <figcaption>fig. 8: A comparison between the original black underlined text and the reproduction</figcaption>
                         </figure>
             
-                        <p>The titles of the selections have the letters spaced apart, applying the letter-spacing property with a value of 5px to the h2 element.</p>
+                        <p>The titles of the selections have the letters spaced apart, applying the  <span class="decoration1">letter-spacing</span> property with a value of 5px to the h2 element.</p>
                         
                         <figure id="f09_raygun">
                             <img src=""/> 
@@ -753,8 +753,8 @@
                             <figcaption>fig. 9: The h2 element</figcaption>
                         </figure>
             
-                        <p>Some images are in color, but a 40% sepia filter is applied to them (using the “filter” property). Other images are instead in black and white, in this case the “filter” property was used with the values: grayscale (100%) saturated (50%). In fact, it is typical for raygun magazine to have the coexistence of colored images and black and white images on the page. This alternation is made possible by the selector “: nth-child (odd)”, which, applied to the section element, allows you to select the odd sections, then through a hierarchical selector you can apply the filter to the images of the section.</p>
-                        <p>For the descriptions of the images - where present - the font used is Nimbus Sans Becker PBla Regular. In addition, the space between characters and words is less than the usual one, practically non-existent. This effect has been recreated, horizontally, with the “letter-spacing” property with value -1 and, vertically, with the “line-height” property with value 0.7. The description of the images usually overlaps the image. To achieve this overlap, the "position" property with relative value was used, so it was possible to move the div element, containing the description, in relation to its natural position. The shift took place with “top: -130px” and “right: 6px”.</p>
+                        <p>Some images are in color, but a 40% sepia filter is applied to them (using the  <span class="decoration1">“filter”</span> property). Other images are instead in black and white, in this case the  <span class="decoration1">“filter”</span> property was used with the values:  <span class="decoration1">grayscale (100%) saturated (50%)</span>. In fact, it is typical for raygun magazine to have the coexistence of colored images and black and white images on the page. This alternation is made possible by the selector  <span class="decoration1">“: nth-child (odd)”</span>, which, applied to the section element, allows you to select the odd sections, then through a hierarchical selector you can apply the filter to the images of the section.</p>
+                        <p>For the descriptions of the images - where present - the font used is  <span class="decoration1">Nimbus Sans Becker PBla Regular</span>. In addition, the space between characters and words is less than the usual one, practically non-existent. This effect has been recreated, horizontally, with the  <span class="decoration1">“letter-spacing”</span> property with value  <span class="decoration1">-1</span> and, vertically, with the <span class="decoration1">“line-height”</span> property with value  <span class="decoration1">0.7</span>. The description of the images usually overlaps the image. To achieve this overlap, the <span class="decoration1">"position"</span> property with relative value was used, so it was possible to move the div element, containing the description, in relation to its natural position. The shift took place with <span class="decoration1">“top: -130px”</span> and <span class="decoration1">“right: 6px”</span>.</p>
             
                         <figure id="f10_raygun">
                             <img src=""/> 
@@ -775,27 +775,27 @@
                             <figcaption>fig. 11: The title font</figcaption>
                         </figure>
             
-                        <p>For the h2 elements I have chosen the DINfun Pro fonts which are special versions of the classic DIN 1451 Mittelschrift font (these new fonts are very different from the serious and concrete roots of the original font). Specifically, the variant used is DINfunProCounterless, where the counters of the letters are full.</p>
+                        <p>For the h2 elements I have chosen the <span class="decoration1">DINfun Pro fonts</span> which are special versions of the classic <span class="decoration1">DIN 1451 Mittelschrift font</span> (these new fonts are very different from the serious and concrete roots of the original font). Specifically, the variant used is <span class="decoration1">DINfunProCounterless</span>, where the counters of the letters are full.</p>
                         
                         <figure id="f12_raygun">
                             <img src=""/>            
                             <figcaption>fig. 12: The h2 elements font</figcaption>
                         </figure>
             
-                        <p>For the paragraphs the font chosen is Enuverse font, created specifically for Ray Gun magazine. Used for the first time in the issue number 59 (1998).</p>
+                        <p>For the paragraphs the font chosen is <span class="decoration1">Enuverse font</span>, created specifically for Ray Gun magazine. Used for the first time in the issue number 59 (1998).</p>
             
                         <figure id="f13_raygun">
                             <img src=""/>            
                             <figcaption>fig. 13: The paragraphs font</figcaption>
                         </figure>
-                        <p>For internal citations I used Typenoksidi regular Font. A typewriter font, which sometimes has slight irregularities, to give a more realistic effect.</p>
+                        <p>For internal citations I used <span class="decoration1">Typenoksidi regular Font</span>. A typewriter font, which sometimes has slight irregularities, to give a more realistic effect.</p>
             
                         <figure id="f14_raygun">
                             <img src=""/>            
                             <figcaption>fig. 14: The internal citations font</figcaption>
                         </figure>
                         
-                        <p>For blockquotes the font used is the BV variant of the DISTRO font, in which the outline is marked and the body of the character is empty to give greater thickness.</p>
+                        <p>For blockquotes the font used is the BV variant of the <span class="decoration1">DISTRO font</span>, in which the outline is marked and the body of the character is empty to give greater thickness.</p>
             
                         <figure id="f15_raygun">
                             <img src=""/>
@@ -803,7 +803,7 @@
                             <figcaption>fig. 15: The blockquotes font</figcaption>
                         </figure>
             
-                        <p>The DISTRO M variant was used for the names of people, places and entities, very common in grunge typography as it has several irregularities from a font-weight point of view.</p>
+                        <p>The <span class="decoration1">DISTRO M variant</span> was used for the names of people, places and entities, very common in grunge typography as it has several irregularities from a font-weight point of view.</p>
             
                         <figure id="f16_raygun">
                             <img src=""/>
@@ -811,7 +811,7 @@
                             <figcaption>fig. 16: Places, people, entities</figcaption>
                         </figure>
             
-                        <p>Nimbus Sans Becker PBla Regular font was used for the figure captions.</p>
+                        <p><span class="decoration1">Nimbus Sans Becker PBla Regular font</span> was used for the figure captions.</p>
             
                         <figure id="f17_raygun">
                             <img src=""/>
@@ -819,7 +819,7 @@
                             <figcaption>fig. 17: The figure captions font</figcaption>
                         </figure>
             
-                        <p>The Fliped font was used for lists since it has scratches, a typical characteristic of the grunge style.</p>
+                        <p><span class="decoration1">The Fliped font</span> was used for lists since it has scratches, a typical characteristic of the grunge style.</p>
             
                         <figure id="f18_raygun">
                             <img src=""/>
@@ -840,7 +840,7 @@
                     <section>
                         <h2 class = "h2_raygun">Cover</h2>
             
-                        <p>In reproducing the cover I was inspired by the release number 39, in 1996. The font used for the title and for the titles of the articles is DINfunProCounterless. The articles are centered and slightly inclined as in the original. On the backgorund, instead of Beck, the artist to whom the release is dedicated, there is the image of Alice in Wonderland's rabbit in a grunge version. The image is blurred as in the original to make the text more readable.</p>
+                        <p>In reproducing the cover I was inspired by the release number 39, in 1996. The font used for the title and for the titles of the articles is <span class="decoration1">DINfunProCounterless</span>. The articles are centered and slightly inclined as in the original. On the backgorund, instead of Beck, the artist to whom the release is dedicated, there is the image of Alice in Wonderland's rabbit in a grunge version. The image is blurred as in the original to make the text more readable.</p>
                         
                         <figure id="f19_raygun">
                             <img src=""/>                      
@@ -859,12 +859,122 @@
                </div>
             </div> 
 
-            <div id="overlay5" onclick="off('overlay5')">
-                <div class="popup5">
-               </div>
-            </div> 
+            <div id="overlay6" onclick="off('overlay6')">
+                <div class="popup6">
+                
+                <section>
+                
+                    <h1 class="futuro_h1">2040</h1>
+                    <p>Wondering what web design and communication will look like in the future I imagined displays that will appear exactly where we need them, content will appear everywhere and the user interface will not be in the form of a screen as we know it today.</p>
+                    <p>For this reason, I decided to reproduce a hologram, or a parallactic image obtained through the use of a laser light.</p> <p>This technology is able to represent this new “ethereal design” at its best, giving a greater sense of reality to those who use it.</p>
+                    <p>The flat, two-dimensional design will be enriched not only from a visual point of view, but will also involve other senses such as hearing.</p> <p>There will be greater connection with the user, for example the new devices will be able to recognize the user's mood and consequently change color tones and auditory tones.</p>
+                </section>
+                <section>
+                    <h2 class="futuro_h2"> Layout </h2>
+                        <h3 class=futuro_h3>Page organization</h3>
+                            <p>The layout is organized as to reproduce a hologram. The <span class="decoration1">"linear-gradient"</span> css function has been applied to the background of the container div element, which represents the intangible but projected <span class="decoration1">"display"</span> of the hologram, so as to be able to uniformly mix colors - of light shades tending to white and gray – and to create a gradient and therefore more realistic effect.</p>
+                            <p>The text of the paragraphs is justified, through the property <span class="decoration1">"text-align"</span> and the corresponding value <span class="decoration1">"justify"</span>.</p><p> In addition, the text is organized in a single column, positioned in the center of the div element, thanks to the <span class="decoration1">"margin"</span> property and its <span class="decoration1">"auto"</span> value.</p><p> Finally, the top and bottom padding allowed me to give more airiness to the text.</p> 
+                        
+                        <figure id="f01_futuro">
+                                            <img src="./images/img_futuro_documentation/futuro_1.PNG"/>
+                                            <figcaption>fig. 1: </figcaption>
+                        </figure>
+                    
+                        <p>Under the container div element, I simulated the laser light from which the hologram is obtained. </p>
+                        <p>A  div element was firstly created using javascript. The div is fixed under the hologram through the <span class="decoration1">position property</span> with <span class="decoration1">fixed value</span>, then it is positioned with the bottom, top and right properties.</p>
+                        <p>Different shades of color were used through the <span class="decoration1">box-shadow </span> property and then the floating effect was created using the <span class="decoration1">@keyframe rule</span>, which uses the <span class="decoration1">"transform"</span> property to apply a vertical transition.</p>
+            
+                        <figure id="f02_futuro">
+                                    <img src="./images/img_futuro_documentation/futuro_2.PNG"/>
+                                    <figcaption>fig. 2: </figcaption>
+                        </figure>
+                        <p>On the left side of the "hologram" there are three round shaped buttons of different colors.</p><p> By clicking on one of them, it is possible to change the colors and the sound background (specify which one) based on the user’s mood. For this reason, through javascript, each button is associated with the <span class="decoration1">"onclick"</span> event, which calls a javascript function that applies a different style sheet.</p>
+                        <p>The graphic details of the user interaction were created with the <span class="decoration1">": hover"</span> selector, which changes <span class="decoration1">box-shadw</span> and <span class="decoration1">opacity</span> level of the buttons when the user passes over a button with the mouse.</p>
 
+                            <figure id="f03_futuro">
+                                    <img src="./images/img_futuro_documentation/futuro_3.PNG"/>
+                                    <figcaption>fig. 3: </figcaption>
+            </section>
+            <section>
+                        <h3 class="futuro_h3">TITLES, SUBTITLES, CITATIONS AND IMAGES</h3>
+                        
+                        <p>The title is positioned to the center. A glitch effect has been applied to simulate graphic display errors, typical of holographic transmissions.</p><p> The effect was created via css. First of all, I tripled the text, each of the three versions of the text has the <span class="decoration1">text-shadow</span> property with a different value (color), plus the shadow of the duplicates is positioned with a different height than the text.</p> 
+                        <p>The first copy of the text overlaps before the h1 (original) element thanks to the psuedoselector <span class="decoration1">:: after</span>, while the other copy is positioned below the text with the psuedoselector <span class="decoration1">:: before</span>. I then created the animation with the <span class="decoration1">@keyframe</span> rule and through the clip-path properties I gradually show different portions of the text.</p>
+<figure id="f04_futuro">               
+ <div class="terza_parte_futuro">
+                        
+                                    <img src="./images/img_futuro_documentation/futuro_4.PNG"/>
+                        </div>
+                                    <figcaption>fig. 4: </figcaption>
+                        </figure>
 
+                        
+                        <p>The h2 elements are in a central position, they have a <span class="decoration1">letter-spacing of 10px.</span> </p>
+                        <p>The letters are all in uppercase, via the <span class="decoration1">text-transfrom</span> property with value uppercase.</p><p> In addition, the shadow box has been modulated so that the outlines of the text have a <span class="decoration1">gradient color</span>, to give the text a neon effect (brightness).</p>
+
+                        <figure id="f05_futuro">
+                                    <img src="./images/img_futuro_documentation/futuro_5.PNG"/>
+                                    <figcaption>fig. 5: </figcaption>
+                        </figure>
+                        <p>Paragraphs and lists are justified and have a <span class="decoration1">font size of 120%</span>.</p><p> They are centered in the containing div element.</p>
+                        <p>A glitch effect has been applied to the blockquotes, created differently than the glitch effect of the h1 element.</p><p> In this case through the <span class="decoration1">@keyframe</span> rule the <span class="decoration1">text-shadow</span> is modulated gradually and vertically, by applying the <span class="decoration1">transfrom property</span> it is possible to implement a vertical translation.</p>
+                        <figure id="f06_futuro">
+                                    <img src="./images/img_futuro_documentation/futuro_6.PNG"/>
+                                    <figcaption>fig. 6: </figcaption>
+                        </figure>
+                        <p>The images are centered and have rounded edges, the effect is created through the border-radius property applied to the four corners of the image.</p><p> In addition it is possible through the <span class="decoration1">“: hover”</span> selector, to apply a zoom on the images.</p>
+        
+                            <h2 class="futuro_h2"> Typography </h2>
+                            <p>The fonts used have a minimal style, geometric and regular spacing.</p><p> Two different variations of the<span class="decoration1"> Dosis font</span> were used, a font with a modern and rounded style.</p><p> it was designed by Edgar Tolentino, refined and enlarged by Pablo Impallari, interspersed and crenated by Igino Marini IKern.</p><p> Specifically, the variants used are <span class="decoration1">'Dosis book'</span> for h2 elements, paragraphs and blockquotes elements.</p><p> While for the title the version used is <span class="decoration1">'Dosis medium'</span>, a version with a more marked style to give greater prominence to the title.</p>
+                        <div class="prima_parte">
+                                            <img class="img7" src="./images/img_futuro_documentation/futuro_7.PNG"/>
+                                            <img class="img8" src="./images/img_futuro_documentation/futuro_8.PNG"/>
+                                            </div>
+                                        <figcaption>fig. 7:</figcaption>
+                                    </figure>
+            </section>
+            <section>
+                            <h2 class="futuro_h2">COLORS</h2>
+                            <p>The main colors used on the style “starting page” are the white used for the text.</p><p> In some cases, for the h2 elements, a <span class="decoration1">text-shadow</span> has been applied on the shades of purple, specifically # ff00f2 opacified, to give greater prominence.</p>
+                            <p>For the background I used the rgba gray (156, 156, 156, 0.8), and again the rgba white (255, 255, 255, 0.8).</p><p> In this case, both colors have been opacified to recreate an effect of transparency.</p>
+                        <figure id="f09_futuro">
+                                    <img src="./images/img_futuro_documentation/futuro_9.PNG"/>
+                                    <figcaption>fig. 8: </figcaption>
+                        </figure>
+                        <p>A black background-color was applied to the body, to create greater contrast with the shades chosen for the div element (hologram).</p>
+                            <figure id="f10_futuro">
+                                    <img src="./images/img_futuro_documentation/futuro_10.PNG"/>
+                                    <figcaption>fig. 9: </figcaption>
+                            </figure>
+                        
+                        <p>As for the three mood-related variants, in the <span class="decoration1">"right on"</span> variant neutral shades such as white and pink prevail.</p><p> In the “wake up” version yellow and purple prevail, being considered as energizing colors. Finally, for the “chill” variant, different shades of blue were used, a color that exudes a sense of calm and well-being.</p>
+
+            <figure id="f11_futuro">
+                                    <img src="#"/>
+                                    <figcaption>fig. 10: </figcaption>
+                            </figure>
+
+            </section>
+            <section>
+                            <h2 class="futuro_h2">Cover</h2>
+                            <p>When creating the cover, the font used for the text Dosis in the 'book' variant.</p><p> An image was chosen as the background that depicts the hole through which Alice "travels" until she reaches Wonderland, “the rabbit hole” that recalls the “character of the month” of our magazine.</p>
+                            <p>The titles of the articles are centered, arranged one below the other.</p><p> They are contained in div elements to which a background color has been applied, which recalls the colors of the buttons through which the mood is chosen when viewing the articles.</p><p> In addition, through the <span class="decoration1">“: hover”</span> selector the <span class="decoration1">text-shadow</span> changes color, passing to lighter shades, to simulate an increase in brightness, creating an “on” effect.</p>
+                <figure id="f12_futuro">
+                                <img src="#"/>
+                                    <figcaption>fig. 11: </figcaption>
+                                </figure>
+            </section>
+            <section>
+
+                            <h2 class="futuro_h2">References</h2>
+                        <ul>
+                            <li>The AIGA Guide to Careers in Graphic and Communication Design ( Bloomsbury , 2017).</li>
+                        </ul>
+                    </section>
+                        </div>
+                        </div> 
+
+ 
         <section class="section1">
            <div class="container">
                 <div class="subcontainer1">
