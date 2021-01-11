@@ -22,14 +22,18 @@ async function fileToHTML(file_location, with_ids){
 }
 
 function generateMetadataHTML(id){
+	
+	
+	
 	if (Object.keys(metadata[id]).length == 0){
 		temp = "<label>No entries found for "+id+"</label>";
 	}else{
 		var temp = "<ul class=elenco>";
 		for (var i in Object.keys(metadata[id])){
-			temp += "<li class=numeri_elenco>";a
+			temp += "<li class=numeri_elenco>";
 			if (metadata[id][Object.keys(metadata[id])[i]].length == 1){ 
-				temp += "<label  onclick=highlight('"+metadata[id][Objec															
+				temp += "<label  onclick=highlight('"+metadata[id][Object.keys(metadata[id])[i]][0]+"')>"+Object.keys(metadata[id])[i].replaceAll("_", " ")+"</label>";
+				if(id !== "content"){																				
 					//wikipedia
 					var url = "https://it.wikipedia.org/wiki/"+Object.keys(metadata[id])[i];
 					temp += "<img src='./images/wikipedia.png' style='width:1rem; padding-left: 5px; cursor:pointer;' onclick=window.open('"+url+"')>";
