@@ -193,9 +193,7 @@
 		font-size: 12px;
 	}
 
-	.metadata_button{
-		display: none;
-	}
+	
 
 	div.primo, div.secondo{
 		background-image: url(../../images/decorations_blue_red_gimp.jpg);
@@ -263,9 +261,7 @@
 	font-size: 12px;
 }
 
-.metadata_button{
-	display: none;
-}
+
 
 div.primo, div.secondo{
 	background-image: url(../../images/decorations_blue_red_gimp.jpg);

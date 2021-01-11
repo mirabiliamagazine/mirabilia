@@ -176,7 +176,6 @@ table, th, td {
     width:100%;
     padding-top: 10px;
     padding-bottom: 10px;
-      /*height:200px;*/
     object-fit: contain; /*scale-down*/
     border-radius: 60px;
 }

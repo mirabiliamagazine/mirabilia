@@ -23,72 +23,6 @@
 	</head>
 	<body>
 
-        <script>
-            function toggleUl(id){
-                var element = document.getElementById(id);  //per occorrenze
-                if (element.style.display === "none"){
-                    element.style.display = "block";
-                }else{
-                    element.style.display = "none";
-                } 
-            }
-
-
-            function highlight(id){
-                document.getElementById(id).style = "background: yellow";
-                if (style_active !== undefined && style_active.includes("future")){
-                    document.getElementById("box").scroll(0,document.getElementById(id).offsetTop - document.getElementById("my_navbar").clientHeight - 35);
-                }else{
-                    window.scroll(0,document.getElementById(id).offsetTop - document.getElementById("my_navbar").clientHeight);
-                }
-                setTimeout(function (){document.getElementById(id).style = "";}, 3000);
-            }
-
-            
-
-            function toggleMetadata(id){
-                // generateMetadataHTML(id);
-               
-
-                var x= document.getElementById(id+"_toggle");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-
-               var y = document.getElementById("meta_header_"+id);
-                if (y.style.backgroundColor === "lightgrey"){
-                    y.style.backgroundColor = "white";
-                }else{
-                    y.style.backgroundColor = "lightgrey";
-                }          
-            }
-
-            function show() {
-                var x = document.getElementsByClassName("item3")[0];
-                
-                if (x.style.width === "0%") {
-                    // x.style.display = "block";
-                    x.style.width = "40%";
-                } else {
-                    x.style.width = "0%";
-                }
-            }
-                
-
-
-        </script>
-        
-       <!------<nav>
-            <ul>
-               <li style="float:left; font-size: 30px; position: relative; bottom: 20px;"><a href="homepage.html" id="navbar" class> mirabilia</li><a>
-               <li><a href="explore.html" id="navbar">Explore</li></a>
-               <li><a href="documentation.html" id="navbar"> Documentation</li></a>
-               <li><a href="disclaimer.html" id="navbar"> Disclaimer</li></a>
-               <li><a href="about.html" id="navbar"> About</li></a>
-           </ul>issues
-        </nav>--->
         <div class="grid-container">
             <a onclick="show()" class="metadata_button"><img src="./images/nuova_lente.png"></a>
             <div class="first_menu item1" id="my_navbar">
@@ -279,16 +213,10 @@
 
      
         <script>
-            var html_active = undefined,  // devono essere globali, vengono richiamte da tutte le altre funzioni
-                style_active = undefined,
-                cover_active = undefined,
-                issue_active = undefined;
-            var metadata = {};
-            
-            if(screen.width <= 600){
-                document.getElementsByClassName("item3")[0].style.width = "0%";
-            }// serve ha settere lo stile, perchè mi serve nella funzione show. cos' mi chiedo se ha una widht 0%. è in fondo perchè prima 
-                // devo stampare tutto html
+            if(screen.width <= 600){// controllo schermo meno di 600 px
+                document.getElementsByClassName("item3")[0].style.width = "0%";//se vero setto la widht di quel elemento a 0%, per poter fara l'animazione show, altimenti devo cliccare due volte
+            }
+                
         </script>
         
 	</body>

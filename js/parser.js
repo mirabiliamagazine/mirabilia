@@ -1,12 +1,3 @@
-var audio = new Audio();
-var mood = "future.css";
-
-const issues_structure = {
-    literature: ['./pagesToLoad/children.html', './pagesToLoad/inforgraphics.html', './pagesToLoad/theGuardian_article.html'],
-    digital: ['./pagesToLoad/medium_hp_article.html', './pagesToLoad/Dataviz.html', './pagesToLoad/Illus.html'],
-    Rodar100: ['./pagesToLoad/corriere_articolo.html', './pagesToLoad/ny_article.html', './pagesToLoad/Rodari_internazionale.html']
-}
-
 async function parser(html_selected, style_selected, is_cover=null, issue_selected=null){
 
     if (style_selected !== style_active){

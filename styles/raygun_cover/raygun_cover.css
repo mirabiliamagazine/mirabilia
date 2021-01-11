@@ -129,10 +129,7 @@ p{
 		padding-top: 10px;
 	}
 
-	.metadata_button{
-		display: none;
-		
-	}
+	
 
 	p{
 		font-size:20px;
@@ -154,9 +151,7 @@ p{
 		left:20%;
 	}
 
-	.metadata_button{
-		display: none;
-	  }
+	
 	
 }
 

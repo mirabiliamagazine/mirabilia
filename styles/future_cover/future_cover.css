@@ -260,6 +260,10 @@ p{
     .cone{
       left:32%!important;
     }
+
+    .metadata_button{
+      background-color: white;
+    }
   }
 
 
@@ -276,7 +280,7 @@ p{
     }
   
     .metadata_button{
-      display: none;
+      background-color: white;
     }
 
     .text_container a{
@@ -310,8 +314,9 @@ p{
   }
 
   .metadata_button{
-    display: none;
+    background-color: white;
   }
+ 
 
   .date_magazine{
     font-size: 20px;
