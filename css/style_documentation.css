@@ -1101,22 +1101,10 @@ width:60%;
 .popup4 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
   font-family: 'Roboto-Light';
 }
-<<<<<<< HEAD
 
-a.mirabilia1{
-  float: left;
-  font-size: 30px;
-  padding: 0 0 0 1rem;
-}
-
-=======
 .popup5 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
   font-family: 'Roboto-Light';
 }
-.popup6 p, .popup4 ol, .popup4 ul, .popup4 figcaption{
-  font-family: 'Roboto-Light';
-}
->>>>>>> c2b409752d965b5f26fc0177234f8ba6b50eb28f
 
 
 /*------------------------------------------------------------------------------------------*/

@@ -329,10 +329,6 @@ div.first_menu button{
 ul.elenco li{
   text-decoration: none;
   padding-top: 5px;
-<<<<<<< HEAD
-=======
-  
->>>>>>> c2b409752d965b5f26fc0177234f8ba6b50eb28f
 }
 
 #entity_toggle ul.elenco, #time_toggle ul.elenco {
@@ -357,10 +353,6 @@ li label:hover {
 .label_key{
   cursor: pointer;
   height: 90%;
-<<<<<<< HEAD
-=======
-  
->>>>>>> c2b409752d965b5f26fc0177234f8ba6b50eb28f
 }
 
 .numeri_elenco{
