@@ -935,11 +935,24 @@ width: 50%;
 #f09_bauhaus img{
   width: 100%;
 }
-
-
-#f011_bauhaus img{
+#f01_futuro img{
   width: 100%;
+}	
+#f02_futuro img{
+  width: 100%;
+}
+#f03_futuro img{
+  width: 100%;
+}	
+#f00_futuro img{
+  width: 100%;
+}
+#f09_futuro img{
+  width: 100%;
+}
 
+.img50 img{
+width: 100%;
 }
 .popup3 p, .popup3 ol, .popup3 ul, .popup3 figcaption{
   font-family: 'Roboto-Light';
