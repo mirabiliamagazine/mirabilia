@@ -1,15 +1,14 @@
-//funzione 1, serve per leggere lo specifico file (html) di cui voglio fare il parser//
 
 async function readTextFile(file_location){                     
-    const articleResponse = await fetch(file_location)   	//fectch fa richiesta http          
-    const articleHtml = await articleResponse.text()     	// fetch restiusce file in formato json, quindi devo trasformarlo:
-															// 	file json -> stringa -> html        
+    const articleResponse = await fetch(file_location)   	
+    const articleHtml = await articleResponse.text()     	
+															     
     return articleHtml;
 }
 
-//funzione 2, parser//
+
 async function fileToHTML(file_location, with_ids){
-	const html_parser = new DOMParser ()  //DOMParser è una funzione già esistente di js 
+	const html_parser = new DOMParser ()  
 
 	var stringContainingHTMLSource = await readTextFile(file_location); //prende file html, lo legge e restituisce una stringa
 	var parsed_DOM = html_parser.parseFromString(stringContainingHTMLSource, "text/html"); // prendo la stinga e la trasfromo in html
@@ -22,19 +21,15 @@ async function fileToHTML(file_location, with_ids){
 	return dom_with_ids;
 }
 
-function generateMetadataHTML(id){//crea sotto formato stringa il codice html da andare a stampare in ogno dropdown
-	// filling the right div with content from var
-	//costruisce l'html del metadatview riempendo la lista con i tag e le classi 
-	// console.log(Object.keys(metadata[id]))
-	if (Object.keys(metadata[id]).length == 0){//se ce qualocsa per la specifica tipologia di metadato,
-		temp = "<label>No entries found for "+id+"</label>";//se n0n ce niente ti faccio vedere questa stringa
+function generateMetadataHTML(id){
+	if (Object.keys(metadata[id]).length == 0){
+		temp = "<label>No entries found for "+id+"</label>";
 	}else{
 		var temp = "<ul class=elenco>";
-		for (var i in Object.keys(metadata[id])){//cicla le chivi di metatada (es. quetin blake)
-			temp += "<li class=numeri_elenco>";//cotrusice una lista interna alla lista
-			if (metadata[id][Object.keys(metadata[id])[i]].length == 1){ //controlla se ce uno solo e nel caso fa solo il label
-				temp += "<label  onclick=highlight('"+metadata[id][Object.keys(metadata[id])[i]][0]+"')>"+Object.keys(metadata[id])[i].replaceAll("_", " ")+"</label>";
-				if(id !== "content"){					//people     //quale people								//cosa c'è scritto dentro al tipo di metadata								
+		for (var i in Object.keys(metadata[id])){
+			temp += "<li class=numeri_elenco>";a
+			if (metadata[id][Object.keys(metadata[id])[i]].length == 1){ 
+				temp += "<label  onclick=highlight('"+metadata[id][Objec															
 					//wikipedia
 					var url = "https://it.wikipedia.org/wiki/"+Object.keys(metadata[id])[i];
 					temp += "<img src='./images/wikipedia.png' style='width:1rem; padding-left: 5px; cursor:pointer;' onclick=window.open('"+url+"')>";
@@ -50,7 +45,7 @@ function generateMetadataHTML(id){//crea sotto formato stringa il codice html da
 				}
 				temp += "<ul style='display: none;' id='ul_"+Object.keys(metadata[id])[i]+"'>";
 				for (var j in metadata[id][Object.keys(metadata[id])[i]]){
-					temp += "<li onclick=highlight('"+metadata[id][Object.keys(metadata[id])[i]][j]+"')>"+(Number(j)+1)+"</li>";//metto le occerenze
+					temp += "<li onclick=highlight('"+metadata[id][Object.keys(metadata[id])[i]][j]+"')>"+(Number(j)+1)+"</li>";
 				}
 				temp += "</ul>"
 			}
@@ -63,7 +58,7 @@ function generateMetadataHTML(id){//crea sotto formato stringa il codice html da
 }
 
 function enrichMeta(metadata, c, elements){
-	metadata[c] = {}; // inizio a riempire il json (primo livello)
+	metadata[c] = {}; 
 	for (var j in elements){
 		var element = elements[j];
 		// console.log(element);
@@ -78,7 +73,7 @@ function enrichMeta(metadata, c, elements){
 			}else{
 				index = 1;
 				my_id += label + "_" + index;
-				metadata[c][label] = [];	//inizializzo l'array di ids vuoto (per poter aggiungere nuovi elementi) - riempio json secondo livello
+				metadata[c][label] = [];	
 			}
 
 			metadata[c][label].push(
@@ -102,12 +97,12 @@ async function assignIds(html_dom_format){
 	var intering_classes = ["person", "place", "entity"];
 	var interesting_tags = ["h2", "time"];
 
-	for (var i in intering_classes){//ciclo person place entity
+	for (var i in intering_classes){
 		var c = intering_classes[i];
 		console.log(c);
 
 		var elements = html_with_ids.getElementsByClassName(c);
-		// console.log(elements);
+		
 
 		enrichMeta(metadata, c, elements)
 		
