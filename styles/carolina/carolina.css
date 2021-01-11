@@ -1,97 +1,91 @@
-@font-face {
+@font-face{
 	font-family: "seagram";
 	src: url(../../fonts/seagram.ttf);
-	 
-   }
+}
 	
-   @font-face {
+   @font-face{
 	font-family: "initial";
 	src: url(../../fonts/CamelotCaps.ttf); 
-   }
+}
 
-   @font-face {
+   @font-face{
 	font-family: "Royal-7B3K";
 	src: url(../../fonts/Royal-7B3K.ttf); 
-   }
+}
 
    body{
 	margin:0;
 }
 	
-   #box {
+   #box{
 	columns: 2;
-    column-gap: 5vw;
-    width: calc( 80vw - 300px );
+    	column-gap: 5vw;
+    	width: calc( 80vw - 300px );
 	height: 100%;
-	
-    font-family: "seagram";
-    font-size: 120%;
-    background-image: url(../../images/background_carolina.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    border: solid transparent;
-    border-top-width: none;
-    border-bottom-width: none;
-    border-left-width: 100;
-    border-right-width: 200;
-    border-image: url(../../images/cornice_ok1.png) 160 round;
-    letter-spacing: -1.5px;
+    	font-family: "seagram";
+    	font-size: 120%;
+    	background-image: url(../../images/background_carolina.jpg);
+    	background-size: cover;
+    	background-repeat: repeat;
+    	border: solid transparent;
+    	border-top-width: none;
+    	border-bottom-width: none;
+    	border-left-width: 100;
+    	border-right-width: 200;
+    	border-image: url(../../images/cornice_ok1.png) 160 round;
+    	letter-spacing: -1.5px;
 	overflow-wrap: break-word;
 	column-fill: balance;
 	
-   }
+}
 	
    section#Cover > p::first-letter{
 	background: -webkit-linear-gradient(#34251f, #413029f6);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size:120%;
-	
+}
 
-   }
-
-   #Cover figure {
+   #Cover figure{
 	width: 80%;
 	column-span: all; 
 	
-   }
+}
 	
-   .publicationDate {
+   .publicationDate{
 	column-span: all;
 	padding-bottom: 10px;
 	text-align: center;
 	text-decoration: none;
 	
 	
-   }
+}
 
-   .byline {
+   .byline{
 	column-span: all;
 	padding-bottom: 10px;
 	text-align: center;
 	text-decoration: none;
-   }
+}
 
    .byline a{
 	background: -webkit-linear-gradient(#34251ff8, #413029f6);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-
-   }
+}
 	
-   .subtitle {
-
+   .subtitle{
 	font-size:140%;
 	width: 70%;
 	text-decoration: none;
 	background: -webkit-linear-gradient(#34251ff8, #413029f6);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
 	margin: auto;
 	padding-bottom: 5%;
 	column-span:all;
 	text-align: justify;
-   }
+}
 
 
    div#box img{
@@ -105,170 +99,162 @@
 	box-shadow: 7px 0 0 0 #34251f; 
 	box-shadow: 0 0 0 7px #34251f;
 	
-   }
+}
 	
-   figure {
+   figure{
 	column-span: all;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	width: 60%; 
 	margin: auto;
-   }
+}
 	
-   section:nth-child(2) {
+   section:nth-child(2){
 	column-span: all;
-    border: 65px solid transparent;
-    border-image: url(../../images/frame_section_drawing.png) 198 round;
+	border: 65px solid transparent;
+	border-image: url(../../images/frame_section_drawing.png) 198 round;
 	margin-right:7%;
 	margin-left:7%;
-	}
+}
 	
-   p {
+   p{
 	text-align: justify;
 	background: -webkit-linear-gradient(#34251f, #413029f6);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
 	margin-bottom: 0px;
 	margin-top: 0px;
 	
-   }
+}
 
-   p:nth-child(even)::first-letter {
+   p:nth-child(even)::first-letter{
  
 	background: -webkit-linear-gradient( #9600198c, #960019b9);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 1.5rem;
 	
-   }
+}
 	
    p:nth-child(odd)::first-letter {
 	font-size: 1.5rem;
 	background: -webkit-linear-gradient( #0047abb9, #0047abb0);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-   }
+}
 
    .big::first-letter {
 	font-size: 6.5em!important;
-    font-family: "Royal-7B3K";
-    background: -webkit-linear-gradient(#ae7f30, #b0863c, #fff77a,#ae7f30, #ae7f30)!important;
-    -webkit-background-clip: text!important;
-    -webkit-text-fill-color: transparent!important;
-    float: left;
-    line-height: 13vh;
-    padding-top: 4%;
-    padding-right: 0.5%;
-    padding-left: 0.2%;
-   }
+	font-family: "Royal-7B3K";
+	background: -webkit-linear-gradient(#ae7f30, #b0863c, #fff77a,#ae7f30, #ae7f30)!important;
+	-webkit-background-clip: text!important;
+	-webkit-text-fill-color: transparent!important;
+	float: left;
+	line-height: 13vh;
+	padding-top: 4%;
+	padding-right: 0.5%;
+	padding-left: 0.2%;
+}
 	
    
-   h1 {
+   h1{
+	color: #a2231d;
+	text-transform: capitalize;
+	letter-spacing: 0.1em;
+	text-align: center;
+	font-size: 230%;
+	column-span: all;
+}
 	
-    color: #a2231d;
-    text-transform: capitalize;
-    letter-spacing: 0.1em;
-    text-align: center;
-    font-size: 230%;
-    column-span: all;
-   }
-	
-   h2 {
+   h2{
 	color: #960018;
-    text-align: center;
-    column-span: all;
-    letter-spacing: 0.1em;
+    	text-align: center;
+    	column-span: all;
+    	letter-spacing: 0.1em;
 	font-size: 190%;
 	background-image: url(../../images/decorations_blue_red_gimp.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding-bottom: 30px;
-    background-size: 15% auto;
-	
-	}
+    	background-repeat: no-repeat;
+    	background-position: bottom;
+   	padding-bottom: 30px;
+    	background-size: 15% auto;
+}
 	
 
 	
    figcaption {
 	background: -webkit-linear-gradient(#ae7f30, #b0863c, #d4af37);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 110%;
-    text-align: center;
-    margin-top: 2%;
+    	-webkit-background-clip: text;
+    	-webkit-text-fill-color: transparent;
+    	font-size: 110%;
+    	text-align: center;
+    	margin-top: 2%;
 	width: 100%;
 	text-transform: capitalize;
-	
-   }
+}
 
 	
    blockquote{
 	color: #960018;
 	text-align: justify;
 	margin:auto;
-   }
+}
 	
 	
-   section ol {
+   section ol{
 	text-align: left;
-   }
-   ol {
+}
+   ol{
 	color: #34251f;
 	
 	
-   }
+}
 
-   a {
+   a{
     word-break: break-all;
-  }
+}
 	
-   section ul {
+   section ul{
 	color: #34251f;
 	text-align: left;
-   }
+}
 	
-   ul li {
+   ul li{
 	color: #34251f;
+}
 	
-   }
-	
-   table {
+   table{
 	border-collapse: collapse;
 	color: #34251f;
 	margin: auto;
 	padding: 30px;
-	
-   }
-   th, td {
+}
+
+   th, td{
 	border: 2px solid #b0863c;
-   }
+}
 	
    
-   
-	
-   p {
+   p{
 	
 	text-decoration: 0.3px underline;
 	text-decoration-color: rgba(212, 31, 24, 0.07);
-   }
+}
 	
 	
-   .entity {
+   .entity{
 	background-image: url(../../images/decorations_blue_red_gimp.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
 	padding-left: 16%;
-	
 	background-size: 54px 10px;
-	
-   }
+}
 	
 
 
    @media screen and (max-width: 600px){
-
-		body{
-			margin:0;
+	   
+	   body{
+		   margin:0;
 		}
 
 		html{
@@ -351,6 +337,7 @@
 
 
 @media screen and (max-width: 320px){
+	
 	.entity{
 		background-image: none;
 		padding-left:0px!important;
@@ -376,7 +363,7 @@
 		padding-top: 4%;
 		padding-right: 0.5%;
 		padding-left: 0.2%;
-	   }
+	}
 		
 
 	blockquote{
@@ -388,23 +375,22 @@
 		text-align: justify;
 	}
 
-	h2 {
-		
+	h2{
 		background-size: 30% auto;
+	}
 		
-		}
-		section:nth-child(2) {
-			column-span: all;
-			border: 40px solid transparent;
-			border-image: url(../../images/frame_section_drawing.png) 198 round;
-			margin-right:7%;
-			margin-left:7%;
-			}
+	section:nth-child(2){
+		column-span: all;
+		border: 40px solid transparent;
+		border-image: url(../../images/frame_section_drawing.png) 198 round;
+		margin-right:7%;
+		margin-left:7%;
+	}
 
-			table {
-				width: 50%!important;
+	table {
+		width: 50%!important;
 					
-			}
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 768px){
@@ -412,79 +398,72 @@
 		column-count: 1;
 		height: 100%;
 		margin-bottom: 40%;
-		
-	   }
-	
-   h1 {
-	   font-size: 200%;
-	margin-right:0px;
-	column-span: none;
-   }
-
-   
-  
-
-   .entity{
-	background-image: none;
-	padding-left:0px!important;
-}
-
-.subtitle{
-	font-size: 100%;
-}
-
-p{
-	font-size: 150%;
-	padding-left:1%!important;
-	padding-right: 1%!important;
-}
-
-.big::first-letter {
-	font-size: 5em!important;
-	font-family: "Royal-7B3K";
-	background: -webkit-linear-gradient(#ae7f30, #b0863c, #fff77a,#ae7f30, #ae7f30)!important;
-	-webkit-background-clip: text!important;
-	-webkit-text-fill-color: transparent!important;
-	float: left;
-	line-height: 13vh;
-	padding-top: 4%;
-	padding-right: 0.5%;
-	padding-left: 0.2%;
-   }
-	
-
-blockquote{
-	margin: 1%;
-	font-size:150%;
-}
-
-figcaption{
-	font-size: 90%;
-	text-align: justify;
-}
-
-h2 {
-	
-	background-size: 50% auto;
-	
 	}
-	section:nth-child(2) {
+	
+	h1{
+	   	font-size: 200%;
+		margin-right:0px;
+		column-span: none;
+	}
+	
+	.entity{
+		background-image: none;
+		padding-left:0px!important;
+	}
+
+	.subtitle{
+		font-size: 100%;
+	}
+	
+	p{
+		font-size: 150%;
+		padding-left:1%!important;
+		padding-right: 1%!important;
+	}
+	
+	.big::first-letter{
+		font-size: 5em!important;
+		font-family: "Royal-7B3K";
+		background: -webkit-linear-gradient(#ae7f30, #b0863c, #fff77a,#ae7f30, #ae7f30)!important;
+		-webkit-background-clip: text!important;
+		-webkit-text-fill-color: transparent!important;
+		float: left;
+		line-height: 13vh;
+		padding-top: 4%;
+		padding-right: 0.5%;
+		padding-left: 0.2%;
+	}
+	
+	blockquote{
+		margin: 1%;
+		font-size:150%;
+	}
+	
+	figcaption{
+		font-size: 90%;
+		text-align: justify;
+	}
+	
+	h2{
+		background-size: 50% auto;
+	}
+	
+	section:nth-child(2){
 		column-span: all;
 		border: 40px solid transparent;
 		border-image: url(../../images/frame_section_drawing.png) 198 round;
 		margin-right:2%;
 		margin-left:2%;
-		}
+	}
 
 	
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
-
 	#box{
-	  height: 100%;
-	  margin-bottom: 20%;
-  }
+		height: 100%;
+		margin-bottom: 20%;
+	}
   
 }
 	
