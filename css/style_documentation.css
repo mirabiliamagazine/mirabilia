@@ -70,6 +70,10 @@
 	font-family: 'dosis.medium';
 	src: url(../fonts/dosis.medium.ttf);
 }
+@font-face{
+	font-family: 'BOYCOTT';
+	src: url(../fonts/BOYCOTT.ttf);
+}
 
 
 .popup5 h1{
