@@ -536,6 +536,9 @@ footer {
   
   width: 50%;
 }
+#f01_raygun img{
+  width:100%;
+}
 
 .popup1 figure{
   text-align: center;
