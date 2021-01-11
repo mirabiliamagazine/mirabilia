@@ -10,7 +10,7 @@
 /*-------------------------------------------------------------------------------------*/
 @font-face {
 	font-family: "seagram";
-	src: url(./fonts/seagram.ttf);
+	src: url(../fonts/seagram.ttf);
 	 
    }
 	
@@ -19,51 +19,51 @@
 
 @font-face {
   font-family: "franklin";
-  src: url(./fonts/Franklin.otf);
+  src: url(../fonts/Franklin.otf);
 
 }
 
 @font-face {
   font-family: "deutch";
-  src: url(./fonts/deutch.ttf);
+  src: url(../fonts/deutch.ttf);
 }
 
 @font-face {
   font-family: "didot";
-  src: url(./fonts/didot.ttf);
+  src: url(../fonts/didot.ttf);
 
 }
 
 /*---------------------------------------------------------------------*/
 @font-face{
   font-family: 'Bayer';
-  src: url(./fonts/BayerUniversal.ttf);
+  src: url(../fonts/BayerUniversal.ttf);
 }
 
 @font-face{
   font-family: 'Prime';
-  src: url(./fonts/primerPrint.ttf);
+  src: url(../fonts/primerPrint.ttf);
 }
 @font-face{
     font-family: 'Rene';
-    src: url(./fonts/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf);
+    src: url(../fonts/Rene\ Bieder\ -\ Mackay\ DEMO\ Regular.otf);
 
 }
 @font-face{
     font-family: 'Roya';
-   src: url(./fonts/Royalacid.ttf);
+   src: url(../fonts/Royalacid.ttf);
 
 }
 
 /*-------------------------------------------------------------------------*/
 @font-face{
 	font-family: 'DINfunProCounterless';
-	src: url(../../fonts/DINfunProCounterless.ttf)
+	src: url(../fonts/DINfunProCounterless.ttf)
 }
 
 @font-face{
 	font-family: 'typenoksidi_regular';
-	src: url(../../fonts/typenoksidi_regular.ttf); 
+	src: url(../fonts/typenoksidi_regular.ttf); 
 }
 
 .popup5 h1{
@@ -895,6 +895,9 @@ width: 50%;
   width: 100%;
 }
 #f05_bauhaus img{
+  width: 100%;
+}
+#f09_bauhaus img{
   width: 100%;
 }
 
