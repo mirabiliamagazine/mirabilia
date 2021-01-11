@@ -2,7 +2,7 @@ var html_active = undefined,  // devono essere globali, vengono richiamte da tut
     style_active = undefined,
     cover_active = undefined,
     issue_active = undefined;
-var metadata = {};
+var metadata = {};//oggetto js contiene tutti i metadati
 var audio = new Audio();
 var mood = "future.css";
 
