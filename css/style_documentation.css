@@ -107,7 +107,16 @@ html{
 body{
   margin: 0px;
 }
-
+.popup5 figcaption {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.popup6 figcaption {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12px;
+}
 a.mirabilia1{
   float: left;
   padding: 0 0 0 1rem;
