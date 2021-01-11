@@ -737,15 +737,16 @@
             
                         <p>To reproduce the title, a grunge-style sans-serif font was chosen, Boycott font, adding some details such as the purple rectangle at the beginning, which was reproduced by selecting the first letter with the pseudo-selector h1 :: first-letter and then adding a padding-left, to create an indent, then the letter was given a background-color and the edges were rounded with border-radius. </p>
                         <p>In addition there is a barcode, applied to the H1 selector through the background-image property. The barcode is set up differently than its usual one. This artistic choice, wanted by David Carson, was made to make visible and more appreciated, an element such as a barcode, not typically considered in a meaningful way by the reader.</p>
-                        
+                        <centre>
                         <figure id="f06_raygun">
                            
                             <img style="width: 40%; padding-bottom: 3px;" class="img50" src="./images/raygun_documentazione/foto9.jpg"/><br>
-                            <img class="img50" src="./images/raygun_documentazione/foto10.PNG"/>                
+                            <img class="img50" src="./images/raygun_documentazione/foto10.PNG"/>   
+				</centre>
                             <figcaption>fig. 6: The original title compared to the 1992 style reproduction</figcaption>
                            
                         </figure>
-            
+				   
                         <p>Paragraphs have different forms. The diversity in their shape has been reproduced by creating an elliptical div element, using the “shape-outside” property, which is positioned alongside - on the left side - of some paragraphs selected by using javascript. Since no rules are given to the div to make it visible, the effect obtained is that of an elliptical or rectangular space between one paragraph and another.</p>
                         <p>In addition it can be seen that some paragraphs are read from right to left, this effect has been recreated thanks to the combination of the properties “direction: rtl” and “unicode-bidi: bidi-override”. Those paragraphs are usually not justified, the latter characteristic being typical for the rest of the paragraphs.</p>
                         <p>Another typical Raygun feature is the different color of the text. Since there is almost no distance between the paragraphs, to make the division into columns more visible, a different color is used, usually black and gray alternate.</p>
@@ -772,11 +773,12 @@
                         
                         <p>Some images are colored, but a 40% sepia filter is applied to them (using the “filter” property). Other images are instead in black and white, in this case the “filter” property was used with the values: grayscale (100%) saturated (50%). In fact, it is typical for raygun magazine to have the coexistence of colored images and black and white images on the page. This alternation is made possible by the selector “: nth-child (odd)”, which, applied to the section element, allows you to select the odd sections, then through a hierarchical selector you can apply the filter to the images of the section.</p>
                         <p>For the descriptions of the images - where present - the font used is Nimbus Sans Becker PBla Regular. In addition, the space between characters and words is less than the usual one, practically non-existent. This effect has been recreated, horizontally, with the “letter-spacing” property with value -1 and, vertically, with the “line-height” property with value 0.7. The description of the images usually overlaps the image. To achieve this overlap, the "position" property with relative value was used, so it was possible to move the div element, containing the description, in relation to its natural position. The shift took place with “top: -130px” and “right: 6px”.</p>
-            
+            		<centre>
                         <figure id="f10_raygun">
                            
                             <img class="img50" src="./images/raygun_documentazione/foto17.PNG"/> 
-                            <img class="img50" src="./images/raygun_documentazione/foto18.PNG"/>            
+                            <img class="img50" src="./images/raygun_documentazione/foto18.PNG"/>   
+				</centre>
                             <figcaption>fig. 10: The figure captions compared</figcaption>
                         
                         </figure>
@@ -786,10 +788,11 @@
             
                         <p>As for the fonts used, it is typical of the grunge style to use multiple fonts on a single page. All fonts used are san-serif fonts. In some cases they are enriched with details, such as scratches, to express originality and to be unconventional.</p>
                         <p>The font used for the titles is Boycott font, a grungy display font with noisy design and a little rough around the edges. </p>
-                        
+                        <centre>
                         <figure id="f11_raygun">
                             
-                            <img class="img100" src="./images/raygun_documentazione/foto20.PNG"/>           
+                            <img class="img100" src="./images/raygun_documentazione/foto20.PNG"/>  
+				</centre>
                             <figcaption>fig. 11: The title font</figcaption>
                            
                         </figure>
@@ -821,10 +824,11 @@
                         </figure>
                         
                         <p>For blockquotes the font used is the BV variant of the DISTRO font, in which the outline is marked and the body of the character is empty to give greater thickness.</p>
-            
+            <centre>
                         <figure id="f15_raygun">
                            
-                            <img class="img50" src="./images/raygun_documentazione/foto25.PNG"/>                     
+                            <img class="img50" src="./images/raygun_documentazione/foto25.PNG"/>   
+				</centre>
                             <figcaption>fig. 15: The blockquotes font</figcaption>
                            
                         </figure>
@@ -839,17 +843,19 @@
                         </figure>
             
                         <p>Nimbus Sans Becker PBla Regular font was used for the figure captions.</p>
-                        
+                        <centre>
                         <figure id="f17_raygun">
                             <img class="img50" src="./images/raygun_documentazione/foto27.PNG"/>
+				</centre>
                             <figcaption>fig. 17: The figure captions font</figcaption>
                      
                         </figure>
             
                         <p>The Fliped font was used for lists since it has scratches, a typical characteristic of the grunge style.</p>
-                      
+                      <centre>
                         <figure id="f18_raygun">
-                            <img style="width: 50%;" class="img50" src="./images/raygun_documentazione/foto28.PNG"/>               
+                            <img style="width: 50%;" class="img50" src="./images/raygun_documentazione/foto28.PNG"/>
+				</centre>
                             <figcaption>fig. 18: The lists font</figcaption>
                        
                         </figure>
