@@ -171,6 +171,7 @@ section ul{
   .grid-container {
     display: grid;
     min-height: 90vh;
+    width: 100%;
     grid-template-areas:
       'omini omini testo testo strega strega'
       'omini omini testo testo strega strega'
