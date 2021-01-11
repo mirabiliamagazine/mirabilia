@@ -66,6 +66,12 @@
 	src: url(../fonts/typenoksidi_regular.ttf); 
 }
 
+@font-face{
+	font-family: 'dosis.medium';
+	src: url(../../fonts/dosis.medium.ttf);
+}
+
+
 .popup5 h1{
   font-family:'BOYCOTT' ;
   font-size: 250%;
@@ -79,6 +85,17 @@
 .popup5 h3{
   font-family: 'typenoksidi_regular';
 }
+
+.popup6 h1{
+  font-family: 'dosis.medium';
+  font-size: 250%;
+
+}
+
+.popup6 h2, .popup6 h3{
+  font-family: 'dosis.medium';
+}
+
 
 html{
   width: 100%;
