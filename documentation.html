@@ -891,118 +891,129 @@
 
             <div id="overlay6" onclick="off('overlay6')">
                 <div class="popup6">
-                
-                <section>
-                
-                    <h1 class="futuro_h1">2040</h1>
-                    <p>Wondering what web design and communication will look like in the future I imagined displays that will appear exactly where we need them, content will appear everywhere and the user interface will not be in the form of a screen as we know it today.</p>
-                    <p>For this reason, I decided to reproduce a hologram, or a parallactic image obtained through the use of a laser light.</p> <p>This technology is able to represent this new “ethereal design” at its best, giving a greater sense of reality to those who use it.</p>
-                    <p>The flat, two-dimensional design will be enriched not only from a visual point of view, but will also involve other senses such as hearing.</p> <p>There will be greater connection with the user, for example the new devices will be able to recognize the user's mood and consequently change color tones and auditory tones.</p>
+			<section>
+                        <center><h1 class="futuro_h1">2040</h1></center>
+                        <p>Wondering what web design and communication will look like in the future I imagined displays that will appear exactly where we need them, content will appear everywhere and the user interface will not be in the form of a screen as we know it today.For this reason, I decided to reproduce a hologram, or a parallactic image obtained through the use of a laser light.This technology is able to represent this new “ethereal design” at its best, giving a greater sense of reality to those who use it. The flat, two-dimensional design will be enriched not only from a visual point of view, but will also involve other senses such as hearing. There will be greater connection with the user, for example the new devices will be able to recognize the user's mood and consequently change color tones and auditory tones.</p>
                 </section>
                 <section>
-                    <h2 class="futuro_h2"> Layout </h2>
-                        <h3 class=futuro_h3>Page organization</h3>
-                            <p>The layout is organized as to reproduce a hologram. The <span class="decoration1">"linear-gradient"</span> css function has been applied to the background of the container div element, which represents the intangible but projected <span class="decoration1">"display"</span> of the hologram, so as to be able to uniformly mix colors - of light shades tending to white and gray – and to create a gradient and therefore more realistic effect.</p>
-                            <p>The text of the paragraphs is justified, through the property <span class="decoration1">"text-align"</span> and the corresponding value <span class="decoration1">"justify"</span>.</p><p> In addition, the text is organized in a single column, positioned in the center of the div element, thanks to the <span class="decoration1">"margin"</span> property and its <span class="decoration1">"auto"</span> value.</p><p> Finally, the top and bottom padding allowed me to give more airiness to the text.</p> 
-                        
-                        <figure id="f01_futuro">
-                                            <img src="./images/img_futuro_documentation/futuro_1.PNG"/>
-                                            <figcaption>fig. 1: </figcaption>
-                        </figure>
-                    
-                        <p>Under the container div element, I simulated the laser light from which the hologram is obtained. </p>
-                        <p>A  div element was firstly created using javascript. The div is fixed under the hologram through the <span class="decoration1">position property</span> with <span class="decoration1">fixed value</span>, then it is positioned with the bottom, top and right properties.</p>
-                        <p>Different shades of color were used through the <span class="decoration1">box-shadow </span> property and then the floating effect was created using the <span class="decoration1">@keyframe rule</span>, which uses the <span class="decoration1">"transform"</span> property to apply a vertical transition.</p>
-            
-                        <figure id="f02_futuro">
-                                    <img src="./images/img_futuro_documentation/futuro_2.PNG"/>
-                                    <figcaption>fig. 2: </figcaption>
-                        </figure>
-                        <p>On the left side of the "hologram" there are three round shaped buttons of different colors.</p><p> By clicking on one of them, it is possible to change the colors and the sound background (specify which one) based on the user’s mood. For this reason, through javascript, each button is associated with the <span class="decoration1">"onclick"</span> event, which calls a javascript function that applies a different style sheet.</p>
-                        <p>The graphic details of the user interaction were created with the <span class="decoration1">": hover"</span> selector, which changes <span class="decoration1">box-shadw</span> and <span class="decoration1">opacity</span> level of the buttons when the user passes over a button with the mouse.</p>
-
-                            <figure id="f03_futuro">
-                                    <img src="./images/img_futuro_documentation/futuro_3.PNG"/>
-                                    <figcaption>fig. 3: </figcaption>
-            </section>
-            <section>
-                        <h3 class="futuro_h3">TITLES, SUBTITLES, CITATIONS AND IMAGES</h3>
-                        
-                        <p>The title is positioned to the center. A glitch effect has been applied to simulate graphic display errors, typical of holographic transmissions.</p><p> The effect was created via css. First of all, I tripled the text, each of the three versions of the text has the <span class="decoration1">text-shadow</span> property with a different value (color), plus the shadow of the duplicates is positioned with a different height than the text.</p> 
-                        <p>The first copy of the text overlaps before the h1 (original) element thanks to the psuedoselector <span class="decoration1">:: after</span>, while the other copy is positioned below the text with the psuedoselector <span class="decoration1">:: before</span>. I then created the animation with the <span class="decoration1">@keyframe</span> rule and through the clip-path properties I gradually show different portions of the text.</p>
-<figure id="f04_futuro">               
- <div class="terza_parte_futuro">
-                        
-                                    <img src="./images/img_futuro_documentation/futuro_4.PNG"/>
-                        </div>
-                                    <figcaption>fig. 4: </figcaption>
-                        </figure>
-
-                        
-                        <p>The h2 elements are in a central position, they have a <span class="decoration1">letter-spacing of 10px.</span> </p>
-                        <p>The letters are all in uppercase, via the <span class="decoration1">text-transfrom</span> property with value uppercase.</p><p> In addition, the shadow box has been modulated so that the outlines of the text have a <span class="decoration1">gradient color</span>, to give the text a neon effect (brightness).</p>
-
-                        <figure id="f05_futuro">
-                                    <img src="./images/img_futuro_documentation/futuro_5.PNG"/>
-                                    <figcaption>fig. 5: </figcaption>
-                        </figure>
-                        <p>Paragraphs and lists are justified and have a <span class="decoration1">font size of 120%</span>.</p><p> They are centered in the containing div element.</p>
-                        <p>A glitch effect has been applied to the blockquotes, created differently than the glitch effect of the h1 element.</p><p> In this case through the <span class="decoration1">@keyframe</span> rule the <span class="decoration1">text-shadow</span> is modulated gradually and vertically, by applying the <span class="decoration1">transfrom property</span> it is possible to implement a vertical translation.</p>
-                        <figure id="f06_futuro">
-                                    <img src="./images/img_futuro_documentation/futuro_6.PNG"/>
-                                    <figcaption>fig. 6: </figcaption>
-                        </figure>
-                        <p>The images are centered and have rounded edges, the effect is created through the border-radius property applied to the four corners of the image.</p><p> In addition it is possible through the <span class="decoration1">“: hover”</span> selector, to apply a zoom on the images.</p>
-        
-                            <h2 class="futuro_h2"> Typography </h2>
-                            <p>The fonts used have a minimal style, geometric and regular spacing.</p><p> Two different variations of the<span class="decoration1"> Dosis font</span> were used, a font with a modern and rounded style.</p><p> it was designed by Edgar Tolentino, refined and enlarged by Pablo Impallari, interspersed and crenated by Igino Marini IKern.</p><p> Specifically, the variants used are <span class="decoration1">'Dosis book'</span> for h2 elements, paragraphs and blockquotes elements.</p><p> While for the title the version used is <span class="decoration1">'Dosis medium'</span>, a version with a more marked style to give greater prominence to the title.</p>
-                        <div class="prima_parte">
-                                            <img class="img7" src="./images/img_futuro_documentation/futuro_7.PNG"/>
-                                            <img class="img8" src="./images/img_futuro_documentation/futuro_8.PNG"/>
-                                            </div>
-                                        <figcaption>fig. 7:</figcaption>
-                                    </figure>
-            </section>
-            <section>
-                            <h2 class="futuro_h2">COLORS</h2>
-                            <p>The main colors used on the style “starting page” are the white used for the text.</p><p> In some cases, for the h2 elements, a <span class="decoration1">text-shadow</span> has been applied on the shades of purple, specifically # ff00f2 opacified, to give greater prominence.</p>
-                            <p>For the background I used the rgba gray (156, 156, 156, 0.8), and again the rgba white (255, 255, 255, 0.8).</p><p> In this case, both colors have been opacified to recreate an effect of transparency.</p>
-                        <figure id="f09_futuro">
-                                    <img src="./images/img_futuro_documentation/futuro_9.PNG"/>
-                                    <figcaption>fig. 8: </figcaption>
-                        </figure>
-                        <p>A black background-color was applied to the body, to create greater contrast with the shades chosen for the div element (hologram).</p>
-                            <figure id="f10_futuro">
-                                    <img src="./images/img_futuro_documentation/futuro_10.PNG"/>
-                                    <figcaption>fig. 9: </figcaption>
+                         <center><h2 class="futuro_h2"> Layout </h2></center>
+                            <h3 class=futuro_h3>Page organization</h3>
+                            <p>The layout is organized as to reproduce a hologram. The "linear-gradient" css function has been applied to the background of the container div element, which represents the intangible but projected "display" of the hologram, so as to be able to uniformly mix colors - of light shades tending to white and gray – and to create a gradient and therefore more realistic effect. The text of the paragraphs is justified, through the property "text-align" and the corresponding value "justify".In addition, the text is organized in a single column, positioned in the center of the div element, thanks to the "margin" property and its "auto" value.Finally, the top and bottom padding allowed me to give more airiness to the text.</p> 
+                            
+                            <figure id="f01_futuro">
+                                <center>
+                                <img class="img100" src="./images//future_documentazione/futuro_1.PNG"/>
+                                <figcaption>fig. 1: Hologram display reproducted </figcaption>
+                                </center>
                             </figure>
-                        
-                        <p>As for the three mood-related variants, in the <span class="decoration1">"right on"</span> variant neutral shades such as white and pink prevail.</p><p> In the “wake up” version yellow and purple prevail, being considered as energizing colors. Finally, for the “chill” variant, different shades of blue were used, a color that exudes a sense of calm and well-being.</p>
-
-            <figure id="f11_futuro">
-                                    <img src="#"/>
-                                    <figcaption>fig. 10: </figcaption>
+                         
+                            <p>Under the container div element, I simulated the laser light from which the hologram is obtained. A  div element was firstly created using javascript. The div is fixed under the hologram through the position property with fixed value, then it is positioned with the bottom, top and right properties. Different shades of color were used through the box-shadow property and then the floating effect was created using the @keyframe rule, which uses the "transform" property to apply a vertical transition.</p>
+                  
+                            <figure id="f02_futuro">
+                                <center>
+                                <img src="./images//future_documentazione/futuro_2.PNG"/>
+                                <figcaption>fig. 2: The laser light from which the hologram is obtained  </figcaption>
+                                </center>
                             </figure>
-
-            </section>
-            <section>
-                            <h2 class="futuro_h2">Cover</h2>
-                            <p>When creating the cover, the font used for the text Dosis in the 'book' variant.</p><p> An image was chosen as the background that depicts the hole through which Alice "travels" until she reaches Wonderland, “the rabbit hole” that recalls the “character of the month” of our magazine.</p>
-                            <p>The titles of the articles are centered, arranged one below the other.</p><p> They are contained in div elements to which a background color has been applied, which recalls the colors of the buttons through which the mood is chosen when viewing the articles.</p><p> In addition, through the <span class="decoration1">“: hover”</span> selector the <span class="decoration1">text-shadow</span> changes color, passing to lighter shades, to simulate an increase in brightness, creating an “on” effect.</p>
-                <figure id="f12_futuro">
-                                <img src="#"/>
-                                    <figcaption>fig. 11: </figcaption>
+                            <p>On the left side of the "hologram" there are three round shaped buttons of different colors.</p><p> By clicking on one of them, it is possible to change the colors and the sound background based on the user’s mood. For this reason, through javascript, each button is associated with the "onclick" event, which calls a javascript function that applies a different style sheet. The graphic details of the user interaction were created with the ": hover" selector, which changes box-shadw and opacity level of the buttons when the user passes over a button with the mouse.</p>
+                
+                                 <figure id="f03_futuro">
+                                    <center>
+                                        <img class="img20" src="./images//future_documentazione/futuro_3.PNG"/>
+                                        <figcaption>fig. 3: Mood buttons</figcaption>
+                                    </center>
+                            </figure>
+                </section>
+                <section>
+                        <center> <h3 class="futuro_h3">TITLES, SUBTITLES, CITATIONS AND IMAGES</h3></center>
+                            
+                            <p>The title is positioned to the center. A glitch effect has been applied to simulate graphic display errors, typical of holographic transmissions. The effect was created via css. First of all, I tripled the text, each of the three versions of the text has the text-shadow property with a different value (color), plus the shadow of the duplicates is positioned with a different height than the text. The first copy of the text overlaps before the h1 (original) element thanks to the psuedoselector :: after, while the other copy is positioned below the text with the psuedoselector :: before. I then created the animation with the @keyframe rule and through the clip-path properties I gradually show different portions of the text.</p>
+                
+                             <figure id="f04_futuro">
+                                 <center>
+                                <img style="width: 50%;" class="img100" src="./images//future_documentazione/futuro_4.PNG"/>
+                                <figcaption>Fig. 4: The h1 and the glitch effect </figcaption>
+                                </center>
+                            </figure>
+                
+                            
+                            <p>The h2 elements are in a central position, they have a letter-spacing of 10px. The letters are all in uppercase, via the text-transfrom property with value uppercase. In addition, the shadow box has been modulated so that the outlines of the text have a gradient color, to give the text a neon effect (brightness).</p>
+                
+                                <figure id="f05_futuro">
+                                    <center>
+                                    <img class="img100" src="./images//future_documentazione/futuro_5.PNG"/>
+                                <figcaption>Fig. 5: The h2 </figcaption>
+                                </center>
+                            </figure>
+                            
+                            <p>A glitch effect has been applied to the blockquotes, created differently than the glitch effect of the h1 element. In this case through the @keyframe rule the text-shadow is modulated gradually and vertically, by applying the transfrom property it is possible to implement a vertical translation.</p>
+                             <figure id="f06_futuro">
+                                 <center>
+                                <img class="img100" src="./images//future_documentazione/futuro_6.PNG"/>
+                                <figcaption>Fig. 6: The blockquotes </figcaption>
+                                </center>
+                            </figure>
+                            <p>The images are centered and have rounded edges, the effect is created through the border-radius property applied to the four corners of the image. In addition it is possible through the “: hover” selector, to apply a zoom on the images.</p>
+                            <figure id="f00_futuro">
+                                <center>
+                               <img class="img100" src="./images//future_documentazione/futuro_13.PNG"/>
+                               <figcaption>Fig. 6: The images</figcaption>
+                               </center>
+                           </figure>
+                        </section>
+                <section>
+                                <center><h2 class="futuro_h2"> Typography </h2></center>
+                                <p>The fonts used have a minimal style, geometric and regular spacing.Two different variations of the Dosis font were used, a font with a modern and rounded style.it was designed by Edgar Tolentino, refined and enlarged by Pablo Impallari, interspersed and crenated by Igino Marini IKern. Specifically, the variants used are 'Dosis book' for h2 elements, paragraphs and blockquotes elements.While for the title the version used is 'Dosis medium', a version with a more marked style to give greater prominence to the title.</p>
+                               <div class="prima_parte">
+                                                <img class="img50" src="./images//future_documentazione/futuro_7.PNG"/>
+                                                <img class="img50" src="./images//future_documentazione/futuro_8.PNG"/>
+                                                </div>
+                                            <figcaption>Fig. 7: The fonts used</figcaption>
+                                        </figure>
+                </section>
+                    <section>            
+                                <center><h2 class="futuro_h2">COLORS</h2></center>
+                                <p>The main colors used on the style “starting page” are the white used for the text. In some cases, for the h2 elements, a text-shadow has been applied on the shades of purple, specifically # ff00f2 opacified, to give greater prominence. For the background I used the rgba gray (156, 156, 156, 0.8), and again the rgba white (255, 255, 255, 0.8). In this case, both colors have been opacified to recreate an effect of transparency. A black background-color was applied to the body, to create greater contrast with the shades chosen for the div element (hologram).</p>
+                                <center>
+                                <figure id="f09_futuro">
+                                    <img class="img50" src="./images//future_documentazione/futuro_9.PNG"/>
+                                    <figcaption>Fig. 8: The starting page of the future style  </figcaption>
+                                    </center>
                                 </figure>
-            </section>
-            <section>
-
-                            <h2 class="futuro_h2">References</h2>
-                        <ul>
-                            <li>The AIGA Guide to Careers in Graphic and Communication Design ( Bloomsbury , 2017).</li>
-                        </ul>
+                                </figure>
+                                <p>As for the three mood-related variants, in the "right on" variant neutral shades such as white and pink prevail.In the “wake up” version yellow and purple prevail, being considered as energizing colors. Finally, for the “chill” variant, different shades of blue were used, a color that exudes a sense of calm and well-being.</p>
+                                <figure id="f10_futuro">
+                                    <center>
+                                    <div class="prima_parte">
+                                    <img class="img50" src="./images//future_documentazione/futuro_10.PNG"/>
+                                        <img class="img50" src="./images//future_documentazione/futuro_11.PNG"/>
+                                    </div><br>
+                                        <img class="img50" src="./images//future_documentazione/futuro_12.PNG"/>
+                                   
+                                        <figcaption> Fig. 9: The three variants related to the moods</figcaption>
+                                    </center> 
+                                </figure>
+                
+                
                     </section>
-                        </div>
-                        </div> 
+                <section>
+                               <center> <h2 class="futuro_h2">Cover</h2></center>
+                                <p>When creating the cover, the font used for the text Dosis in the 'book' variant. An image was chosen as the background that depicts the hole through which Alice "travels" until she reaches Wonderland, “the rabbit hole” that recalls the “character of the month” of our magazine. The titles of the articles are centered, arranged one below the other.They are contained in div elements to which a background color has been applied, which recalls the colors of the buttons through which the mood is chosen when viewing the articles. In addition, through the “: hover” selector the text-shadow changes color, passing to lighter shades, to simulate an increase in brightness, creating an “on” effect.</p>
+                                <center>
+                                <figure id="f11_futuro">
+                                    <img style="width: 50%;" src="./images//future_documentazione/futuro_14.PNG"/>
+                                    <figcaption>Fig. 10: The cover reproduction</figcaption>
+                                </figure>
+                            </figure>
+                </section>
+                        <section>
+                                <h2 class="futuro_h2">References</h2>
+                                <p>The AIGA Guide to Careers in Graphic and Communication Design ( Bloomsbury , 2017).</p>
+                                <p><a href="https://uxdesign.cc/challenges-designers-will-face-in-2040-ebb63ed9b41d">What challenges will designers face in 2040? (Nilroy Packiyarajah, Jul 7, 2020)<a></p>
+                </section>	
+                
+                </div>
+            </div> 
 
  
         <section class="section1">
