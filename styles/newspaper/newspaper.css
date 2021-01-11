@@ -1,33 +1,39 @@
 
 
-@font-face{
+@font-face {
     font-family: "didot";
     src: url(../../fonts/didot.ttf);
+
 }
 
 
-@font-face{
+@font-face {
     font-family: "franklin";
     src: url(../../fonts/Franklin.otf);
   
 }
 
-@font-face{
+@font-face {
     font-family: "Cheltenham_Extra_Condensed_Bold";
     src: url(../../fonts/Cheltenham_Extra_Condensed_Bold.otf);
+    
 }
 
-@font-face{
+@font-face {
     font-family: "deutch";
     src: url(../../fonts/deutch.ttf);
+    
+    
 }
 
-@font-face{
+@font-face {
     font-family: "egyptian";
     src: url(../../fonts/kenny.ttf);
+    
+   
 }
 
-h1{
+h1 {
     font-family: "Cheltenham_Extra_Condensed_Bold";
     font-size: 300%;
     text-transform: uppercase;
@@ -35,6 +41,7 @@ h1{
     margin: auto;
     font-weight: bolder;
     color: rgba(0, 0, 0, 0.9);
+    width: 100%;
 }
 
 
@@ -56,7 +63,7 @@ section:nth-child(even) h2{
     color: rgba(0, 0, 0, 0.8);
 }
 
-.subtitle{
+.subtitle {
 
     font-family: "deutch";
     text-align: center;
@@ -65,12 +72,13 @@ section:nth-child(even) h2{
 }
 
 
-#Cover{
+#Cover {
     column-span: all;
     display: flex;
     flex-flow: row wrap;
     width: 100%;/**/
     text-align: center;
+    
 }
 
 #Cover p{
@@ -78,18 +86,18 @@ section:nth-child(even) h2{
     text-indent: 0em!important;
 }
 
-#Cover img{
+#Cover img {
     width: 80%!important; 
     border: 2px solid black;    
 }
 
-#Cover figure{
+#Cover figure {
     text-align: center;
     width: 100%;
        
 }
 
-#Cover figcaption{
+#Cover figcaption {
     font-family: 'egyptian';
     font-size: 120%;
     text-align: center;
@@ -97,6 +105,7 @@ section:nth-child(even) h2{
 }
 
 .byline{
+    
     order: 3;
     width: 20%;
     text-align: left;
@@ -109,9 +118,11 @@ section:nth-child(even) h2{
     margin-top: 15px;
     font-family: "franklin";
     color: rgba(0, 0, 0, 0.8);
+ 
 }
  
 .publicationDate{
+    
     order: 4;
     width: 20%;
     font-family: 'Abril Fatface', serif;
@@ -123,18 +134,19 @@ section:nth-child(even) h2{
     flex-grow: 2;
     font-family: "franklin";
     color: rgba(0, 0, 0, 0.8);
+ 
 }
 
-#box a{
+#box a {
     word-break: break-all;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
-}
+  }
 
 #box{
     margin-top: 3vh;
     margin-bottom: 15vh;
-    column-count: 3; 
+	column-count: 3; 
     column-rule: 1px solid black; 
     column-gap: 8px;
     text-align: justify; 
@@ -146,20 +158,22 @@ section:nth-child(even) h2{
     font-family: "didot";
     filter: grayscale(100%);
     box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);
+    
+    
 }
 
 
-div#box img{
+div#box img {
     width: 100%;
     filter: brightness(60%) contrast(150%) brightness(150%);
-    border: 2px solid black;
+    border: 2px solid black;   
 }
 
 section:nth-child(even) img{
     border: 4px dotted black!important;
 }
 
-figcaption{
+figcaption {
     font-family: "franklin";
     text-transform: uppercase;
     font-size: 15px;
@@ -170,7 +184,7 @@ figcaption{
 }
 
 
-section{
+section {
 
     background-image: url(../../images/divider.png);
     background-repeat: no-repeat;
@@ -179,24 +193,24 @@ section{
     background-size: 20% auto;
 }
 
-section:nth-child(1){
+section:nth-child(1) {
     background-image: none;
 }
 
-table{
-    border-collapse: collapse;
+table {
+	border-collapse: collapse;
     color: rgba(0, 0, 0, 0.8);
     font-size: 60%; 
     margin: auto;
 }
 
-th, td{
-    border: 1px solid black;
+th, td {
+	border: 1px solid black;
 }
 
 section ol {
     border: 5px black double;
-    font-size: 70%;
+	font-size: 70%;
     text-align: justify;
     padding: 3.5%;
     padding-left: 6%;
@@ -209,7 +223,7 @@ section ul {
     border-color: rgba(0, 0, 0, 0.9);
     border-radius: 15px;
     padding:8%;
-    font-size: 80%;
+	font-size: 80%;
     text-align: justify;
     color: rgba(0, 0, 0, 0.8);
 }
@@ -233,64 +247,68 @@ blockquote {
         width: 65%;
         margin: auto;
         margin-bottom: 30%;
-	
-	}
+    }
 
     h1{
         font-size: 150%;
-	}
+    }
     
 
     .subtitle{
         padding-top:10%;
         font-size: 100%;
         text-align: justify;
-	}
+    }
 
    .byline, .publicationDate{
        font-size: 40%!important;
-	}
+   }
 
    #Cover figcaption{
        font-size: 100%;
        text-align: justify;
-	}
+   }
     
    
 
     .byline{
         font-size: 15px;
-	}
+        
+     
+    }
      
     .publicationDate{
     
         font-size: 15px;
-	}
+    }
 
     #Cover img {
         width: 100%;
-        margin:auto;
-	}
+        margin:auto;   
+    }
 
     p{
         font-size: 20px;
-	}
+    }
 
-    section ol{
+    section ol {
+       
         font-size: 100%;
         text-align: justify;
         padding: 10%;
-    	}
+    }
 
-    section ul{
+    section ul {
+       
         padding:10%;
         font-size: 100%;
         text-align: justify;
-    	}
+    }
 
     table {
         width: 50%!important;
-        }
+            
+    }
     
 }
 
@@ -299,41 +317,42 @@ blockquote {
         column-count: 1;
         width: 65%;
         margin: auto;
-	}
+    }
 
     h1{
         font-size: 150%;
-    	}
+    }
     
 
     .subtitle{
         padding-top:10%;
         font-size: 100%;
         text-align: justify;
-    	}
+    }
 
    .byline, .publicationDate{
        font-size: 55%;
-   	}
+   }
    #Cover figcaption{
        font-size: 100%;
        text-align: justify;
-   	}
+   }
 
-   table{
+   table {
     width: 50%!important;
-	}
+        
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 768px){
     #box{
         column-count: 2;
-    	}
+    }
 
     h1{
         font-size: 200%;
         padding-bottom:10%;
-    	}
+    }
     
 
     .subtitle{
@@ -341,17 +360,17 @@ blockquote {
         padding-bottom:8%;
         font-size: 100%;
         text-align: justify;
-    	}
+    }
 
    .byline, .publicationDate{
        font-size: 60%!important;
 
-   	}
+   }
 
    #Cover figcaption{
        font-size: 100%;
        text-align: justify;
-   	}
+   }
     
    
 
@@ -359,35 +378,35 @@ blockquote {
         font-size: 15px;
         
      
-    	}
+    }
      
     .publicationDate{
     
         font-size: 15px;
-   	 }
+    }
 
     #Cover img {
         width: 100%;
         margin:auto;   
-    	}
+    }
 
     p{
         font-size: 20px;
-    	}
+    }
 
-    section ol{
+    section ol {
        
         font-size: 100%;
         text-align: justify;
         padding: 10%;
-    	}
+    }
 
-    section ul{
+    section ul {
        
         padding:10%;
         font-size: 100%;
         text-align: justify;
-   	 }
+    }
 
 }
 
@@ -395,8 +414,9 @@ blockquote {
 
     #box{
      column-count: 2;
-  	}
-}
+  }
+  
+  }
       
 
 
