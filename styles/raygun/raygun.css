@@ -72,13 +72,10 @@ h1{
 	text-transform: uppercase;
 	text-align: left;
 	font-size: 50px;
-	top:0;
 	width: 50%;
-	height: 100%;
 	line-height: 0.9;
 	letter-spacing: 0.2;
 	background-image: url(../../images/barcode.png);
-	background-size: contain;
 	background-size: 50px 80px;
 	background-repeat: no-repeat;
 	background-position: 88%;
