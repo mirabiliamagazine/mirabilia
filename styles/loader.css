@@ -328,7 +328,7 @@ div.first_menu button{
 ul.elenco li{
   text-decoration: none;
   padding-top: 5px;
-  list-style-type: none;
+  
 }
 
 #entity_toggle ul.elenco, #time_toggle ul.elenco {
@@ -347,7 +347,7 @@ label{
 .label_key{
   cursor: pointer;
   height: 90%;
-  list-style-type: none;
+  
 }
 
 
