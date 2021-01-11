@@ -57,7 +57,7 @@
 	box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);
 	column-count: 4;
 	column-gap: 5px;
-	column-fill: balance!important;
+	column-fill: balance;
 	
 }
 
