@@ -116,11 +116,6 @@ h2{
 	
 }
 
-h2::first-letter{
-	margin-right: 10px;
-	
-}
-
 div#box a {
 	color: black;
 	text-decoration: none;
