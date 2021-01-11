@@ -76,18 +76,27 @@
 }
 
 
-.popup5 h1{
+.h1_raygun{
   font-family:'BOYCOTT' ;
-  font-size: 250%;
+  text-align: center;
+   font-size: 300%;
+   letter-spacing: 0.3em
 }
 
-.popup5 h2 {
+.h2_raygun {
   font-family:'DINfunProCounterless' ;
   text-transform: uppercase;
+  font-size: 150%;
+   letter-spacing: 0.1em;
+    text-align: center;
+    margin-top: 6%;
 }
 
-.popup5 h3{
+.h3_raygun{
   font-family: 'typenoksidi_regular';
+font-size: 120%;
+    letter-spacing: 0.1em;
+    margin-top: 8%;
 }
 
 .popup6 h1{
