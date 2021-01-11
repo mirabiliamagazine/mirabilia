@@ -814,7 +814,7 @@ height: 30vh;
   width: 100%;
 }
 #f010_bauhaus img{
-  width: 100%;
+  width: 100%!important;
 
 }
 #f011_bauhaus img{
