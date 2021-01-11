@@ -24,16 +24,6 @@
 }
 
 @font-face{
-	font-family: 'ZapfDingbats';
-	src: url(../../fonts/ZapfDingbats.ttf); 
-}
-
-@font-face{
-	font-family: 'Payday';
-	src: url(../../fonts/Payday.ttf); 
-}
-
-@font-face{
 	font-family: 'typenoksidi_regular';
 	src: url(../../fonts/typenoksidi_regular.ttf); 
 }
@@ -55,7 +45,7 @@
 
 
 #box{
-	width: 78%;
+	width: calc( 80vw - 60px );
 	font-size: 15px;
 	background-image: url(../../images/background_ok.jpg);
 	background-size: contain;
@@ -65,7 +55,6 @@
 	margin-bottom: 15vh;
 	margin-top: 5vh;
 	box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);
-	display: block;
 	column-count: 4;
 	column-gap: 5px;
 	column-fill: balance!important;
@@ -102,12 +91,7 @@ h1::first-letter{
 	border-radius: 10px;
 }
 
-/*p:nth-child(even){
-	
-	
-	/*transform: skew(175deg);
-	padding: 5px;
-}*/
+
 
 
 .barcode{
@@ -121,18 +105,9 @@ h1::first-letter{
     right: 20%;
 }
 
-.barcode_2{
-	
-	position: absolute;
-    background-image: url(../../images/barcode2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 20vw;
-    height: 5vh;
-	background-position: bottom;
-
+#References{
+	transform: skew(178deg, 178deg);
 }
-
 
 
 h2{
@@ -169,25 +144,7 @@ p{
 	height: 700px;
 	float: left;
 	shape-outside: ellipse(35px 170px at 10% 30%);
-	
-	
-	/* width: 200px;
-	height: 300px; */
-	
-  /*   border-radius: 50px / 100px; */
-	/* margin: 1em;
-	float: left;
-	shape-outside: ellipse(120px 150px at 20% 30%); */
-
-	/*width: 40px; old ok
-    height: 300px; old ok
-    /* border-radius: 50px / 100px; */
-    /* margin: 1em; */
-    /*float: left;*/
-    /*shape-outside: ellipse(35px 100px at 0% 31%); old ok
-    /* margin-top: 60px; */ 
-  }
-  
+}
 
 .person, .place, .entity{
 	font-family: 'DISTROM';
@@ -250,43 +207,21 @@ ol p{
 
 
 q{
-	/*font-family: 'Payday';*/
+	
 	font-family: 'typenoksidi_regular';
 	color: white;
 	background-color: black;
-	
-	
-	/*color: white;
-	background-color: black;
-	text-transform: uppercase;
-	line-height: 1.5;
-	font-weight: bolder;
-	font-family:'Trixie-Text';*/
+
 }
 
 blockquote{
 	font-family: 'DISTROBV' ;
 	font-size: 20px;
 	color: rgb(142,127,146);
-	/*text-shadow:
-   -1px -1px 0 rgb(142,127,146),  
-    1px -1px 0 rgb(142,127,146),
-    -1px 1px 0 rgb(142,127,146),
-     1px 1px 0 rgb(142,127,146);*/
-	 transform: rotate(-3deg);
+	transform: rotate(-3deg);
 	 padding: 5px;
 }
 
-/*.right > p, .right > h2, .right > h3{
-	direction: rtl;
-  	unicode-bidi: bidi-override;
-
-}
-
-.right > p:hover, .right > h2:hover, .right > h3:hover {
-	direction: ltr;
-	unicode-bidi: normal;
-}*/
 
 table {
 	border-collapse: collapse;
@@ -300,13 +235,11 @@ table {
   }
   
   img{
-	  
-	  width:90%;
-	  padding-left: 5%;
-	  padding-right: 5%;
-		/*height:200px;*/
-	  object-fit: contain; /*scale-down*/
-	  filter:  sepia(40%);
+	width:90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	object-fit: contain; 
+	filter:  sepia(40%);
   }
 
   #Cover figure{
@@ -319,40 +252,16 @@ table {
   
   figure{
 	  width: 90%;
-	  margin: auto ;/*immagini grandi centrate*/
+	  margin: auto ;
 	  padding-right: 10px;
 	  height: 100%;
 	  padding: 5%;
 }
 
 
-
-/*figure:before{
-	content: 'YaM FERRY';
-    font-family: 'ZapfDingbats';
-	float: right;
-	position:initial;
-	white-space: nowrap;
-	position: relative;
-    color: grey;
-    font-size: 1.4rem;
-}
-
-/*img:after {
-    content: 'abcedf';
-    font-family: 'ZapfDingbats';
-    
-    position: absolute;
-    letter-spacing: 1rem;
-    color: green;
-    font-size: 1.5rem;
-} */
-  
   figcaption{
 	  
 	font-family: 'Nimbus_Sans_Becker_Regular';
-	/*display: table-caption;
-	caption-side: top;*/
 	position: relative;
 	margin: auto;
 	top: -120px;
@@ -378,11 +287,6 @@ figcaption q{
 	
 }
 
-.first_half:hover{
-	direction: ltr;
-	unicode-bidi: normal;
-}
-
 
 #cover p{
 	direction: ltr!important;
@@ -395,199 +299,6 @@ figcaption q{
 }
   
   
-/*.h1_different{
-	background-color: red;
-}
-
-.make_skew{
-	transform: skew(177deg,177deg);
-	font-size: 15px;
-	padding:1rem;
-}
-
-.make_skew:hover{
-	transform: skew(0deg);
-}
-
-#References, #Bibliography{
-	transform: skew(177deg,177deg);
-	font-size: 15px;
-	padding:1rem;
-	
-}
-
-#References:hover, #Bibliography:hover{
-	transform: skew(0deg);
-}
-
-
-
-.right > p, .right > h2, .right > h3{
-	direction: rtl;
-  	unicode-bidi: bidi-override;
-
-}
-
-.right > p:hover, .right > h2:hover, .right > h3:hover {
-	direction: ltr;
-	unicode-bidi: normal;
-}
-
-.line-height_different{
-	line-height: 0.5;
-	font-weight: bolder;
-}
-
-.line-height_different:hover{
-	line-height: normal;
-	font-weight: normal;
-}
-
-.rotate_p{
-	transform: rotate(-90deg);
-	font-size: 12px;
-	line-height: 0.7;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	margin-left: 70px;
-	margin-right: 80px;
-	transition: transform ease 0.8s;
-
-}
-
-.rotate_p:hover{
-	transform: rotate(0deg);
-
-} */
-
-/*h2{
-	background-color: rgba(255, 242, 0, 0.7);
-	padding-left:1rem;
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 30px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 60px;
-}
-
-
-.subtitle{
-	font-weight: bolder;
-	text-transform: uppercase;
-}*/
-
-
-/*.dingbats_font{
-	background-image: url(../../images/zapf_simbol1.PNG);
-	font-weight: 600;
-	background-repeat: no-repeat;
-	background-size: contain;
-	
-}*/
-
-
-
-/*section:nth-child(5){
-	background-image: url(../../images/zapf_simbol_2.PNG);
-	font-weight: 600;
-	background-repeat: no-repeat;
-	background-size: contain;
-
-}*/
-
-/*p:nth-last-child(-n+3){
-	transform: rotate(-90deg);
-	margin: 45px;
-	line-height: 0.8;
-}*/
-
-/*.first_half{
-	color: black;
-}
-
-.second_half{
-	color: #c44716;/*#660e08*/ /*:#ba3636
-}
-
-blockquote{
-	font-family: 'ZURCHXC';
-	transform: rotate(-90deg);
-	font-size: 15px;
-	padding: 40px;
-	word-spacing: 10px;
-	transition: transform ease 0.8s;
-	/*font-size: 18px;
-	color: green;
-	/*transform: rotate(-3deg); non funziona perchè ovviamente fa contrasto con inline
-	display: inline;
-    padding: 0.2em 0em;
-    background-color: black;
-    box-shadow: 1em 0 0 black, -1em 0 0 black;
-	box-decoration-break: clone; 
-	line-height: 2;
-}
-
-blockquote:hover{
-	transform: rotate(0deg);
-}*/
-
-/*li:nth-child(odd){
-	margin-left: 30px;
-}*/
-
-
-
-/*.different_line{
-	font-size: 30px;
-}*/
-
-/*.backgroundLine{
-	display: block; 
-	position: absolute;
-	margin: auto;
-	left: 0px;
-	transform: rotate(80deg) skew(20deg);
-	trasform: rotate(50deg); 
-	width: 20px;
-	height: 53vw;
-	z-index: -1;
-	background-color: orange;
-}*/
-
-/*.backgroundLine{
-	 display: block; 
-	position: relative;
-	padding: 10px;
-    /* margin: auto; 
-    
-    width: 51.6vw;
-    height: 3vh;
-    z-index: -100;
-    background-color: orange;*/
-    /* text-align: center; */
-    /* object-position: center; */
-    /* top: 50; 
-    bottom: 0px;
-	right: 371px;
-} */
-
-/*.big::first-letter{
-	font-size: 30px;
-	color: orange;
-	
-}*/
-
-
-
-/*section > p:nth-child(2)::first-letter {
-	font-size: 30px;
-	background-color: orange;
-}*/ 
-
-
-
-
-
-
 
 @media screen and (max-width: 600px){
 	div#box{
