@@ -137,7 +137,9 @@ a.mirabilia1{
   text-align: right;
   background-color: white;
 }
-
+.img100 {
+  width:100%;
+}
 .topnav_mobile{
   display: none;
 }
