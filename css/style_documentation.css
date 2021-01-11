@@ -56,6 +56,29 @@
 }
 
 /*-------------------------------------------------------------------------*/
+@font-face{
+	font-family: 'DINfunProCounterless';
+	src: url(../../fonts/DINfunProCounterless.ttf)
+}
+
+@font-face{
+	font-family: 'typenoksidi_regular';
+	src: url(../../fonts/typenoksidi_regular.ttf); 
+}
+
+.popup5 h1{
+  font-family:'BOYCOTT' ;
+  font-size: 250%;
+}
+
+.popup5 h2 {
+  font-family:'DINfunProCounterless' ;
+  text-transform: uppercase;
+}
+
+.popup5 h3{
+  font-family: 'typenoksidi_regular';
+}
 
 html{
   width: 100%;
