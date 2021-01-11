@@ -1,9 +1,8 @@
 function first_button(){
     changeCSS("future_2.css");
     mood = "future_2.css";
-    // var audio = new Audio('./sample.mp3');
     audio.pause();
-    audio = new Audio('https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3');
+    audio = new Audio('../../audio/righton.mp3');
     audio.play();
 
     document.getElementsByClassName("bottone_1")[0].setAttribute("onclick", "comeBack()");
@@ -12,9 +11,8 @@ function first_button(){
 function second_button(){
     changeCSS("future_3.css");
     mood = "future_3.css";
-    // var audio = new Audio('./sample.mp3');
     audio.pause();
-    audio = new Audio('https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3');
+    audio = new Audio('../../audio/energy.mp3');
     audio.play();
 
     document.getElementsByClassName("bottone_1")[0].setAttribute("onclick", "comeBack()");
@@ -23,9 +21,8 @@ function second_button(){
 function third_button(){
     changeCSS("future_4.css");
     mood = "future_4.css";
-    // var audio = new Audio('./sample.mp3' );
-    audio.pause(); //prima zittisce quello precendente poi carica audio poi fa finire quello successivo
-    audio = new Audio('https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3');
+    audio.pause(); 
+    audio = new Audio('../../audio/relax.mp3');
     audio.play();
 
     document.getElementsByClassName("bottone_1")[0].setAttribute("onclick", "comeBack()");
@@ -33,8 +30,6 @@ function third_button(){
 
 function comeBack(){
     audio.pause();
-    // come back stuff
-    //   parser(null, "future");
     mood = "future.css";
     changeCSS("future.css");
     document.getElementsByClassName("bottone_1")[0].setAttribute("onclick", "first_button()");
