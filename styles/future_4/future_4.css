@@ -45,10 +45,7 @@ body{
     filter: blur(2.5px);
 }
 
-.cone + .cone {
-  animation-duration: 0.75s;
-  opacity: 0.5;
-}
+
 
 @keyframes float {
   from {
