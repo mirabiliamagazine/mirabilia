@@ -10,12 +10,10 @@
 #box{
 	font-family: 'DINfunProCounterless' ;
 	font-size: 15px;
-	/*background-color:#f8f4eb;*/
 	background-image: linear-gradient(to bottom, white,rgba(142, 127, 146, 0.678) /*rgb(248, 219, 164)*/);
-
 	text-align: center;
 	height: 100%;
-    width: calc( 80vw );
+    	width: calc( 80vw );
 	
 }
 
@@ -36,15 +34,6 @@ h1{
 	width: 50%;
 	margin: auto;
 	transform: skew(178deg,178deg);
-	
-	
-	/*background-image: url(../../images/rabbit_raygun.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position-y: 60%;
-	background-position: top;*/
-
-	
 }
 
 .contenitore{
