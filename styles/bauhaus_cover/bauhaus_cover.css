@@ -10,7 +10,7 @@
 }
 
 @keyframes animation {
-/*cerchio */
+
  0% {
   width: 50px;
   height: 0px;
@@ -18,7 +18,7 @@
   border-radius: 50%;
   border-color:#be1e2d;
 }
-/*square*/
+
 100% {
  width: 50px;
  height: 0px;
@@ -48,13 +48,13 @@ border-color: #ffde17;
 
 @keyframes animation1{
 
-/*cerchio */
+
  0% {
   width: 50px;
   height: 0px;
   border-radius: 0%;
 }
-/*square*/
+
 100% {
  width: 50px;
  height: 0px;
