@@ -1,6 +1,7 @@
 function bauhaus_cover(html_final){
     var loaded_document_edited = html_final;
 
+    changeCSS("bauhaus_cover.css")
    
 
     var f = document.createElement("DIV"); 
