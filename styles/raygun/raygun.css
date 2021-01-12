@@ -272,7 +272,7 @@ figcaption q{
 	background-color: transparent;
 }
 
-.first_half {
+.first_part {
 	direction: rtl;
 	unicode-bidi: bidi-override;
 	text-align: right;
@@ -286,7 +286,7 @@ figcaption q{
 	text-align: justify;
 }
 
-.second_half{
+.second_part{
 	color:grey;
 }
   
