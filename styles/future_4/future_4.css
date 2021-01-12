@@ -177,19 +177,18 @@ table {
     width:100%;
     padding-top: 10px;
     padding-bottom: 10px;
-      /*height:200px;*/
-    object-fit: contain; /*scale-down*/
+     object-fit: contain; 
     border-radius: 60px;
 }
 
 div#box img:hover{
-box-shadow: 0 16px 21px 0 rgba(0,0,0,0.8);
--ms-transform: scale(1.5); /* IE 9 */
--webkit-transform: scale(1.2); /* Safari 3-8 */
+
+-ms-transform: scale(1.5); 
+-webkit-transform: scale(1.2); 
 transform: scale(1.2);
 margin-bottom: 30px;
 margin-top: 30px;
-z-index: 30;
+
 }
 
 figcaption{
@@ -202,7 +201,7 @@ figcaption{
 
 figure{
     width: 50%;
-    margin: auto ;/*immagini grandi centrate*/
+    margin: auto ;
     animation: 10s fadeIn;
     animation-fill-mode: forwards;
     visibility: hidden;
