@@ -13,12 +13,12 @@ function raygun(html_final){
     var x = loaded_document_edited.getElementsByTagName("p");
     var i;
     for (i = 0; i < x.length/3; i++) {
-        x[i].classList.add('first_half');
+        x[i].classList.add('first_part');
     }
 
     x = loaded_document_edited.getElementsByTagName("p");
     for (i = x.length/3; i < x.length/3*2; i++) {
-        x[parseInt(i)].classList.add('second_half');
+        x[parseInt(i)].classList.add('second_part');
         if(parseInt(i) % 2 == 0){
             var create_circle = document.createElement("div");
             create_circle.classList.add('circle');
