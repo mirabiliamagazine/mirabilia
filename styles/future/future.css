@@ -42,7 +42,6 @@ div#box a {
   z-index: 2;
   width: 400px;
   height: 5px;
-  margin: -5px auto 0;
   background-color: rgba(0, 252, 252, .35);
   border-radius: 100%;
   filter: blur(2.5px);
@@ -297,15 +296,14 @@ table {
     width:100%;
     padding-top: 10px;
     padding-bottom: 10px;
-      /*height:200px;*/
-    object-fit: contain; /*scale-down*/
+    object-fit: contain; 
     border-radius: 60px;
 }
 
 div#box img:hover{
-box-shadow: none;
--ms-transform: scale(1.5); /* IE 9 */
--webkit-transform: scale(1.2); /* Safari 3-8 */
+
+-ms-transform: scale(1.5); 
+-webkit-transform: scale(1.2);
 transform: scale(1.2);
 margin-bottom: 30px;
 margin-top: 30px;
@@ -322,7 +320,7 @@ figcaption{
 
 figure{
     width: 50%;
-    margin: auto ;/*immagini grandi centrate*/
+    margin: auto ;
     animation: 10s fadeIn;
     animation-fill-mode: forwards;
     visibility: hidden;
